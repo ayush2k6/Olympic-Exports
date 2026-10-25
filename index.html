@@ -1,0 +1,957 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <title>Olympic Exports Pvt. Ltd.</title>
+  <meta name="description"
+    content="Founded in 1994 in Jajmau, Kanpur. Olympic Exports Pvt. Ltd. manufactures and exports premium hand-carved Western tooling belts, tribal beaded belts, handcrafted Kilim tapestry bags, and technical narrow fabrics.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/src/style.css">
+
+  <style>
+    footer.modern-footer,
+    .modern-footer,
+    .footov,
+    .collection-footer {
+      background-color: #000000 !important;
+      background: #000000 !important;
+      color: #ffffff !important;
+    }
+
+    .modern-footer a,
+    .modern-footer p,
+    .modern-footer span,
+    .modern-footer li,
+    .modern-footer .modern-footer__logo {
+      color: #ffffff !important;
+    }
+
+    .modern-footer a:hover {
+      color: #e6c875 !important;
+    }
+
+    .modern-footer hr {
+      border-color: rgba(255, 255, 255, 0.15) !important;
+    }
+
+    header.header--type-4,
+    .header--type-4,
+    #mainHeader {
+      background-color: #000000 !important;
+      background: #000000 !important;
+    }
+
+    .header--type-4 .oe-logo-text,
+    .header--type-4.scrolled .oe-logo-text {
+      color: #ffffff !important;
+    }
+
+    /* Desktop Navigation Bar in Header */
+    .header__nav-menu {
+      display: flex;
+      align-items: center;
+      gap: 2.2rem;
+      margin: 0;
+      padding: 0;
+    }
+
+    .header__nav-link {
+      font-family: 'Cinzel', serif;
+      font-size: 0.82rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: rgba(255, 255, 255, 0.85);
+      text-decoration: none;
+      transition: color 0.2s ease;
+      font-weight: 600;
+      position: relative;
+      padding: 0.3rem 0;
+      line-height: 1.2;
+      display: inline-block;
+    }
+
+    .header__nav-link:hover,
+    .header__nav-link.active {
+      color: #c9a96e;
+      text-decoration: none;
+    }
+
+    .header__nav-link.active::after {
+      content: '';
+      position: absolute;
+      bottom: -4px;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      background: #c9a96e;
+    }
+
+    @media (max-width: 991px) {
+      .header__nav-menu {
+        display: none !important;
+      }
+    }
+  </style>
+
+</head>
+
+<body class="absolute-header">
+
+  <!-- Floating WhatsApp Action Widget (Olympic Exports Reference) -->
+  <a href="https://wa.me/919839086636?text=Hello%21%20Olympic%20Exports%20Pvt%20Ltd" class="floatwp" target="_blank"
+    title="Chat with Mr. Farhan Mirza (Director)" aria-label="Chat on WhatsApp">
+    <svg class="my-float" viewBox="0 0 448 512" width="30" height="30" fill="#ffffff"
+      xmlns="http://www.w3.org/2000/svg">
+      <path
+        d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z" />
+    </svg>
+  </a>
+
+
+  <!-- Primary Luxury Header (Olympic Exports Reference: header--type-4) -->
+  <header class="header header--type-4" id="mainHeader">
+    <div class="container container--type-3">
+      <div class="header__container">
+
+        <!-- Left Brand Logo -->
+        <h1 class="header__logo mb-0">
+          <a href="index.html" style="display: flex; align-items: center; gap: 10px; text-decoration: none;">
+            <img src="/images/logo-dark-bg.png" alt="Olympic Exports Pvt Ltd"
+              style="height: 44px; width: auto; object-fit: contain;">
+            <span class="oe-logo-text"
+              style="font-family: 'Cinzel', serif; font-size: 1.15rem; font-weight: 700; letter-spacing: 0.08em; color: #ffffff;">OLYMPIC
+              <span style="font-weight: 400; font-size: 0.88rem; opacity: 0.85; color: #ffffff;">EXPORTS</span></span>
+          </a>
+        </h1>
+
+        <!-- 4-Page Desktop Primary Navigation Menu -->
+        <nav class="header__nav-menu">
+          <a href="index.html" class="header__nav-link active">Home</a>
+          <a href="about.html" class="header__nav-link">About Us</a>
+          <a href="products.html" class="header__nav-link">Products</a>
+          <a href="contact-us.html" class="header__nav-link">Contact Us</a>
+        </nav>
+
+        <!-- Right Action & Mobile Drawer Trigger -->
+        <div class="header__right-action-wrapper">
+          <a href="contact-us.html" class="btn-header-quote">
+            <i class="fa fa-envelope-o"></i> Request Quote
+          </a>
+          <!-- Mobile Menu Icon (Only visible on small screens) -->
+          <button type="button" class="header__mobile-menu-btn js-open-canvas-menu" id="btnOpenMenu" aria-label="Open Navigation">
+            <i class="fa fa-bars"></i>
+          </button>
+        </div>
+
+      </div>
+    </div>
+  </header>
+
+  <!-- Slide-Out Canvas Navigation Drawer (Clean 4 Pages System) -->
+  <div class="canvas-menu js-canvas-menu" id="canvasMenu" aria-hidden="true">
+    <div class="canvas-menu__overlay js-close-canvas-menu" id="canvasMenuOverlay"></div>
+    <div class="canvas-menu__content">
+      <div class="canvas-menu__close">
+        <button type="button" class="js-close-canvas-menu close-drawer-btn" id="btnCloseCanvasMenu">
+          <i data-lucide="x" class="icon-sm"></i>
+          <span>Close</span>
+        </button>
+      </div>
+
+      <div class="canvas-menu__brand">
+        <img src="/images/logo-dark-bg.png" alt="Olympic Exports Crest" class="canvas-logo-img">
+        <h3 style="font-family:'Cinzel',serif;margin-top:8px;">Olympic Exports</h3>
+        <p style="font-size:0.75rem;letter-spacing:0.15em;color:#c5a059;text-transform:uppercase;">Govt. Recognized
+          Export House &bull; Jajmau, Kanpur</p>
+      </div>
+
+      <!-- Clean 4-Page Canvas Navigation Menu -->
+      <nav class="canvas-menu__nav">
+        <ul>
+          <li><a href="index.html" class="canvas-nav__item" style="color:#c5a059;font-weight:700;">Home</a></li>
+          <li><a href="about.html" class="canvas-nav__item">About Us</a></li>
+          <li class="canvas-menu__dropdown">
+            <div style="display:flex;justify-content:space-between;align-items:center;">
+              <a href="products.html" class="canvas-nav__item">Products (All 6 Divisions)</a>
+            </div>
+            <ul class="canvas-sub-menu" style="display:block;padding-left:1rem;margin-top:0.4rem;">
+              <li><a href="products.html#leather-belts" class="js-close-canvas-menu">01. Leather Belts (Tooled
+                  Western)</a></li>
+              <li><a href="products.html#beaded-belts" class="js-close-canvas-menu">02. Beaded Belts (Tribal Aztec)</a>
+              </li>
+              <li><a href="products.html#kilim-bags" class="js-close-canvas-menu">03. Kilim Bags &amp; Tapestry</a></li>
+              <li><a href="products.html#leather-bags" class="js-close-canvas-menu">04. Handcrafted Leather Bags</a>
+              </li>
+              <li><a href="products.html#shoe-laces" class="js-close-canvas-menu">05. Shoe Laces &amp; Boot Cords</a>
+              </li>
+              <li><a href="products.html#elastic-bands" class="js-close-canvas-menu">06. Technical Elastic &amp;
+                  Webbing</a></li>
+            </ul>
+          </li>
+          <li><a href="contact-us.html" class="canvas-nav__item">Contact Us</a></li>
+        </ul>
+      </nav>
+
+      <div style="padding:1.5rem 2rem;border-top:1px solid #eee;font-size:0.82rem;line-height:1.7;">
+        <strong>Kanpur Direct Desk:</strong><br>
+        <a href="tel:9839086636" style="color:#c5a059;text-decoration:none;">+91 98390 86636</a> (Mr. Farhan Mirza)<br>
+        <a href="tel:7388814225" style="color:#c5a059;text-decoration:none;">+91 73888 14225</a> (Mr. Ayaan Mirza)
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Full-Screen Interactive Search Popup (Olympic Exports Reference) -->
+  <div class="search-popup js-search-popup" id="searchPopup" aria-hidden="true">
+    <div class="search-popup__close">
+      <button type="button" class="js-close-search-popup" id="btnCloseSearchPopup">
+        <i data-lucide="x" class="icon-md"></i>
+      </button>
+    </div>
+    <div class="container container--type-2">
+      <h3 class="search-popup__title">Search Olympic Exports Catalogue</h3>
+      <ul class="search-popup__categories">
+        <li><button type="button" class="search-cat-btn active" data-cat="all">All</button></li>
+        <li><button type="button" class="search-cat-btn" data-cat="Leather Belts">Tooling Belts</button></li>
+        <li><button type="button" class="search-cat-btn" data-cat="Beaded Belts">Beaded Belts</button></li>
+        <li><button type="button" class="search-cat-btn" data-cat="Leather Bags">Kilim Bags</button></li>
+        <li><button type="button" class="search-cat-btn" data-cat="Elastic Products">Elastic</button></li>
+        <li><button type="button" class="search-cat-btn" data-cat="Shoe Laces">Shoelaces</button></li>
+      </ul>
+      <div class="psearch">
+        <input type="text" id="popupSearchInput" class="search-popup__input"
+          placeholder="Type model, SKU (e.g. T1, FT2, FB1, EL1), material, or feature...">
+      </div>
+      <div class="search-popups__results">
+        <h6 class="search-popup__results-heading" id="searchResultsHeading">Matching Specimens</h6>
+        <div class="search-popups__results-products" id="popupSearchResultsGrid">
+          <!-- Dynamically populated -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- =========================================================================
+       HERO COLLECTION SLIDER (Olympic Exports Reference: mainhero collection-slider)
+       ========================================================================= -->
+  <section class="mainhero collection-slider js-home-collection-slider" id="home">
+
+    <!-- Slide 1 -->
+    <div class="collection-slider__item js-slider-item active" data-slide="1">
+      <div class="collection-slider__image">
+        <img src="/images/hero.jpg" alt="Olympic Exports Atelier Kanpur - Hand-carved leather Western belts"
+          class="hero-bg-img">
+        <div class="hero-gradient-overlay"></div>
+      </div>
+      <div class="collection-slider__content container">
+        <span class="hero-heritage-tag">32+ YEARS HERITAGE</span>
+        <h2 class="collection-slider__title js-slider-heading">TRUST CRAFTS SUCCESS</h2>
+        <div class="collection-slider__buttons js-slider-heading">
+          <p class="pwhite phide">
+            Rooted in a legacy of three decades in Kanpur, our commitment to<br>
+            crafting premium hand-carved Western tooling belts, Kilim luggage, and narrow fabrics remains unwavering.
+          </p>
+          <div class="hero-actions-row">
+            <a href="about.html" class="eighth-button">About Us</a>
+            <a href="products.html" class="eighth-button without-background">Explore Products</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- =========================================================================
+       MINIMAL ABOUT SECTION (Olympic Exports Reference: minimal-about bg1973)
+       ========================================================================= -->
+  <section class="minimal-about bg1973" id="about">
+    <div class="revercemobile minimal-about__d-flex d-flex">
+      <div class="minimal-about__content bgabtimg">
+        <div class="minimal-about__container_updated aboutalighmnt">
+          <span class="mini-kicker">&bull; HERITAGE &bull; </span>
+          <h4 class="home-about-us__title spacetitle">Time really matters</h4>
+          <div class="home-about-us__description">
+            Discover the captivating journey of Olympic Exports Pvt. Ltd., ignited in 1994 in the historic leather hub
+            of Jajmau, Kanpur. Across generations, our founding ethos of uncompromising excellence lives on through
+            Managing Director Farhan Mirza, Director Rukhsaar Mirza, and Director Ayaan Mirza, shaping Olympic Exports
+            into a Govt. Recognized Export
+            House.
+            <br><br>
+            From master vegetable-tanned grain selection to intricate hand-incised floral tooling, handwoven Aztec
+            beadwork, Southwestern Kilim luggage, and technical narrow fabrics, our dedication to efficiency, commercial
+            integrity, and European REACH compliance defines our evolution from a heritage atelier into an international
+            export powerhouse.
+          </div>
+          <div class="about-leadership-summary">
+          </div>
+          <p class="subtitle">
+            <a href="#craftsmanship" class="eighth-button">Discover Our Journey</a>
+          </p>
+        </div>
+      </div>
+      <div class="minimal-about__image mobileabtimgcolor">
+        <div class="about-img-frame">
+          <img src="/images/workshop-hero.jpg" alt="Olympic Exports Jajmau Workshop - Master Craftsmen at Bench"
+            class="lazyload grc-rounded-img">
+          <div class="about-image-badge">
+            <span class="badge-title">EST. 1994</span>
+            <span class="badge-sub">Kanpur Leathercraft</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       CORE PRODUCT CATEGORIES SHOWCASE (Shoe Laces, Bags, Belts, Elastic)
+       ========================================================================= -->
+  <section class="categories-showcase" id="categories">
+    <div id="products"></div>
+    <div class="container container--type-2">
+
+      <!-- Section Header -->
+      <div class="grc-section-heading-wrap d-flex justify-content-between align-items-end flex-wrap gap-3">
+        <div>
+          <span class="mini-kicker">&bull; MANUFACTURING DIVISIONS &bull;</span>
+          <h2 class="categories-main-title">Our Core Categories</h2>
+          <p class="category-section-subtitle">
+            Generational leather craftsmanship, technical narrow fabrics, and custom OEM manufacturing across our
+            4 core export divisions.
+          </p>
+        </div>
+        <br>
+        <div class="product-grid-nav-controls">
+          <a href="catalogue.html" class="btn-catalogue-pill" id="btnProductGridLineSheet">
+            <i data-lucide="file-down" class="icon-xs"></i>
+            <span>Download Full Catalogue</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- 4 Core Categories Grid -->
+      <div class="categories-grid">
+
+        <!-- Category 1: Shoe Laces -->
+        <article class="category-card">
+          <a href="products.html#shoe-laces" class="category-card__media-link" aria-label="Explore Shoe Laces">
+            <div class="category-card__media">
+              <span class="category-card__badge">Division 01</span>
+              <img src="/images/products/shoe-laces/1.png" alt="Olympic Exports Shoe Laces" class="category-card__img"
+                loading="lazy">
+              <div class="category-card__overlay"></div>
+            </div>
+          </a>
+          <div class="category-card__body">
+            <span class="category-card__subtitle">Technical &amp; Dress Cordage</span>
+            <h4 class="category-card__title">
+              <a href="products.html#shoe-laces">Shoe Laces</a>
+            </h4>
+            <p class="category-card__desc">
+              Premium glazed waxed cotton dress laces, high-tensile 32-carrier boot cords, flat &amp; round sneaker
+              laces with custom laser-engraved alloy aglets.
+            </p>
+            <div class="category-card__chips">
+              <span class="category-card__chip">Waxed Cotton</span>
+              <span class="category-card__chip">Metal Aglets</span>
+              <span class="category-card__chip">Boot Cords</span>
+            </div>
+            <div class="category-card__footer">
+              <a href="products.html#shoe-laces" class="category-card__btn">
+                <span>Explore Shoe Laces</span>
+                <i data-lucide="arrow-right" class="icon-xs"></i>
+              </a>
+              <div class="category-card__links">
+                <a href="products.html#shoe-laces" class="category-card__link-pill">View All</a>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Category 2: Bags -->
+        <article class="category-card">
+          <a href="products.html#leather-bags" class="category-card__media-link" aria-label="Explore Bags">
+            <div class="category-card__media">
+              <span class="category-card__badge">Division 02</span>
+              <img src="/images/products/fashion-bags/Product FB1.png" alt="Olympic Exports Bags &amp; Luggage"
+                class="category-card__img" loading="lazy">
+              <div class="category-card__overlay"></div>
+            </div>
+          </a>
+          <div class="category-card__body">
+            <span class="category-card__subtitle">Artisanal Tapestry &amp; Leather</span>
+            <h4 class="category-card__title">
+              <a href="products.html#leather-bags">Bags</a>
+            </h4>
+            <p class="category-card__desc">
+              Handwoven Southwestern Kilim travel duffels, full-grain vegetable-tanned leather messenger bags, satchels,
+              and boutique totes crafted with heavy brass hardware.
+            </p>
+            <div class="category-card__chips">
+              <span class="category-card__chip">Leather Bags</span>
+              <span class="category-card__chip">Kilim Duffles</span>
+              <span class="category-card__chip">YKK Zippers</span>
+            </div>
+            <div class="category-card__footer">
+              <a href="products.html#leather-bags" class="category-card__btn">
+                <span>Explore Bags</span>
+                <i data-lucide="arrow-right" class="icon-xs"></i>
+              </a>
+              <div class="category-card__links">
+                <a href="products.html#leather-bags" class="category-card__link-pill">Leather</a>
+                <a href="products.html#kilim-bags" class="category-card__link-pill">Kilim</a>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Category 3: Belts -->
+        <article class="category-card">
+          <a href="products.html#leather-belts" class="category-card__media-link" aria-label="Explore Belts">
+            <div class="category-card__media">
+              <span class="category-card__badge">Division 03</span>
+              <img src="/images/products/leather-tooling-belts/Product T1.png" alt="Olympic Exports Belts"
+                class="category-card__img" loading="lazy">
+              <div class="category-card__overlay"></div>
+            </div>
+          </a>
+          <div class="category-card__body">
+            <span class="category-card__subtitle">Western Tooling &amp; Aztec Inlays</span>
+            <h4 class="category-card__title">
+              <a href="products.html#leather-belts">Belts</a>
+            </h4>
+            <p class="category-card__desc">
+              Masterfully hand-carved floral western tooling on 9-10 oz vegetable-tanned steerhide, hand-loomed tribal
+              Aztec seed-bead belts, and classic bridle straps.
+            </p>
+            <div class="category-card__chips">
+              <span class="category-card__chip">Western Tooling</span>
+              <span class="category-card__chip">Beaded Belts</span>
+              <span class="category-card__chip">Steerhide</span>
+            </div>
+            <div class="category-card__footer">
+              <a href="products.html#leather-belts" class="category-card__btn">
+                <span>Explore Belts</span>
+                <i data-lucide="arrow-right" class="icon-xs"></i>
+              </a>
+              <div class="category-card__links">
+                <a href="products.html#leather-belts" class="category-card__link-pill">Tooling</a>
+                <a href="products.html#beaded-belts" class="category-card__link-pill">Beaded</a>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Category 4: Elastic -->
+        <article class="category-card">
+          <a href="products.html#elastic-bands" class="category-card__media-link" aria-label="Explore Elastic">
+            <div class="category-card__media">
+              <span class="category-card__badge">Division 04</span>
+              <img src="/images/products/elastic/3.jpeg" alt="Olympic Exports 1inch and 2inch Woven Elastic Products"
+                class="category-card__img" loading="lazy">
+              <div class="category-card__overlay"></div>
+            </div>
+          </a>
+          <div class="category-card__body">
+            <span class="category-card__subtitle">Technical Narrow Fabrics</span>
+            <h4 class="category-card__title">
+              <a href="products.html#elastic-bands">Elastic</a>
+            </h4>
+            <p class="category-card__desc">
+              1inch and 2inch woven elastic in color as per requirement. High-recovery Chelsea boot side gussets,
+              non-roll apparel waistbands, and technical stretch narrow fabrics.
+            </p>
+            <div class="category-card__chips">
+              <span class="category-card__chip">1" &amp; 2" Woven</span>
+              <span class="category-card__chip">Custom Colors</span>
+              <span class="category-card__chip">Boot Gussets</span>
+            </div>
+            <div class="category-card__footer">
+              <a href="products.html#elastic-bands" class="category-card__btn">
+                <span>Explore Elastic</span>
+                <i data-lucide="arrow-right" class="icon-xs"></i>
+              </a>
+              <div class="category-card__links">
+                <a href="products.html#elastic-bands" class="category-card__link-pill">1" &amp; 2" Woven</a>
+                <a href="products.html#elastic-bands" class="category-card__link-pill">Webbing</a>
+              </div>
+            </div>
+          </div>
+        </article>
+
+      </div>
+
+      <!-- Quick Action Strip -->
+      <div class="categories-bottom-bar mt-5 text-center">
+        <br>
+        <p class="text-muted-gold mb-3">Looking for tailored gauges, custom embossing dies, or OEM private-label
+          development?</p>
+        <div class="d-flex justify-content-center gap-3 flex-wrap">
+          <br>
+          <a href="#oem" class="eighth-button">Custom OEM Development</a>
+          <a href="contact-us.html" class="eighth-button without-background">Request Category Samples</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+
+  <!-- =========================================================================
+       4 PILLARS OF EXCELLENCE WITH HOVER IMAGE OVERLAY (Olympic Exports Reference: b-page_module-5)
+       ========================================================================= -->
+  <section class="minimal-about twsixymain">
+    <div class="minimal-about__d-flex d-flex">
+      <div class="minimal-about__content crimbg lefttwentythirty">
+        <div class="minimal-about__container_updated aboutalighmnt fourpiller">
+          <span class="mini-kicker">CORE MANUFACTURING DIVISIONS</span>
+          <h4 class="home-about-us__title">4 Pillars of Manufacturing</h4>
+        </div>
+      </div>
+      <div class="minimal-about__content crimbg righteightythirty">
+        <div class="minimal-about__container_updated aboutalighmnt maxwidththrty">
+          <p class="subtitle">
+            Explore our specialized manufacturing disciplines across four core product categories:
+            hand-carved and beaded belts, artisan Kilim and leather bags, technical narrow elastics, and performance
+            shoelaces.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="l-hp-slot-7 js-section" id="craftsmanship">
+    <div class="b-page_module b-page_module-5">
+
+      <!-- Pillar 1: Belts -->
+      <div class="b-page_module-5_item">
+        <div class="b-page_module-title">
+          <a href="products.html#leather-belts" class="b-page_module_link js-page_module_link-text"
+            data-filter="Leather Belts">
+            <span class="b-page_module_link-text">LEATHER &amp; BEADED BELTS</span>
+            <div class="b-page_module_image-overlay">
+              <img src="/images/products/leather-tooling-belts/Product T1.png" alt="Leather &amp; Beaded Belts"
+                class="b-page_module_image-item">
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <!-- Pillar 2: Bags -->
+      <div class="b-page_module-5_item">
+        <div class="b-page_module-title">
+          <a href="products.html#kilim-bags" class="b-page_module_link js-page_module_link-text"
+            data-filter="Leather Bags">
+            <span class="b-page_module_link-text">KILIM &amp; LEATHER BAGS</span>
+            <div class="b-page_module_image-overlay">
+              <img src="/images/products/fashion-bags/Product FB3.png" alt="Kilim &amp; Leather Bags"
+                class="b-page_module_image-item">
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <!-- Pillar 3: Elastics -->
+      <div class="b-page_module-5_item">
+        <div class="b-page_module-title">
+          <a href="products.html#elastic-bands" class="b-page_module_link js-page_module_link-text"
+            data-filter="Elastic Products">
+            <span class="b-page_module_link-text">TECHNICAL ELASTICS &amp; WEBBING</span>
+            <div class="b-page_module_image-overlay">
+              <img src="/images/products/elastic/6.jpeg" alt="1inch and 2inch Woven Elastic in Color as per Requirement"
+                class="b-page_module_image-item">
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <!-- Pillar 4: Laces -->
+      <div class="b-page_module-5_item">
+        <div class="b-page_module-title">
+          <a href="products.html#shoe-laces" class="b-page_module_link js-page_module_link-text"
+            data-filter="Shoe Laces">
+            <span class="b-page_module_link-text">CUSTOM SHOELACES &amp; CORDS</span>
+            <div class="b-page_module_image-overlay">
+              <img src="/images/products/shoe-laces/1.png" alt="Waxed &amp; Braided Shoelaces"
+                class="b-page_module_image-item">
+            </div>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- =========================================================================
+       TAILOR-MADE DREAMS FULL-BLEED FEATURE (Olympic Exports Reference: bb-page_module-6)
+       ========================================================================= -->
+  <section class="bb-page_module-6_container" id="oem">
+    <div class="bb-page_module-6_embed-content">
+      <div class="bb-page_module-6_overlay">
+        <div class="bb-page_module-6_overlay-container container">
+          <div class="bb-page_module-6_center-content">
+            <h2 class="home-about-us__title oem-title">TAILOR-MADE DREAMS</h2>
+            <p class="b-page_module-text oem-description">
+              Elevate your brand presence with our bespoke solutions. Tailor leather gauges, tooling motifs, custom
+              engraved hardware, and weave specifications to reflect your distinct brand signature. From custom brass
+              embossing dies to branded packaging, make a lasting impression with personalized private-label collections
+              that resonate with your discerning audience.
+            </p>
+            <div class="oem-actions">
+              <a href="contact-us.html" class="eighth-button diveinto" id="btnCustomiseCTA">DIVE INTO CUSTOMISATION</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img class="bb-page_module-6_media-content desktop-image" src="/images/workshop-hero.jpg"
+        alt="Olympic Exports Atelier Craftsmanship">
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       COMMERCIAL DESK & EXPORT INQUIRY (Official B2B Contact Section)
+       ========================================================================= -->
+  <section class="section section-contact" id="contact">
+    <div class="container">
+      <div class="contact-editorial-layout">
+        <!-- Left: Direct Factory Contacts -->
+        <div class="contact-dossier-panel">
+          <div class="section-kicker">COMMERCIAL DESK</div>
+          <h2 class="editorial-heading">Connect with Us</h2>
+          <p class="section-subtext">
+            Overseas buyers and private-label sourcing agents are invited to connect directly with our founding
+            directors in Kanpur for wholesale FOB line sheets, physical counter-samples, and container production
+            bookings.
+          </p>
+
+          <div class="factory-contacts-list">
+            <div class="contact-point">
+              <span class="contact-label">FACTORY &amp; REGISTERED OFFICE</span>
+              <p class="contact-val">
+                <strong>Olympic Exports Pvt. Ltd.</strong><br>
+                56-D, Defence Colony, Jajmau Industrial Area,<br>
+                Kanpur, Uttar Pradesh &ndash; 208010, India
+              </p>
+            </div>
+
+            <div class="contact-point">
+              <span class="contact-label">DIRECT PHONE LINES &amp; DIRECTORS</span>
+              <p class="contact-val">
+                <a href="tel:+919839086636" class="contact-link">+91 98390 86636</a>
+                <br>
+                <a href="tel:+917388814225" class="contact-link">+91 73888 14225</a>
+
+              </p>
+            </div>
+
+            <div class="contact-point">
+              <span class="contact-label">OFFICIAL TRADE EMAIL</span>
+              <p class="contact-val">
+                <a href="mailto:Olympic.Mirza@yahoo.com" class="contact-link">Olympic.Mirza@yahoo.com</a>
+              </p>
+            </div>
+
+            <div class="contact-point">
+              <span class="contact-label">ATELIER OPERATING HOURS</span>
+              <p class="contact-val">
+                Monday &ndash; Saturday: 09:30 AM &ndash; 06:30 PM IST (GMT +5:30)<br>
+              </p>
+            </div>
+          </div>
+
+          <div class="wa-priority-strip">
+            <div>
+              <strong>Require Immediate Wholesale Pricing?</strong>
+              <p>Chat directly with us on WhatsApp for rapid turnaround.</p>
+            </div>
+            <a href="https://wa.me/919839086636?text=Hello%20Mr%20Farhan%20Mirza,%20I%20have%20an%20inquiry%20regarding%20Olympic%20Exports%20catalogue"
+              target="_blank" class="btn btn-whatsapp-clean btn-sm">
+              <i data-lucide="message-circle" class="icon-xs"></i> Contact Us
+            </a>
+          </div>
+        </div>
+
+        <!-- Right: Official RFQ Form -->
+        <div class="contact-form-panel">
+          <div class="form-editorial-header">
+            <h3>Request Official Export Quotation</h3>
+            <p>Specify your target catalogue models or custom requirements below. Our Kanpur export desk will reply with
+              FOB rates within 12 business hours.</p>
+          </div>
+
+          <form id="contactForm" class="editorial-form">
+            <div class="form-row-2">
+              <div class="form-field">
+                <label for="contactName">Full Name *</label>
+                <input type="text" id="contactName" required placeholder="e.g. David Miller" class="form-input">
+              </div>
+              <div class="form-field">
+                <label for="contactCompany">Company / Brand Name *</label>
+                <input type="text" id="contactCompany" required placeholder="e.g. Miller Western Outfitters"
+                  class="form-input">
+              </div>
+            </div>
+
+            <div class="form-row-2">
+              <div class="form-field">
+                <label for="contactEmail">Corporate Email *</label>
+                <input type="email" id="contactEmail" required placeholder="david@milleroutfitters.com"
+                  class="form-input">
+              </div>
+              <div class="form-field">
+                <label for="contactPhone">Phone / WhatsApp *</label>
+                <input type="tel" id="contactPhone" required placeholder="+1 512 555 0198" class="form-input">
+              </div>
+            </div>
+
+            <div class="form-row-2">
+              <div class="form-field">
+                <label for="contactCategory">Primary Division *</label>
+                <select id="contactCategory" required class="form-select">
+                  <option value="" disabled selected>Select primary division...</option>
+                  <option value="Bags & Belts (Tooling Belts, Beaded & Kilim Bags)">Bags &amp; Belts (Tooling Belts,
+                    Beaded &amp; Kilim Bags)</option>
+                  <option value="Elastic Products (Narrow Fabrics & Boot Gusset Webbing)">Elastic Products (Narrow
+                    Fabrics &amp; Boot Gusset Webbing)</option>
+                  <option value="Shoe Laces (Waxed Cotton & Braided Cords)">Shoe Laces (Waxed Cotton &amp; Braided
+                    Cords)</option>
+                  <option value="Full Custom OEM Collection">Full Custom OEM Collection</option>
+                </select>
+              </div>
+              <div class="form-field">
+                <label for="contactDestination">Destination Country &amp; Port *</label>
+                <input type="text" id="contactDestination" required placeholder="e.g. USA (Houston) / Germany (Hamburg)"
+                  class="form-input">
+              </div>
+            </div>
+
+            <div class="form-field">
+              <label for="contactMessage">Order Specifications &amp; Target Models *</label>
+              <textarea id="contactMessage" rows="4" required
+                placeholder="State target catalogue codes (e.g. 200 pcs Product T1, 150 pcs Product FT2, 50 pcs Product FB3), sizing curve, target delivery schedule..."
+                class="form-textarea"></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary-clean btn-block btn-lg" id="btnSubmitForm">
+              <i data-lucide="send" class="icon-sm"></i>
+              <span>Transmit Formal Export Inquiry</span>
+            </button>
+            <div id="formStatus" class="clean-status-msg hidden"></div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       MODERN CLEAN FULL-WIDTH FOOTER (Olympic Exports Reference: modern-footer - Solid Black & White)
+       ========================================================================= -->
+  <!-- =========================================================================
+       MODERN CLEAN FULL-WIDTH LUXURY FOOTER (Olympic Exports Luxury Industrial System)
+       ========================================================================= -->
+
+
+  <div class="go-top" id="goTopBtn" title="Back to Top"><i data-lucide="chevron-up" class="icon-sm"></i></div>
+  <footer class="modern-footer collection-footer footov">
+    <div class="container container--type-4">
+
+      <!-- Top Footer Horizontal Menu (Clean 4 Pages) -->
+      <div class="modern-footer__top-nav">
+        <ul class="modern-footer__menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="contact-us.html">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <!-- 4-Column Luxury Corporate Ledger Grid -->
+      <div class="footer-lux-grid">
+
+        <!-- Column 1: Brand & Legacy -->
+        <div class="footer-col">
+          <a href="index.html" class="footer-brand-lockup">
+            <img src="/images/logo-dark-bg.png" alt="Olympic Exports Crest" class="footer-brand-logo-img">
+            <div>
+              <h4 class="footer-brand-title">OLYMPIC EXPORTS PVT. LTD.</h4>
+            </div>
+          </a>
+          <p class="footer-heritage-desc">
+            Established in 1994 in the historic leather hub of Kanpur. Manufacturing and exporting luxury hand-carved
+            tooling belts, beaded belts, Kilim bags, and technical narrow fabrics worldwide.
+          </p>
+        </div>
+
+        <!-- Column 2: 6 Manufacturing Divisions -->
+        <div class="footer-col">
+          <h5 class="footer-col-title">MANUFACTURING DIVISIONS</h5>
+          <ul class="footer-links-list">
+            <li><a href="products.html#leather-belts">01. Hand-Carved Western Belts</a></li>
+            <li><a href="products.html#beaded-belts">02. Tribal Aztec Beaded Belts</a></li>
+            <li><a href="products.html#kilim-bags">03. Handwoven Kilim Tapestry Bags</a></li>
+            <li><a href="products.html#leather-bags">04. Handcrafted Full-Grain Bags</a></li>
+            <li><a href="products.html#shoe-laces">05. Waxed Shoelaces &amp; Boot Cords</a></li>
+            <li><a href="products.html#elastic-bands">06. Technical Elastic &amp; Webbing</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Global Export & Trade Services -->
+        <div class="footer-col">
+          <h5 class="footer-col-title">EXPORT &amp; TRADE DESK</h5>
+          <ul class="footer-links-list">
+            <li><a href="about.html">Heritage &amp; Factory Tour</a></li>
+            <li><a href="about.html#leadership">Leadership: Farhan &amp; Ayaan Mirza</a></li>
+            <li><a href="products.html">Integrated Product Divisions</a></li>
+            <li><a href="contact-us.html">Request Counter-Sample Deck</a></li>
+            <li><a href="contact-us.html">Custom Die &amp; Private Label RFQ</a></li>
+            <li><a href="about.html#certifications">REACH &amp; SVHC Compliance Standards</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 4: Factory Atelier & Direct Contacts -->
+        <div class="footer-col">
+          <h5 class="footer-col-title">CONTACT US</h5>
+          <div class="footer-contact-block">
+            <div class="footer-contact-item">
+              <a href="https://maps.google.com/?q=56-D+Defence+Colony+Jajmau+Kanpur" target="_blank">
+                56-D, Defence Colony, Jajmau,<br>
+                Kanpur &ndash; 208010, Uttar Pradesh, India
+              </a>
+            </div>
+            <div class="footer-contact-item">
+              <div>
+                <a href="tel:+919839086636">+91 98390 86636</a> <span style="font-size: 0.72rem; color: #888;">(Mr.
+                  Farhan Mirza)</span><br>
+                <a href="tel:+917388814225">+91 73888 14225</a> <span style="font-size: 0.72rem; color: #888;">(Mr.
+                  Ayaan Mirza)</span>
+              </div>
+            </div>
+            <div class="footer-contact-item">
+              <div>
+                <a href="mailto:Olympic.Mirza@yahoo.com">Olympic.Mirza@yahoo.com</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Copyright & Legal Compliance Bottom Bar -->
+      <div class="footer-bottom-bar">
+        <div class="footer-bottom-inner">
+          <p>&copy; 2026 Olympic Exports Pvt. Ltd.</p>
+          <div class="footer-legal-links">
+            <a href="index.html">Home</a>
+            <span>&bull;</span>
+            <a href="about.html">About Us</a>
+            <span>&bull;</span>
+            <a href="products.html">Products</a>
+            <span>&bull;</span>
+            <a href="contact-us.html">Contact Us</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Slide-Over Sample RFQ Requisition Drawer -->
+  <div class="rfq-drawer-overlay" id="rfqDrawerOverlay"></div>
+  <aside class="rfq-drawer-clean" id="rfqDrawer" aria-hidden="true">
+    <div class="clean-drawer-header">
+      <div class="drawer-header-left">
+        <span class="drawer-pre-title">SAMPLE REQUISITION PORTFOLIO</span>
+        <h3>Staged Export Specimen Deck</h3>
+      </div>
+      <button class="drawer-close-btn" id="btnCloseRfqDrawer" aria-label="Close Sample Tray">
+        <i data-lucide="x" class="icon-sm"></i>
+      </button>
+    </div>
+
+    <div class="clean-drawer-body">
+      <div class="requisition-instructions">
+        <i data-lucide="info" class="icon-xs"></i>
+        <span>Counter-samples are dispatched within 48 hours via DHL/FedEx Express from Kanpur.</span>
+      </div>
+
+      <div class="staged-items-container" id="rfqDrawerItems">
+        <!-- Rendered by main.js -->
+      </div>
+    </div>
+
+    <div class="clean-drawer-footer" id="drawerFooter">
+      <div class="drawer-counter-row">
+        <span>Staged Repertoire Count:</span>
+        <strong id="drawerSummaryCount">0 Selected Models</strong>
+      </div>
+      <div class="drawer-btn-actions">
+        <button class="btn btn-primary-clean btn-block btn-lg" id="btnSubmitDrawerRfq">
+          <span>Finalize Formal Sample Requisition</span>
+          <i data-lucide="arrow-right" class="icon-sm"></i>
+        </button>
+        <button class="btn btn-outline-clean btn-block btn-sm" id="btnClearRfqTray">
+          Clear All Repertoire Models
+        </button>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Archival Line Sheet Modal -->
+  <div class="modal-clean-backdrop" id="catalogueModal">
+    <div class="modal-clean-card">
+      <div class="modal-clean-header">
+        <div>
+          <span class="modal-kicker">OFFICIAL 1994-2026 EXPORT DOSSIER</span>
+          <h3>Olympic Exports Line Sheet</h3>
+        </div>
+        <button class="modal-close-btn" id="btnCloseCatalogueModal">
+          <i data-lucide="x" class="icon-sm"></i>
+        </button>
+      </div>
+      <div class="modal-clean-body">
+        <p class="modal-lead">
+          Download the complete manufacturing ledger with technical specifications, leather gauges, MOQ matrices, and
+          Incoterms across all catalogue models in Bags &amp; Belts, Narrow Fabrics, and Custom Shoelaces.
+        </p>
+        <form id="catalogueDownloadForm" class="modal-form">
+          <div class="form-field">
+            <label for="catBuyerName">Procurement Officer / Buyer Name *</label>
+            <input type="text" id="catBuyerName" required placeholder="e.g. Sarah Jenkins" class="form-input">
+          </div>
+          <div class="form-field">
+            <label for="catBuyerCompany">Registered Buying House / Brand Name *</label>
+            <input type="text" id="catBuyerCompany" required placeholder="e.g. Jenkins Leather Outfitters LLC"
+              class="form-input">
+          </div>
+          <div class="form-field">
+            <label for="catBuyerEmail">Corporate Email *</label>
+            <input type="email" id="catBuyerEmail" required placeholder="sarah@jenkinsoutfitters.com"
+              class="form-input">
+          </div>
+          <div class="modal-actions-row">
+            <button type="submit" class="btn btn-primary-clean btn-lg">
+              <i data-lucide="download" class="icon-sm"></i>
+              <span>Download Official Line Sheet</span>
+            </button>
+            <button type="button" class="btn btn-secondary-clean btn-lg" id="btnCancelCatalogue">Cancel</button>
+          </div>
+          <div id="catModalStatus" class="clean-status-msg hidden"></div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <div id="toastContainer" class="toast-container"></div>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+
+</html>

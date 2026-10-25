@@ -1,0 +1,1890 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <title>Products &amp; Manufacturing Divisions || Olympic Exports Pvt. Ltd.</title>
+  <meta name="description"
+    content="Explore all 6 specialist manufacturing divisions of Olympic Exports Pvt. Ltd. — Hand-Tooled Western Belts, Beaded Belts, Kilim Bags, Leather Bags, Waxed Shoelaces, and Technical Elastic Webbing. Est. 1994, Kanpur, India.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.lineicons.com/4.0/lineicons.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/src/style.css">
+
+  <style>
+    /* Products Page Luxury Styling */
+    footer.modern-footer, .modern-footer, .footov, .collection-footer {
+      background-color: #000000 !important;
+      background: #000000 !important;
+      color: #ffffff !important;
+    }
+    .modern-footer a, .modern-footer p, .modern-footer span, .modern-footer li, .modern-footer .modern-footer__logo {
+      color: #ffffff !important;
+    }
+    .modern-footer a:hover { color: #e6c875 !important; }
+    .modern-footer hr { border-color: rgba(255, 255, 255, 0.15) !important; }
+    header.header--type-4, .header--type-4, #mainHeader {
+      background-color: #000000 !important;
+      background: #000000 !important;
+    }
+    .header--type-4 .oe-logo-text, .header--type-4.scrolled .oe-logo-text { color: #ffffff !important; }
+
+    /* Page Banner */
+    .page-banner {
+      height: 52vh;
+      min-height: 400px;
+      background: linear-gradient(135deg, #18110b 0%, #29180c 50%, #150f0a 100%);
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      align-items: flex-end;
+      padding-bottom: 5rem;
+    }
+    .page-banner img.cover {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      opacity: 0.35;
+      filter: saturate(1.1);
+    }
+    .page-banner .container { position: relative; z-index: 2; }
+    .page-banner .kicker {
+      font-size: 0.72rem;
+      letter-spacing: 0.28em;
+      text-transform: uppercase;
+      color: #c9a96e;
+      margin-bottom: 0.85rem;
+      font-weight: 600;
+    }
+    .page-banner h1 {
+      font-family: 'Cinzel', serif;
+      font-size: clamp(2.2rem, 5vw, 4.2rem);
+      font-weight: 700;
+      color: #ffffff;
+      line-height: 1.12;
+      margin: 0;
+    }
+    .page-banner p.lead-subtitle {
+      max-width: 680px;
+      color: rgba(255, 255, 255, 0.78);
+      font-size: 1rem;
+      line-height: 1.7;
+      margin-top: 1rem;
+    }
+    .page-banner .breadcrumb-row {
+      color: rgba(255, 255, 255, 0.5);
+      font-size: 0.82rem;
+      margin-top: 1.25rem;
+      letter-spacing: 0.05em;
+    }
+    .page-banner .breadcrumb-row a {
+      color: rgba(255, 255, 255, 0.6);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+    .page-banner .breadcrumb-row a:hover { color: #c9a96e; }
+
+    /* Desktop Navigation Bar in Header */
+    .header__nav-menu {
+      display: flex;
+      align-items: center;
+      gap: 2.2rem;
+      margin: 0 2rem;
+    }
+    .header__nav-link {
+      font-family: 'Cinzel', serif;
+      font-size: 0.82rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: rgba(255, 255, 255, 0.85);
+      text-decoration: none;
+      transition: color 0.2s ease;
+      font-weight: 600;
+      position: relative;
+      padding: 0.25rem 0;
+    }
+    .header__nav-link:hover, .header__nav-link.active {
+      color: #c9a96e;
+      text-decoration: none;
+    }
+    .header__nav-link.active::after {
+      content: '';
+      position: absolute;
+      bottom: -4px;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      background: #c9a96e;
+    }
+    @media (max-width: 991px) {
+      .header__nav-menu { display: none; }
+    }
+
+    /* Sticky Category Filter & Search Bar */
+    .category-sticky-bar {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: #0b0e14;
+      border-bottom: 1px solid rgba(197, 160, 89, 0.3);
+      box-shadow: 0 8px 24px rgba(0,0,0,0.35);
+      padding: 0.75rem 0;
+    }
+    .category-filter-nav {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      overflow-x: auto;
+      white-space: nowrap;
+      padding: 0.25rem 0;
+      scrollbar-width: thin;
+      scrollbar-color: #c5a059 transparent;
+    }
+    .category-filter-nav::-webkit-scrollbar { height: 4px; }
+    .category-filter-nav::-webkit-scrollbar-thumb { background: #c5a059; border-radius: 4px; }
+    .cat-pill-btn {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      color: rgba(255, 255, 255, 0.85);
+      font-family: 'Cinzel', serif;
+      font-size: 0.75rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      padding: 0.45rem 1rem;
+      border-radius: 2px;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .cat-pill-btn:hover {
+      background: rgba(197, 160, 89, 0.15);
+      border-color: #c5a059;
+      color: #fff;
+      text-decoration: none;
+    }
+    .cat-pill-btn.active {
+      background: #c5a059;
+      border-color: #c5a059;
+      color: #0b0e14;
+      font-weight: 700;
+    }
+    .products-search-box {
+      position: relative;
+      min-width: 260px;
+    }
+    .products-search-input {
+      width: 100%;
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      color: #fff;
+      padding: 0.45rem 2.2rem 0.45rem 1rem;
+      font-size: 0.82rem;
+      border-radius: 2px;
+      outline: none;
+      transition: border-color 0.2s;
+    }
+    .products-search-input:focus {
+      border-color: #c5a059;
+      background: rgba(255, 255, 255, 0.12);
+    }
+    .products-search-box i {
+      position: absolute;
+      right: 10px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: #c5a059;
+      pointer-events: none;
+    }
+
+    /* Division Section Cards */
+    .division-section {
+      padding: 5rem 0 3.5rem;
+      border-bottom: 1px solid #e2e8f0;
+    }
+    .division-section:nth-child(even) {
+      background: #f8fafc;
+    }
+    .division-section:nth-child(odd) {
+      background: #ffffff;
+    }
+    .division-header-box {
+      margin-bottom: 2.75rem;
+    }
+    .division-badge {
+      display: inline-block;
+      background: #0f172a;
+      color: #c5a059;
+      border: 1px solid rgba(197, 160, 89, 0.35);
+      font-family: 'Cinzel', serif;
+      font-size: 0.68rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      padding: 4px 12px;
+      font-weight: 700;
+      border-radius: 2px;
+      margin-bottom: 0.85rem;
+    }
+    .division-title {
+      font-family: 'Cinzel', serif;
+      font-size: clamp(1.8rem, 3.2vw, 2.6rem);
+      font-weight: 700;
+      color: #0f172a;
+      margin-bottom: 1rem;
+      line-height: 1.2;
+    }
+    .division-description {
+      font-size: 1rem;
+      line-height: 1.8;
+      color: #475569;
+      max-width: 900px;
+      margin-bottom: 1.5rem;
+    }
+
+    /* Spec Matrix Accordion / Table */
+    .spec-matrix-card {
+      background: #ffffff;
+      border: 1px solid #e2e8f0;
+      border-radius: 4px;
+      box-shadow: 0 4px 16px rgba(15, 23, 42, 0.04);
+      margin-bottom: 2.5rem;
+      overflow: hidden;
+    }
+    .spec-matrix-header {
+      background: #f8fafc;
+      border-bottom: 1px solid #e2e8f0;
+      padding: 0.85rem 1.25rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      cursor: pointer;
+    }
+    .spec-matrix-header h4 {
+      font-family: 'Cinzel', serif;
+      font-size: 0.92rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: #0f172a;
+      margin: 0;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .spec-matrix-table {
+      width: 100%;
+      margin: 0;
+      font-size: 0.86rem;
+    }
+    .spec-matrix-table td {
+      padding: 0.65rem 1.25rem;
+      border-top: 1px solid #e2e8f0;
+      vertical-align: middle;
+    }
+    .spec-matrix-table tr:first-child td { border-top: none; }
+    .spec-label {
+      width: 28%;
+      font-weight: 700;
+      color: #0f172a;
+      background: #f8fafc;
+    }
+    .spec-val { color: #334155; }
+
+    /* Product Cards */
+    .product-model-card {
+      background: #ffffff;
+      border: 1px solid #e2e8f0;
+      border-radius: 4px;
+      overflow: hidden;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+    }
+    .product-model-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 16px 36px rgba(15, 23, 42, 0.1);
+      border-color: #c5a059;
+    }
+    .product-card-thumb {
+      height: 230px;
+      position: relative;
+      overflow: hidden;
+      background: #f1f5f9;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .product-card-thumb img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.4s ease;
+    }
+    .product-card-thumb.contain-thumb {
+      background: #ffffff;
+      padding: 6px;
+    }
+    .product-card-thumb.contain-thumb img {
+      object-fit: contain;
+    }
+    .product-model-card:hover .product-card-thumb img {
+      transform: scale(1.05);
+    }
+    .card-sku-badge {
+      position: absolute;
+      top: 12px;
+      left: 12px;
+      background: rgba(15, 23, 42, 0.9);
+      color: #fff;
+      font-family: 'Cinzel', serif;
+      font-size: 0.65rem;
+      letter-spacing: 0.1em;
+      padding: 3px 8px;
+      font-weight: 700;
+      border-radius: 2px;
+      backdrop-filter: blur(4px);
+      border: 1px solid rgba(197, 160, 89, 0.35);
+    }
+    .product-card-content {
+      padding: 1.35rem;
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+    }
+    .product-card-name {
+      font-family: 'Cinzel', serif;
+      font-size: 1.05rem;
+      color: #0f172a;
+      margin-bottom: 0.5rem;
+      line-height: 1.35;
+      font-weight: 700;
+    }
+    .product-card-desc {
+      font-size: 0.84rem;
+      line-height: 1.65;
+      color: #475569;
+      margin-bottom: 1rem;
+      flex-grow: 1;
+    }
+    .product-card-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 4px;
+      margin-bottom: 1.25rem;
+    }
+    .product-tag-chip {
+      font-size: 0.68rem;
+      background: #f1f5f9;
+      color: #0f172a;
+      border: 1px solid #e2e8f0;
+      padding: 2px 7px;
+      border-radius: 2px;
+      font-weight: 600;
+    }
+    .product-card-actions {
+      display: flex;
+      gap: 8px;
+      margin-top: auto;
+    }
+    .btn-action-rfq {
+      flex: 1;
+      background: #0f172a;
+      color: #fff;
+      border: 1px solid #0f172a;
+      font-family: 'Cinzel', serif;
+      font-size: 0.72rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      padding: 0.55rem 0.75rem;
+      text-align: center;
+      border-radius: 2px;
+      text-decoration: none;
+      font-weight: 700;
+      transition: all 0.2s;
+    }
+    .btn-action-rfq:hover {
+      background: #c5a059;
+      border-color: #c5a059;
+      color: #0b0e14;
+      text-decoration: none;
+    }
+    .btn-action-quickview {
+      background: #ffffff;
+      border: 1px solid #cbd5e1;
+      color: #0f172a;
+      font-family: 'Cinzel', serif;
+      font-size: 0.72rem;
+      padding: 0.55rem 0.85rem;
+      border-radius: 2px;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+    .btn-action-quickview:hover {
+      background: #0f172a;
+      color: #fff;
+      border-color: #0f172a;
+    }
+
+    /* Modal Quickview */
+    .quickview-modal-backdrop {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.8);
+      z-index: 9999;
+      align-items: center;
+      justify-content: center;
+      padding: 1.5rem;
+      backdrop-filter: blur(4px);
+    }
+    .quickview-modal-backdrop.show { display: flex; }
+    .quickview-card {
+      background: #fff;
+      border-radius: 6px;
+      max-width: 820px;
+      width: 100%;
+      overflow: hidden;
+      position: relative;
+      box-shadow: 0 25px 60px rgba(0,0,0,0.35);
+      animation: modalFadeIn 0.25s ease;
+    }
+    @keyframes modalFadeIn {
+      from { opacity: 0; transform: scale(0.96); }
+      to { opacity: 1; transform: scale(1); }
+    }
+    .quickview-close-btn {
+      position: absolute;
+      top: 15px;
+      right: 15px;
+      background: #111;
+      color: #fff;
+      border: none;
+      width: 34px;
+      height: 34px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      z-index: 10;
+      transition: background 0.2s;
+    }
+    .quickview-close-btn:hover { background: #c5a059; color: #0b0e14; }
+    .quickview-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+    @media (max-width: 767px) {
+      .quickview-grid { grid-template-columns: 1fr; }
+    }
+    .quickview-media {
+      background: #f8f4ee;
+      min-height: 340px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+    }
+    .quickview-media img {
+      width: 100%;
+      height: 100%;
+      max-height: 480px;
+      object-fit: contain;
+      background: #ffffff;
+    }
+    .quickview-info {
+      padding: 2.25rem;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* B2B Bottom Action Ribbon */
+    .b2b-cta-ribbon {
+      background: linear-gradient(135deg, #18110b 0%, #2a190c 100%);
+      color: #ffffff;
+      padding: 4.5rem 0;
+      text-align: center;
+      position: relative;
+      border-top: 1px solid rgba(201, 169, 110, 0.25);
+    }
+    .b2b-cta-ribbon h3 {
+      font-family: 'Cinzel', serif;
+      font-size: clamp(1.8rem, 3.5vw, 2.6rem);
+      margin-bottom: 0.85rem;
+      color: #ffffff;
+    }
+    .b2b-cta-ribbon p {
+      max-width: 650px;
+      margin: 0 auto 2rem;
+      color: rgba(255, 255, 255, 0.8);
+      font-size: 1rem;
+      line-height: 1.75;
+    }
+    .btn-gold-action {
+      background: #c9a96e;
+      color: #110e0c;
+      font-family: 'Cinzel', serif;
+      font-size: 0.82rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      padding: 0.85rem 2rem;
+      font-weight: 700;
+      border-radius: 2px;
+      text-decoration: none;
+      display: inline-block;
+      transition: background 0.2s, transform 0.2s;
+    }
+    .btn-gold-action:hover {
+      background: #e8d09f;
+      color: #110e0c;
+      transform: translateY(-2px);
+      text-decoration: none;
+    }
+    .btn-outline-action {
+      background: transparent;
+      border: 1px solid rgba(255, 255, 255, 0.4);
+      color: #ffffff;
+      font-family: 'Cinzel', serif;
+      font-size: 0.82rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      padding: 0.85rem 2rem;
+      font-weight: 600;
+      border-radius: 2px;
+      text-decoration: none;
+      display: inline-block;
+      margin-left: 1rem;
+      transition: all 0.2s;
+    }
+    .btn-outline-action:hover {
+      border-color: #c9a96e;
+      color: #c9a96e;
+      text-decoration: none;
+    }
+  </style>
+</head>
+
+<body class="absolute-header">
+
+  <!-- WhatsApp Floating Desk -->
+  <a href="https://wa.me/919839086636?text=Hello%20Olympic%20Exports%20Pvt%20Ltd%2C%20I%20am%20inquiring%20about%20your%20Products%20Catalogue."
+    class="floatwp" target="_blank" title="Chat with Director Farhan Mirza on WhatsApp" aria-label="WhatsApp Desk">
+    <i class="fa fa-whatsapp my-float"></i>
+  </a>
+
+  <!-- Primary Luxury Header -->
+  <header class="header header--type-4" id="mainHeader">
+    <div class="container container--type-3">
+      <div class="header__container d-flex align-items-center justify-content-between">
+
+        <!-- Left Brand Logo -->
+        <h1 class="header__logo mb-0">
+          <a href="index.html" style="display: flex; align-items: center; gap: 10px; text-decoration: none;">
+            <img src="/images/logo-dark-bg.png" alt="Olympic Exports Crest" style="height: 44px; width: auto; object-fit: contain;">
+            <span class="oe-logo-text"
+              style="font-family: 'Cinzel', serif; font-size: 1.15rem; font-weight: 700; letter-spacing: 0.08em; color: #ffffff;">OLYMPIC
+              <span style="font-weight: 400; font-size: 0.88rem; opacity: 0.85; color: #ffffff;">EXPORTS</span></span>
+          </a>
+        </h1>
+
+        <!-- 4-Page Desktop Primary Navigation Menu -->
+        <nav class="header__nav-menu">
+          <a href="index.html" class="header__nav-link">Home</a>
+          <a href="about.html" class="header__nav-link">About Us</a>
+          <a href="products.html" class="header__nav-link active">Products</a>
+          <a href="contact-us.html" class="header__nav-link">Contact Us</a>
+        </nav>
+
+        <!-- Right Quick Action & Mobile Drawer Trigger -->
+        <div class="header__right-action-wrapper">
+          <a href="contact-us.html" class="btn-header-quote">
+            <i class="fa fa-envelope-o"></i> Request Quote
+          </a>
+          <!-- Mobile Menu Icon (Only visible on small screens) -->
+          <button type="button" class="header__mobile-menu-btn js-open-canvas-menu" id="btnOpenMenu" aria-label="Open Navigation">
+            <i class="fa fa-bars"></i>
+          </button>
+        </div>
+
+      </div>
+    </div>
+  </header>
+
+  <!-- Slide-Out Canvas Navigation Drawer -->
+  <div class="canvas-menu js-canvas-menu" id="canvasMenu" aria-hidden="true">
+    <div class="canvas-menu__overlay js-close-canvas-menu" id="canvasMenuOverlay"></div>
+    <div class="canvas-menu__content">
+      <div class="canvas-menu__close">
+        <button type="button" class="js-close-canvas-menu close-drawer-btn" id="btnCloseCanvasMenu">
+          <i data-lucide="x" class="icon-sm"></i>
+          <span>Close</span>
+        </button>
+      </div>
+
+      <div class="canvas-menu__brand">
+        <img src="/images/logo-dark-bg.png" alt="Olympic Exports Crest" class="canvas-logo-img">
+        <h3 style="font-family:'Cinzel',serif;margin-top:8px;">Olympic Exports</h3>
+        <p style="font-size:0.75rem;letter-spacing:0.15em;color:#c5a059;text-transform:uppercase;">Govt. Recognized Export House &bull; Jajmau, Kanpur</p>
+      </div>
+
+      <!-- Clean 4-Page Canvas Navigation Menu -->
+      <nav class="canvas-menu__nav">
+        <ul>
+          <li><a href="index.html" class="canvas-nav__item">Home</a></li>
+          <li><a href="about.html" class="canvas-nav__item">About Us</a></li>
+          <li class="canvas-menu__dropdown active">
+            <div style="display:flex;justify-content:space-between;align-items:center;">
+              <a href="products.html" class="canvas-nav__item" style="color:#c5a059;font-weight:700;">Products (All 6 Divisions)</a>
+            </div>
+            <ul class="canvas-sub-menu" style="display:block;padding-left:1rem;margin-top:0.4rem;border-left:2px solid #c5a059;">
+              <li><a href="#leather-belts" class="js-close-canvas-menu">01. Leather Belts (Tooled Western)</a></li>
+              <li><a href="#beaded-belts" class="js-close-canvas-menu">02. Beaded Belts (Tribal Aztec)</a></li>
+              <li><a href="#kilim-bags" class="js-close-canvas-menu">03. Kilim Bags &amp; Tapestry</a></li>
+              <li><a href="#leather-bags" class="js-close-canvas-menu">04. Handcrafted Leather Bags</a></li>
+              <li><a href="#shoe-laces" class="js-close-canvas-menu">05. Shoe Laces &amp; Boot Cords</a></li>
+              <li><a href="#elastic-bands" class="js-close-canvas-menu">06. Technical Elastic &amp; Webbing</a></li>
+            </ul>
+          </li>
+          <li><a href="contact-us.html" class="canvas-nav__item">Contact Us</a></li>
+        </ul>
+      </nav>
+
+      <div style="padding:1.5rem 2rem;border-top:1px solid #eee;font-size:0.82rem;line-height:1.7;">
+        <strong>Direct Kanpur Factory Desk:</strong><br>
+        <a href="tel:9839086636" style="color:#c5a059;text-decoration:none;">+91 98390 86636</a> (Mr. Farhan Mirza)<br>
+        <a href="tel:7388814225" style="color:#c5a059;text-decoration:none;">+91 73888 14225</a> (Mr. Ayaan Mirza)<br>
+        <a href="mailto:Olympic.Mirza@yahoo.com" style="color:#666;text-decoration:none;">Olympic.Mirza@yahoo.com</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Page Banner Section -->
+  <div class="page-banner">
+    <img src="/images/hero.jpg" alt="Olympic Exports Products" class="cover">
+    <div class="container">
+      <div class="kicker">Est. 1994 &bull; Jajmau, Kanpur &bull; Direct B2B Export House</div>
+      <h1>Our Products &amp; Manufacturing Divisions</h1>
+      <p class="lead-subtitle">
+        Discover all 6 integrated manufacturing divisions of Olympic Exports Pvt. Ltd. From hand-carved Western steerhide tooling belts and tribal Aztec beaded straps to handwoven kilim tapestries, and technical narrow fabrics.
+      </p>
+      <div class="breadcrumb-row">
+        <a href="index.html">Home</a> &rarr; <span>Products (All Divisions)</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Sticky Category Filter Navigation & Real-time Live Search Bar -->
+  <div class="category-sticky-bar">
+    <div class="container container--type-3">
+      <div class="d-flex align-items-center justify-content-between flex-wrap gap-2">
+        <nav class="category-filter-nav" id="categoryTabsNav">
+          <button type="button" class="cat-pill-btn active" data-filter="all">All Divisions (6)</button>
+          <a href="#leather-belts" class="cat-pill-btn" data-target="leather-belts">01. Leather Belts</a>
+          <a href="#beaded-belts" class="cat-pill-btn" data-target="beaded-belts">02. Beaded Belts</a>
+          <a href="#kilim-bags" class="cat-pill-btn" data-target="kilim-bags">03. Kilim Bags</a>
+          <a href="#leather-bags" class="cat-pill-btn" data-target="leather-bags">04. Leather Bags</a>
+          <a href="#shoe-laces" class="cat-pill-btn" data-target="shoe-laces">05. Shoe Laces</a>
+          <a href="#elastic-bands" class="cat-pill-btn" data-target="elastic-bands">06. Elastic Webbing</a>
+        </nav>
+
+        <div class="products-search-box">
+          <input type="text" id="productFilterInput" class="products-search-input" placeholder="Search by SKU, model, or keyword...">
+          <i class="fa fa-search"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Integrated Categories Container -->
+  <main id="allCategoriesContainer">
+
+    <!-- =========================================================================
+         DIVISION 01: HAND-TOOLED WESTERN LEATHER BELTS
+         ========================================================================= -->
+    <section class="division-section" id="leather-belts" data-category="Leather Belts">
+      <div class="container container--type-3">
+
+        <div class="division-header-box">
+          <span class="division-badge">DIVISION 01 OF 06</span>
+          <h2 class="division-title">Hand-Carved Western Tooling Belts</h2>
+          <p class="division-description">
+            Our flagship heritage line since 1994. Every belt is sculpted from 9-10 oz vegetable-tanned full-grain steerhide sourced directly from certified Jajmau tanneries. Master craftsmen hand-incise floral, wild rose, scroll arabesque, and geometric medallions using traditional swivel-knife carving and beveling tools. Finished with hand-burnished edges and solid alloy or brass Western buckles.
+          </p>
+
+
+        </div>
+
+        <!-- Products Grid for Division 1 -->
+        <div class="row product-cards-grid">
+
+          <div class="col-lg-4 col-md-6 mb-4 product-item-col" data-sku="Product T1" data-title="Classic Floral Western Tooling Belt">
+            <div class="product-model-card">
+              <div class="product-card-thumb">
+                <span class="card-sku-badge">SKU: Product T1</span>
+                <img src="/images/products/leather-tooling-belts/Product T1.png" alt="Classic Floral Western Tooling Belt" loading="lazy">
+              </div>
+              <div class="product-card-content">
+                <h3 class="product-card-name">Classic Floral Western Tooling Belt</h3>
+                <p class="product-card-desc">Continuous floral and wild rose hand-incised motifs on 9-10 oz steerhide. Natural saddle tan finish with heavy-duty antique silver Western buckle.</p>
+                <div class="product-card-tags">
+                  <span class="product-tag-chip">Floral Tooling</span>
+                  <span class="product-tag-chip">1.5" Width</span>
+                  <span class="product-tag-chip">9-10 oz Steerhide</span>
+                </div>
+                <div class="product-card-actions">
+                  <a href="contact-us.html?division=Leather+Belts&sku=Product+T1&name=Classic+Floral+Western+Tooling+Belt" class="btn-action-rfq">Request Sample</a>
+                  <button type="button" class="btn-action-quickview" onclick="openQuickView('Product T1', 'Classic Floral Western Tooling Belt', 'Leather Belts', '/images/products/leather-tooling-belts/Product T1.png', 'Continuous floral and wild rose hand-incised motifs on 9-10 oz steerhide with heavy-duty antique silver Western buckle.', '100 Pieces', '15-20 Days', 'Full-Grain Steerhide, Antique Saddle Tan')">Quick View</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 mb-4 product-item-col" data-sku="Product T2" data-title="Two-Tone Antique Scroll Tooling Belt">
+            <div class="product-model-card">
+              <div class="product-card-thumb">
+                <span class="card-sku-badge">SKU: Product T2</span>
+                <img src="/images/products/leather-tooling-belts/Product T2.png" alt="Two-Tone Antique Scroll Tooling Belt" loading="lazy">
+              </div>
+              <div class="product-card-content">
+                <h3 class="product-card-name">Two-Tone Scroll Arabesque Belt</h3>
+                <p class="product-card-desc">Dark walnut and cognac two-tone scrollwork paired with an engraved 3-piece antique buckle set (buckle, keeper, tip) for high-end boutique retail.</p>
+                <div class="product-card-tags">
+                  <span class="product-tag-chip">Two-Tone</span>
+                  <span class="product-tag-chip">3-Piece Set</span>
+                  <span class="product-tag-chip">Scrollwork</span>
+                </div>
+                <div class="product-card-actions">
+                  <a href="contact-us.html?division=Leather+Belts&sku=Product+T2&name=Two-Tone+Scroll+Arabesque+Belt" class="btn-action-rfq">Request Sample</a>
+                  <button type="button" class="btn-action-quickview" onclick="openQuickView('Product T2', 'Two-Tone Scroll Arabesque Belt', 'Leather Belts', '/images/products/leather-tooling-belts/Product T2.png', 'Dark walnut and cognac two-tone scrollwork paired with an engraved 3-piece antique buckle set.', '100 Pieces', '15 Days', 'Aniline-Dyed Saddle Leather, Two-Tone Walnut/Cognac')">Quick View</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 mb-4 product-item-col" data-sku="Product T3" data-title="Sunburst Floral Saddle Tan Tooling Belt">
+            <div class="product-model-card">
+              <div class="product-card-thumb">
+                <span class="card-sku-badge">SKU: Product T3</span>
+                <img src="/images/products/leather-tooling-belts/Product T3.png" alt="Sunburst Floral Saddle Tan Belt" loading="lazy">
+              </div>
+              <div class="product-card-content">
+                <h3 class="product-card-name">Sunburst Floral Saddle Tan Belt</h3>
+                <p class="product-card-desc">Continuous sunburst and rose medallions on heavy bridle-grade cowhide. Finished with pure carnauba wax hand buffing for a rich, deep luster.</p>
+                <div class="product-card-tags">
+                  <span class="product-tag-chip">Sunburst</span>
+                  <span class="product-tag-chip">Bridle Leather</span>
+                  <span class="product-tag-chip">Carnauba Buff</span>
+                </div>
+                <div class="product-card-actions">
+                  <a href="contact-us.html?division=Leather+Belts&sku=Product+T3&name=Sunburst+Floral+Saddle+Tan+Belt" class="btn-action-rfq">Request Sample</a>
+                  <button type="button" class="btn-action-quickview" onclick="openQuickView('Product T3', 'Sunburst Floral Saddle Tan Belt', 'Leather Belts', '/images/products/leather-tooling-belts/Product T3.png', 'Continuous sunburst and rose medallions on heavy bridle-grade cowhide with carnauba hand buffing.', '120 Pieces', '14-18 Days', 'Bridle Cowhide (4.0mm), Carnauba Wax Buffed')">Quick View</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 mb-4 product-item-col" data-sku="Product T4" data-title="Sunflower Deep-Embossed Western Belt">
+            <div class="product-model-card">
+              <div class="product-card-thumb">
+                <span class="card-sku-badge">SKU: Product T4</span>
+                <img src="/images/products/leather-tooling-belts/Product T4.png" alt="Sunflower Deep-Embossed Western Belt" loading="lazy">
+              </div>
+              <div class="product-card-content">
+                <h3 class="product-card-name">Sunflower Deep-Embossed Belt</h3>
+                <p class="product-card-desc">Artisan hand-stamped sunflower medallions bordered by intricate rope-edge tooling and Chicago screw interchangeable buckle closure.</p>
+                <div class="product-card-tags">
+                  <span class="product-tag-chip">Sunflower</span>
+                  <span class="product-tag-chip">Rope Border</span>
+                  <span class="product-tag-chip">Interchangeable</span>
+                </div>
+                <div class="product-card-actions">
+                  <a href="contact-us.html?division=Leather+Belts&sku=Product+T4&name=Sunflower+Deep-Embossed+Belt" class="btn-action-rfq">Request Sample</a>
+                  <button type="button" class="btn-action-quickview" onclick="openQuickView('Product T4', 'Sunflower Deep-Embossed Belt', 'Leather Belts', '/images/products/leather-tooling-belts/Product T4.png', 'Sunflower medallions bordered by rope-edge tooling with Chicago screw buckle snap closure.', '100 Pieces', '12-15 Days', 'Full-Grain Steerhide, Warm Whiskey Brown')">Quick View</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 mb-4 product-item-col" data-sku="Product T5" data-title="Vintage Distressed Scroll Carved Belt">
+            <div class="product-model-card">
+              <div class="product-card-thumb">
+                <span class="card-sku-badge">SKU: Product T5</span>
+                <img src="/images/products/leather-tooling-belts/Product T5.png" alt="Vintage Distressed Scroll Carved Belt" loading="lazy">
+              </div>
+              <div class="product-card-content">
+                <h3 class="product-card-name">Vintage Distressed Scroll Belt</h3>
+                <p class="product-card-desc">Antiqued distressed wash with deep geometric scroll tooling, feather-edge skiving, and brushed pewter engraved Western hardware.</p>
+                <div class="product-card-tags">
+                  <span class="product-tag-chip">Distressed</span>
+                  <span class="product-tag-chip">Espresso</span>
+                  <span class="product-tag-chip">Pewter Buckle</span>
+                </div>
+                <div class="product-card-actions">
+                  <a href="contact-us.html?division=Leather+Belts&sku=Product+T5&name=Vintage+Distressed+Scroll+Belt" class="btn-action-rfq">Request Sample</a>
+                  <button type="button" class="btn-action-quickview" onclick="openQuickView('Product T5', 'Vintage Distressed Scroll Belt', 'Leather Belts', '/images/products/leather-tooling-belts/Product T5.png', 'Antiqued distressed wash with deep geometric scroll tooling and brushed pewter hardware.', '100 Pieces', '15 Days', 'Oiled Vegetable-Tanned Cowhide, Distressed Espresso')">Quick View</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 mb-4 product-item-col" data-sku="Product T6" data-title="Heavy Western Floral Tooled Bridle Belt">
+            <div class="product-model-card">
+              <div class="product-card-thumb">
+                <span class="card-sku-badge">SKU: Product T6</span>
+                <img src="/images/products/leather-tooling-belts/Product T6.png" alt="Heavy Western Floral Tooled Bridle Belt" loading="lazy">
+              </div>
+              <div class="product-card-content">
+                <h3 class="product-card-name">Heavy Floral Bridle Belt</h3>
+                <p class="product-card-desc">High-relief full floral carving on premium English bridle leather with hand-burnished and painted edge bevels for heavy ranch and rodeo endurance.</p>
+                <div class="product-card-tags">
+                  <span class="product-tag-chip">Bridle Leather</span>
+                  <span class="product-tag-chip">High Relief</span>
+                  <span class="product-tag-chip">Painted Bevels</span>
+                </div>
+                <div class="product-card-actions">
+                  <a href="contact-us.html?division=Leather+Belts&sku=Product+T6&name=Heavy+Floral+Bridle+Belt" class="btn-action-rfq">Request Sample</a>
+                  <button type="button" class="btn-action-quickview" onclick="openQuickView('Product T6', 'Heavy Floral Bridle Belt', 'Leather Belts', '/images/products/leather-tooling-belts/Product T6.png', 'High-relief full floral carving on premium English bridle leather with hand-burnished edge bevels.', '100 Pieces', '15-20 Days', '100% Full-Grain Bridle Steerhide, Deep Chestnut Tan')">Quick View</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         DIVISION 02: TRIBAL AZTEC HAND-BEADED BELTS
+         ========================================================================= -->
+    <section class="division-section" id="beaded-belts" data-category="Beaded Belts">
+      <div class="container container--type-3">
+
+        <div class="division-header-box">
+          <span class="division-badge">DIVISION 02 OF 06</span>
+          <h2 class="division-title">Tribal Aztec Hand-Beaded Belts</h2>
+          <p class="division-description">
+            Each Olympic Exports beaded belt is an artisanal statement piece. Skilled bead artisans individually hand-thread premium Japanese Miyuki Delica glass beads, seed beads, and polished stone cabochons onto heavy leather foundations. Featuring vibrant Aztec sunbursts, Navajo diamond repeats, and Southwestern chevron patterns locked with high-tensile bonded thread.
+          </p>
+
+
+        </div>
+
+        <!-- Products Grid for Division 2 -->
+        <div class="row product-cards-grid">
+
+          <div class="col-lg-4 col-md-6 mb-4 product-item-col" data-sku="Product FT1" data-title="Sunflower Carved Aztec Beaded Belt">
+            <div class="product-model-card">
+              <div class="product-card-thumb">
+                <span class="card-sku-badge">SKU: Product FT1</span>
+                <img src="/images/products/fashion-tooling-belts/Product FT1.png" alt="Sunflower Carved Aztec Beaded Belt" loading="lazy">
+              </div>
+              <div class="product-card-content">
+                <h3 class="product-card-name">Aztec Sunburst Beaded Belt</h3>
+                <p class="product-card-desc">Hand-tooled floral leather borders surrounding a vibrant hand-beaded center strip featuring geometric Aztec diamonds in turquoise, coral, and white.</p>
+                <div class="product-card-tags">
+                  <span class="product-tag-chip">Turquoise Inlay</span>
+                  <span class="product-tag-chip">Sunflower Border</span>
+                  <span class="product-tag-chip">Aztec Diamonds</span>
+                </div>
+                <div class="product-card-actions">
+                  <a href="contact-us.html?division=Beaded+Belts&sku=Product+FT1&name=Aztec+Sunburst+Beaded+Belt" class="btn-action-rfq">Request Sample</a>
+                  <button type="button" class="btn-action-quickview" onclick="openQuickView('Product FT1', 'Aztec Sunburst Beaded Belt', 'Beaded Belts', '/images/products/fashion-tooling-belts/Product FT1.png', 'Hand-tooled floral borders surrounding vibrant hand-beaded center strip with Aztec diamonds.', '80 Pieces', '18-22 Days', 'Full-Grain Leather, Grade-A Seed Beads, Antique Silver Buckle')">Quick View</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 mb-4 product-item-col" data-sku="Product FT2" data-title="Basketweave Geometric Beaded Belt">
+            <div class="product-model-card">
+              <div class="product-card-thumb">
+                <span class="card-sku-badge">SKU: Product FT2</span>
+                <img src="/images/products/fashion-tooling-belts/Product FT2.png" alt="Basketweave Geometric Beaded Belt" loading="lazy">
+              </div>
+              <div class="product-card-content">
+                <h3 class="product-card-name">Navajo Diamond Beaded Belt</h3>
+                <p class="product-card-desc">Precision basketweave carved leather billet ends with a contrasting monochrome and crimson Navajo tribal beadwork inlay locked with nylon stitch.</p>
+                <div class="product-card-tags">
+                  <span class="product-tag-chip">Basketweave</span>
+                  <span class="product-tag-chip">Navajo Diamond</span>
+                  <span class="product-tag-chip">Crimson & Black</span>
+                </div>
+                <div class="product-card-actions">
+                  <a href="contact-us.html?division=Beaded+Belts&sku=Product+FT2&name=Navajo+Diamond+Beaded+Belt" class="btn-action-rfq">Request Sample</a>
+                  <button type="button" class="btn-action-quickview" onclick="openQuickView('Product FT2', 'Navajo Diamond Beaded Belt', 'Beaded Belts', '/images/products/fashion-tooling-belts/Product FT2.png', 'Basketweave carved leather billets with monochrome and crimson Navajo tribal beadwork inlay.', '80 Pieces', '18 Days', 'Vegetable-Tanned Saddle Leather, Seed Glass Beads')">Quick View</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 mb-4 product-item-col" data-sku="Product FT3" data-title="Sunrise Diamond Tribal Beaded Belt">
+            <div class="product-model-card">
+              <div class="product-card-thumb">
+                <span class="card-sku-badge">SKU: Product FT3</span>
+                <img src="/images/products/fashion-tooling-belts/Product FT3.png" alt="Sunrise Diamond Tribal Beaded Belt" loading="lazy">
+              </div>
+              <div class="product-card-content">
+                <h3 class="product-card-name">Sunrise Diamond Tribal Belt</h3>
+                <p class="product-card-desc">Vibrant fire-sunburst beaded diamond pattern in red, yellow, and royal blue inlaid into hand-carved floral leather, lined with soft suede backing.</p>
+                <div class="product-card-tags">
+                  <span class="product-tag-chip">Fire Sunburst</span>
+                  <span class="product-tag-chip">Suede-Lined</span>
+                  <span class="product-tag-chip">Ornate Buckle</span>
+                </div>
+                <div class="product-card-actions">
+                  <a href="contact-us.html?division=Beaded+Belts&sku=Product+FT3&name=Sunrise+Diamond+Tribal+Belt" class="btn-action-rfq">Request Sample</a>
+                  <button type="button" class="btn-action-quickview" onclick="openQuickView('Product FT3', 'Sunrise Diamond Tribal Belt', 'Beaded Belts', '/images/products/fashion-tooling-belts/Product FT3.png', 'Fire-sunburst beaded diamond pattern inlaid into hand-carved floral leather with suede back lining.', '100 Pieces', '20 Days', 'Full-Grain Steerhide, Suede Back, Micro Glass Beads')">Quick View</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 mb-4 product-item-col" data-sku="Product FT4" data-title="Turquoise Cross-Hatch Beaded Tooling Belt">
+            <div class="product-model-card">
+              <div class="product-card-thumb">
+                <span class="card-sku-badge">SKU: Product FT4</span>
+                <img src="/images/products/fashion-tooling-belts/Product FT4.png" alt="Turquoise Cross-Hatch Beaded Belt" loading="lazy">
+              </div>
+              <div class="product-card-content">
+                <h3 class="product-card-name">Turquoise Cross-Hatch Belt</h3>
+                <p class="product-card-desc">Cross-hatch tooled honey tan leather strap inset with an intricate turquoise and obsidian geometric beadwork strip, finished with antique silver accents.</p>
+                <div class="product-card-tags">
+                  <span class="product-tag-chip">Cross-Hatch</span>
+                  <span class="product-tag-chip">Obsidian Beads</span>
+                  <span class="product-tag-chip">Honey Tan</span>
+                </div>
+                <div class="product-card-actions">
+                  <a href="contact-us.html?division=Beaded+Belts&sku=Product+FT4&name=Turquoise+Cross-Hatch+Belt" class="btn-action-rfq">Request Sample</a>
+                  <button type="button" class="btn-action-quickview" onclick="openQuickView('Product FT4', 'Turquoise Cross-Hatch Belt', 'Beaded Belts', '/images/products/fashion-tooling-belts/Product FT4.png', 'Cross-hatch tooled strap with turquoise and obsidian geometric beadwork strip.', '80 Pieces', '18 Days', 'Kanpur Harness Leather, Antique Silver Floral Buckle')">Quick View</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 mb-4 product-item-col" data-sku="Product FT5" data-title="Rainbow Aztec Inlay Tooling Belt">
+            <div class="product-model-card">
+              <div class="product-card-thumb">
+                <span class="card-sku-badge">SKU: Product FT5</span>
+                <img src="/images/products/fashion-tooling-belts/Product FT5.png" alt="Rainbow Aztec Inlay Tooling Belt" loading="lazy">
+              </div>
+              <div class="product-card-content">
+                <h3 class="product-card-name">Rainbow Aztec Inlay Belt</h3>
+                <p class="product-card-desc">Spectacular multi-hued Aztec tribal motif hand-beaded center with hand-carved floral tooling on both ends and engraved heavy western hardware.</p>
+                <div class="product-card-tags">
+                  <span class="product-tag-chip">Multi-Hued</span>
+                  <span class="product-tag-chip">Aztec Tribal</span>
+                  <span class="product-tag-chip">Heavy Hardware</span>
+                </div>
+                <div class="product-card-actions">
+                  <a href="contact-us.html?division=Beaded+Belts&sku=Product+FT5&name=Rainbow+Aztec+Inlay+Belt" class="btn-action-rfq">Request Sample</a>
+                  <button type="button" class="btn-action-quickview" onclick="openQuickView('Product FT5', 'Rainbow Aztec Inlay Belt', 'Beaded Belts', '/images/products/fashion-tooling-belts/Product FT5.png', 'Multi-hued Aztec tribal motif center with hand-carved floral tooling on ends and heavy hardware.', '100 Pieces', '20 Days', 'Full-Grain Veg-Tanned Leather, Grade-A Seed Beads')">Quick View</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         DIVISION 03: HANDWOVEN KILIM TAPESTRY BAGS & LUGGAGE
+         ========================================================================= -->
+    <section class="division-section" id="kilim-bags" data-category="Kilim Bags">
+      <div class="container container--type-3">
+
+        <div class="division-header-box">
+          <span class="division-badge">DIVISION 03 OF 06</span>
+          <h2 class="division-title">Handwoven Kilim Tapestry Bags &amp; Luggage</h2>
+          <p class="division-description">
+            Bringing the ancient art of flat-weave slit tapestry to high-fashion leather accessories. We combine authentic wool-and-jute handwoven Kilim tapestries featuring Southwestern diamond and Anatolian tribal motifs with robust full-grain vegetable-tanned leather bases, reinforced leather corners, and heavy antique brass hardware. Built for travel luxury and boutique lifestyle retailers.
+          </p>
+
+
+        </div>
+
+        <!-- Products Grid for Division 3 -->
+        <div class="row product-cards-grid">
+
+          <div class="col-lg-4 col-md-6 mb-4 product-item-col" data-sku="Product FB1" data-title="Handcrafted Kilim Tapestry Leather Tote">
+            <div class="product-model-card">
+              <div class="product-card-thumb">
+                <span class="card-sku-badge">SKU: Product FB1</span>
+                <img src="/images/products/fashion-bags/Product FB1.png" alt="Kilim Tapestry Leather Tote" loading="lazy">
+              </div>
+              <div class="product-card-content">
+                <h3 class="product-card-name">Kilim Tapestry Leather Tote</h3>
+                <p class="product-card-desc">Spacious everyday tote combining authentic handwoven southwestern kilim wool tapestry with heavy full-grain leather base, rolled shoulder straps, and magnetic closure.</p>
+                <div class="product-card-tags">
+                  <span class="product-tag-chip">Handwoven Kilim</span>
+                  <span class="product-tag-chip">Full-Grain Base</span>
+                  <span class="product-tag-chip">Everyday Tote</span>
+                </div>
+                <div class="product-card-actions">
+                  <a href="contact-us.html?division=Kilim+Bags&sku=Product+FB1&name=Kilim+Tapestry+Leather+Tote" class="btn-action-rfq">Request Sample</a>
+                  <button type="button" class="btn-action-quickview" onclick="openQuickView('Product FB1', 'Kilim Tapestry Leather Tote', 'Kilim Bags', '/images/products/fashion-bags/Product FB1.png', 'Authentic handwoven southwestern kilim wool tapestry with heavy full-grain leather base and shoulder straps.', '30 Pieces', '20-25 Days', 'Handwoven Kilim Wool & Full-Grain Cowhide, Antique Brass Rivets')">Quick View</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 mb-4 product-item-col" data-sku="Product FB2" data-title="Dome-Top Kilim Satchel Backpack">
+            <div class="product-model-card">
+              <div class="product-card-thumb">
+                <span class="card-sku-badge">SKU: Product FB2</span>
+                <img src="/images/products/fashion-bags/Product FB2.png" alt="Dome-Top Kilim Satchel Backpack" loading="lazy">
+              </div>
+              <div class="product-card-content">
+                <h3 class="product-card-name">Dome Kilim Satchel Backpack</h3>
+                <p class="product-card-desc">Dome-silhouette convertible satchel and backpack with hand-carved floral leather trim, front panel tapestry, top carry handle, and dual convertible straps.</p>
+                <div class="product-card-tags">
+                  <span class="product-tag-chip">Convertible Straps</span>
+                  <span class="product-tag-chip">Carved Trim</span>
+                  <span class="product-tag-chip">Travel Satchel</span>
+                </div>
+                <div class="product-card-actions">
+                  <a href="contact-us.html?division=Kilim+Bags&sku=Product+FB2&name=Dome+Kilim+Satchel+Backpack" class="btn-action-rfq">Request Sample</a>
+                  <button type="button" class="btn-action-quickview" onclick="openQuickView('Product FB2', 'Dome Kilim Satchel Backpack', 'Kilim Bags', '/images/products/fashion-bags/Product FB2.png', 'Dome-silhouette leather satchel and backpack with hand-carved floral trim and front panel kilim tapestry.', '30 Pieces', '20 Days', 'Veg-Tanned Leather, Hand-Dyed Kilim Tapestry, YKK Zips')">Quick View</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 mb-4 product-item-col" data-sku="Product FB3" data-title="Kilim Weekender Travel Duffel Bag">
+            <div class="product-model-card">
+              <div class="product-card-thumb">
+                <span class="card-sku-badge">SKU: Product FB3</span>
+                <img src="/images/products/fashion-bags/Product FB3.png" alt="Kilim Weekender Travel Duffel Bag" loading="lazy">
+              </div>
+              <div class="product-card-content">
+                <h3 class="product-card-name">Kilim Weekender Travel Duffel</h3>
+                <p class="product-card-desc">Cylindrical weekender duffel engineered for air travel with wrap-around leather reinforcement straps, protective bottom studs, padded shoulder strap, and luggage tag.</p>
+                <div class="product-card-tags">
+                  <span class="product-tag-chip">Travel Duffel</span>
+                  <span class="product-tag-chip">Bottom Studs</span>
+                  <span class="product-tag-chip">Carry-On Size</span>
+                </div>
+                <div class="product-card-actions">
+                  <a href="contact-us.html?division=Kilim+Bags&sku=Product+FB3&name=Kilim+Weekender+Travel+Duffel" class="btn-action-rfq">Request Sample</a>
+                  <button type="button" class="btn-action-quickview" onclick="openQuickView('Product FB3', 'Kilim Weekender Travel Duffel', 'Kilim Bags', '/images/products/fashion-bags/Product FB3.png', 'Cylindrical weekender duffel with wrap-around leather reinforcement straps and bottom studs.', '25 Pieces', '25 Days', 'Heavy Kilim Tapestry, Pull-Up Leather, Brass D-Rings')">Quick View</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 mb-4 product-item-col" data-sku="Product FB4" data-title="Kilim Western Shoulder Bag with Flap Pockets">
+            <div class="product-model-card">
+              <div class="product-card-thumb">
+                <span class="card-sku-badge">SKU: Product FB4</span>
+                <img src="/images/products/fashion-bags/Product FB4.png" alt="Kilim Western Shoulder Bag" loading="lazy">
+              </div>
+              <div class="product-card-content">
+                <h3 class="product-card-name">Kilim Western Shoulder Bag</h3>
+                <p class="product-card-desc">Artisan shoulder bag with dual exterior leather flap cargo pockets, hand-cut leather accents, rich geometric tapestry body, and antique brass magnetic snaps.</p>
+                <div class="product-card-tags">
+                  <span class="product-tag-chip">Exterior Pockets</span>
+                  <span class="product-tag-chip">Leather Flaps</span>
+                  <span class="product-tag-chip">Boho Western</span>
+                </div>
+                <div class="product-card-actions">
+                  <a href="contact-us.html?division=Kilim+Bags&sku=Product+FB4&name=Kilim+Western+Shoulder+Bag" class="btn-action-rfq">Request Sample</a>
+                  <button type="button" class="btn-action-quickview" onclick="openQuickView('Product FB4', 'Kilim Western Shoulder Bag', 'Kilim Bags', '/images/products/fashion-bags/Product FB4.png', 'Artisan shoulder bag with dual exterior leather flap cargo pockets and rich geometric kilim body.', '35 Pieces', '20 Days', 'Pull-Up Cowhide, Kilim Tapestry, Hand-Hammered Brass')">Quick View</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 mb-4 product-item-col" data-sku="Product FB5" data-title="Executive Kilim Voyager Travel Duffle">
+            <div class="product-model-card">
+              <div class="product-card-thumb">
+                <span class="card-sku-badge">SKU: Product FB5</span>
+                <img src="/images/products/fashion-bags/Product FB5.png" alt="Executive Kilim Voyager Travel Duffle" loading="lazy">
+              </div>
+              <div class="product-card-content">
+                <h3 class="product-card-name">Kilim Voyager Travel Duffle</h3>
+                <p class="product-card-desc">Full-size travel bag boasting hand-tooled leather corner patches, floral embossed leather yoke trim, internal wire frame for shape retention, and robust two-way top zip.</p>
+                <div class="product-card-tags">
+                  <span class="product-tag-chip">Tooled Corners</span>
+                  <span class="product-tag-chip">Wire Frame</span>
+                  <span class="product-tag-chip">Large Capacity</span>
+                </div>
+                <div class="product-card-actions">
+                  <a href="contact-us.html?division=Kilim+Bags&sku=Product+FB5&name=Kilim+Voyager+Travel+Duffle" class="btn-action-rfq">Request Sample</a>
+                  <button type="button" class="btn-action-quickview" onclick="openQuickView('Product FB5', 'Kilim Voyager Travel Duffle', 'Kilim Bags', '/images/products/fashion-bags/Product FB5.png', 'Full-size travel duffle boasting hand-tooled corner patches and floral embossed yoke trim.', '25 Pieces', '22 Days', 'Veg-Tanned Steerhide, Aztec Kilim, Dual Brass Sliders')">Quick View</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         DIVISION 04: HANDCRAFTED LEATHER BAGS
+         ========================================================================= -->
+    <section class="division-section" id="leather-bags" data-category="Leather Bags">
+      <div class="container container--type-3">
+
+        <div class="division-header-box">
+          <span class="division-badge">DIVISION 04 OF 06</span>
+          <h2 class="division-title">Handcrafted Full-Grain Leather Bags</h2>
+          <p class="division-description">
+            Precision leather bags crafted from top-grade drum-dyed Kanpur cowhide, vegetable-tanned bridle leather, and oiled pull-up skins. Designed for global executive, urban travel, and heritage lifestyle collections. Each silhouette features hand-burnished edge bevels, reinforced stress points, bonded nylon lockstitching, and impact-cushioned internal compartments.
+          </p>
+
+
+        </div>
+
+        <!-- Products Grid for Division 4 -->
+        <div class="row product-cards-grid">
+
+          <div class="col-lg-4 col-md-6 mb-4 product-item-col" data-sku="OE-BG-401" data-title="Heritage 45L Weekender Leather Duffel">
+            <div class="product-model-card">
+              <div class="product-card-thumb">
+                <span class="card-sku-badge">SKU: OE-BG-401</span>
+                <img src="/images/products/fashion-bags/Product FB3.png" alt="Heritage 45L Weekender Leather Duffel" loading="lazy">
+              </div>
+              <div class="product-card-content">
+                <h3 class="product-card-name">Heritage 45L Leather Duffel</h3>
+                <p class="product-card-desc">Spacious flight-carry cabin duffel constructed from supple full-grain pull-up leather with heavy brass YKK zippers, 6 protective feet, and padded strap.</p>
+                <div class="product-card-tags">
+                  <span class="product-tag-chip">45L Capacity</span>
+                  <span class="product-tag-chip">Pull-Up Leather</span>
+                  <span class="product-tag-chip">6 Brass Feet</span>
+                </div>
+                <div class="product-card-actions">
+                  <a href="contact-us.html?division=Leather+Bags&sku=OE-BG-401&name=Heritage+45L+Leather+Duffel" class="btn-action-rfq">Request Sample</a>
+                  <button type="button" class="btn-action-quickview" onclick="openQuickView('OE-BG-401', 'Heritage 45L Leather Duffel', 'Leather Bags', '/images/products/fashion-bags/Product FB3.png', 'Cabin-approved travel duffel built from supple pull-up leather with heavy brass YKK zippers.', '100 Pieces', '25-30 Days', 'Full-Grain Waxed Cowhide, 14oz Canvas Lining, Brass Hardware')">Quick View</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 mb-4 product-item-col" data-sku="OE-BG-402" data-title="Executive 15.6 Laptop Messenger Bag">
+            <div class="product-model-card">
+              <div class="product-card-thumb">
+                <span class="card-sku-badge">SKU: OE-BG-402</span>
+                <img src="/images/products/fashion-bags/Product FB4.png" alt="Executive 15.6 Laptop Messenger Bag" loading="lazy">
+              </div>
+              <div class="product-card-content">
+                <h3 class="product-card-name">Executive Laptop Messenger</h3>
+                <p class="product-card-desc">Classic satchel design with impact-absorbing padded 15.6" laptop compartment, business organizer pockets, keyclip, and secure tuck-lock brass buckles.</p>
+                <div class="product-card-tags">
+                  <span class="product-tag-chip">15.6" Laptop</span>
+                  <span class="product-tag-chip">Tuck-Lock Brass</span>
+                  <span class="product-tag-chip">Executive Satchel</span>
+                </div>
+                <div class="product-card-actions">
+                  <a href="contact-us.html?division=Leather+Bags&sku=OE-BG-402&name=Executive+Laptop+Messenger" class="btn-action-rfq">Request Sample</a>
+                  <button type="button" class="btn-action-quickview" onclick="openQuickView('OE-BG-402', 'Executive Laptop Messenger', 'Leather Bags', '/images/products/fashion-bags/Product FB4.png', 'Classic satchel with padded 15.6 inch laptop compartment and organizer pockets.', '150 Pieces', '20-25 Days', 'Semi-Vegetable Tanned Leather, Solid Brass Tuck-Locks')">Quick View</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 mb-4 product-item-col" data-sku="OE-BG-403" data-title="Artisan Full-Grain Leather Briefcase">
+            <div class="product-model-card">
+              <div class="product-card-thumb">
+                <span class="card-sku-badge">SKU: OE-BG-403</span>
+                <img src="/images/products/fashion-bags/Product FB5.png" alt="Artisan Full-Grain Leather Briefcase" loading="lazy">
+              </div>
+              <div class="product-card-content">
+                <h3 class="product-card-name">Artisan Voyager Briefcase</h3>
+                <p class="product-card-desc">Structured executive briefcase boasting hand-tooled leather gusset corners, twin document dividers, and an ergonomic leather top carry handle.</p>
+                <div class="product-card-tags">
+                  <span class="product-tag-chip">Structured Brief</span>
+                  <span class="product-tag-chip">Hand-Tooled</span>
+                  <span class="product-tag-chip">Twin Dividers</span>
+                </div>
+                <div class="product-card-actions">
+                  <a href="contact-us.html?division=Leather+Bags&sku=OE-BG-403&name=Artisan+Voyager+Briefcase" class="btn-action-rfq">Request Sample</a>
+                  <button type="button" class="btn-action-quickview" onclick="openQuickView('OE-BG-403', 'Artisan Voyager Briefcase', 'Leather Bags', '/images/products/fashion-bags/Product FB5.png', 'Structured executive briefcase with hand-tooled corners and twin document dividers.', '50 Pieces', '25 Days', 'Vegetable-Tanned Steerhide, Heavy Brass Hardware')">Quick View</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         DIVISION 05: SHOE LACES & BOOT CORDS
+         ========================================================================= -->
+    <section class="division-section" id="shoe-laces" data-category="Shoe Laces">
+      <div class="container container--type-3">
+
+        <div class="division-header-box">
+          <span class="division-badge">DIVISION 05 OF 06</span>
+          <h2 class="division-title">Shoe Laces &amp; Technical Boot Cords</h2>
+          <p class="division-description">
+            A pillar of Olympic Exports since 1994. We produce high-performance shoelaces and braided cordage for international footwear brands. Our capabilities span carnauba-waxed round cotton dress laces for fine Oxfords, 32-carrier braided high-tensile cords for mountaineering boots, flat sneaker laces, 3M Scotchlite reflective cords, and genuine leather thong boot laces.
+          </p>
+
+
+        </div>
+
+        <!-- Products Grid for Division 5 -->
+        <div class="row product-cards-grid">
+
+          <!-- Product 1: 2.50mm Cotton Round Waxy -->
+          <div class="col-lg-3 col-md-6 mb-4 product-item-col" data-sku="OE-SL-101" data-title="2.50mm Cotton Round Waxy Dress Laces">
+            <div class="product-model-card">
+              <div class="product-card-thumb contain-thumb">
+                <span class="card-sku-badge">SKU: OE-SL-101</span>
+                <img src="/images/products/shoe-laces/1.png" alt="2.50mm Cotton Round Waxy Dress Laces" loading="lazy">
+              </div>
+              <div class="product-card-content">
+                <h3 class="product-card-name">2.50mm Cotton Round Waxy Dress Laces</h3>
+                <p class="product-card-desc">Glazed carnauba-waxed combed cotton round cords designed for classic oxfords, brogues, and dress footwear across 9 distinct colorways.</p>
+                <div class="product-card-tags">
+                  <span class="product-tag-chip">2.50mm Round</span>
+                  <span class="product-tag-chip">Waxed Cotton</span>
+                  <span class="product-tag-chip">9 Colorways</span>
+                </div>
+                <div class="product-card-actions">
+                  <a href="contact-us.html?division=Shoe+Laces&sku=OE-SL-101&name=2.50mm+Cotton+Round+Waxy+Dress+Laces" class="btn-action-rfq">Request Sample</a>
+                  <button type="button" class="btn-action-quickview" onclick="openQuickView('OE-SL-101', '2.50mm Cotton Round Waxy Dress Laces', 'Shoe Laces', '/images/products/shoe-laces/1.png', 'Glazed carnauba-waxed combed cotton round cords for oxfords, brogues, and luxury dress footwear.', '1,000 Pairs', '10 Days', '100% Combed Cotton, Carnauba Wax Glaze, 9 Colorways (Black, Brown, Tan, Khaki, Navy, Red, Pink, Beige)')">Quick View</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product 2: 2.75mm - 3.00mm Cotton Round Waxy -->
+          <div class="col-lg-3 col-md-6 mb-4 product-item-col" data-sku="OE-SL-102" data-title="2.75mm – 3.00mm Cotton Round Waxy Laces">
+            <div class="product-model-card">
+              <div class="product-card-thumb contain-thumb">
+                <span class="card-sku-badge">SKU: OE-SL-102</span>
+                <img src="/images/products/shoe-laces/2.png" alt="2.75mm – 3.00mm Cotton Round Waxy Laces" loading="lazy">
+              </div>
+              <div class="product-card-content">
+                <h3 class="product-card-name">2.75mm – 3.00mm Cotton Round Waxy Laces</h3>
+                <p class="product-card-desc">Substantial round waxed cotton cords calibrated in 2.75mm, 2.90mm, and 3.00mm gauges for derbies, chukkas, and casual leather footwear.</p>
+                <div class="product-card-tags">
+                  <span class="product-tag-chip">2.75 - 3.00mm</span>
+                  <span class="product-tag-chip">Waxed Round</span>
+                  <span class="product-tag-chip">Earth Tones</span>
+                </div>
+                <div class="product-card-actions">
+                  <a href="contact-us.html?division=Shoe+Laces&sku=OE-SL-102&name=2.75mm+–+3.00mm+Cotton+Round+Waxy+Laces" class="btn-action-rfq">Request Sample</a>
+                  <button type="button" class="btn-action-quickview" onclick="openQuickView('OE-SL-102', '2.75mm – 3.00mm Cotton Round Waxy Laces', 'Shoe Laces', '/images/products/shoe-laces/2.png', 'Substantial round waxed cotton cords calibrated from 2.75mm to 3.00mm for derbies and boots.', '1,000 Pairs', '10-12 Days', '100% Ring-Spun Cotton, Carnauba Wax, Calibrated 2.75/2.90/3.00mm, 5 Earth Tones')">Quick View</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product 3: Cotton Round & Tubular Waxy -->
+          <div class="col-lg-3 col-md-6 mb-4 product-item-col" data-sku="OE-SL-103" data-title="Cotton Round &amp; Tubular Waxy Boot Laces">
+            <div class="product-model-card">
+              <div class="product-card-thumb contain-thumb">
+                <span class="card-sku-badge">SKU: OE-SL-103</span>
+                <img src="/images/products/shoe-laces/3.png" alt="Cotton Round &amp; Tubular Waxy Boot Laces" loading="lazy">
+              </div>
+              <div class="product-card-content">
+                <h3 class="product-card-name">Cotton Round &amp; Tubular Waxy Boot Laces</h3>
+                <p class="product-card-desc">Heavy-gauge specialty waxed laces engineered in 3.5mm/5.0mm solid round cores and 2.5mm tubular weave for heritage boots and workwear.</p>
+                <div class="product-card-tags">
+                  <span class="product-tag-chip">3.5 / 5.0mm Round</span>
+                  <span class="product-tag-chip">2.5mm Tubular</span>
+                  <span class="product-tag-chip">Heritage Boots</span>
+                </div>
+                <div class="product-card-actions">
+                  <a href="contact-us.html?division=Shoe+Laces&sku=OE-SL-103&name=Cotton+Round+and+Tubular+Waxy+Boot+Laces" class="btn-action-rfq">Request Sample</a>
+                  <button type="button" class="btn-action-quickview" onclick="openQuickView('OE-SL-103', 'Cotton Round & Tubular Waxy Boot Laces', 'Shoe Laces', '/images/products/shoe-laces/3.png', 'Specialty waxed construction featuring 3.5mm/5.0mm round and 2.5mm tubular weave for heritage boots.', '1,200 Pairs', '12 Days', 'Multi-Ply Combed Cotton Yarn, Heavy Carnauba Infusion, Deep Black & Chocolate Brown')">Quick View</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product 4: Cotton Tubular & Flat Waxy -->
+          <div class="col-lg-3 col-md-6 mb-4 product-item-col" data-sku="OE-SL-104" data-title="Cotton Tubular &amp; Flat Waxy Casual Laces">
+            <div class="product-model-card">
+              <div class="product-card-thumb contain-thumb">
+                <span class="card-sku-badge">SKU: OE-SL-104</span>
+                <img src="/images/products/shoe-laces/4.png" alt="Cotton Tubular &amp; Flat Waxy Casual Laces" loading="lazy">
+              </div>
+              <div class="product-card-content">
+                <h3 class="product-card-name">Cotton Tubular &amp; Flat Waxy Casual Laces</h3>
+                <p class="product-card-desc">Engineered flat (4.0mm) and hollow tubular (3.5mm &amp; 4.0mm) glazed cotton cords providing superior knot friction for cupsole sneakers and casual footwear.</p>
+                <div class="product-card-tags">
+                  <span class="product-tag-chip">Tubular &amp; Flat</span>
+                  <span class="product-tag-chip">4.0mm Profile</span>
+                  <span class="product-tag-chip">Knot Grip</span>
+                </div>
+                <div class="product-card-actions">
+                  <a href="contact-us.html?division=Shoe+Laces&sku=OE-SL-104&name=Cotton+Tubular+and+Flat+Waxy+Casual+Laces" class="btn-action-rfq">Request Sample</a>
+                  <button type="button" class="btn-action-quickview" onclick="openQuickView('OE-SL-104', 'Cotton Tubular & Flat Waxy Casual Laces', 'Shoe Laces', '/images/products/shoe-laces/4.png', 'Engineered flat and tubular glazed cotton laces (3.5mm & 4.0mm) for modern lifestyle sneakers.', '1,500 Pairs', '10-12 Days', '100% Long-Staple Cotton, Glazed Wax Emulsion, Jet Black & Earth Brown')">Quick View</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product 5: 6.00mm - 8.00mm Cotton Flat Waxy -->
+          <div class="col-lg-3 col-md-6 mb-4 product-item-col" data-sku="OE-SL-105" data-title="6.00mm – 8.00mm Cotton Flat Waxy Sneaker Laces">
+            <div class="product-model-card">
+              <div class="product-card-thumb contain-thumb">
+                <span class="card-sku-badge">SKU: OE-SL-105</span>
+                <img src="/images/products/shoe-laces/5.png" alt="6.00mm – 8.00mm Cotton Flat Waxy Sneaker Laces" loading="lazy">
+              </div>
+              <div class="product-card-content">
+                <h3 class="product-card-name">6.00mm – 8.00mm Cotton Flat Waxy Sneaker Laces</h3>
+                <p class="product-card-desc">Wide flat profile glazed laces in 6.00mm and 8.00mm widths designed for designer luxury sneakers, trainers, and skate footwear in 5 core shades.</p>
+                <div class="product-card-tags">
+                  <span class="product-tag-chip">6.00mm / 8.00mm</span>
+                  <span class="product-tag-chip">Flat Waxy</span>
+                  <span class="product-tag-chip">Luxury Sneakers</span>
+                </div>
+                <div class="product-card-actions">
+                  <a href="contact-us.html?division=Shoe+Laces&sku=OE-SL-105&name=6.00mm+–+8.00mm+Cotton+Flat+Waxy+Sneaker+Laces" class="btn-action-rfq">Request Sample</a>
+                  <button type="button" class="btn-action-quickview" onclick="openQuickView('OE-SL-105', '6.00mm – 8.00mm Cotton Flat Waxy Sneaker Laces', 'Shoe Laces', '/images/products/shoe-laces/5.png', 'Wide flat profile glazed laces in 6mm and 8mm widths for designer luxury cupsole sneakers.', '1,500 Pairs', '12 Days', '100% Ring-Spun Cotton, Carnauba Wax Glaze, 5 Colors (Black, Tan, Navy, White, Grey)')">Quick View</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product 6: 6.00mm - 8.00mm Cotton Flat Non-Waxy -->
+          <div class="col-lg-3 col-md-6 mb-4 product-item-col" data-sku="OE-SL-106" data-title="6.00mm – 8.00mm Cotton Flat Soft Non-Waxy Laces">
+            <div class="product-model-card">
+              <div class="product-card-thumb contain-thumb">
+                <span class="card-sku-badge">SKU: OE-SL-106</span>
+                <img src="/images/products/shoe-laces/6.png" alt="6.00mm – 8.00mm Cotton Flat Soft Non-Waxy Laces" loading="lazy">
+              </div>
+              <div class="product-card-content">
+                <h3 class="product-card-name">6.00mm – 8.00mm Cotton Flat Soft Non-Waxy Laces</h3>
+                <p class="product-card-desc">Natural untreated soft cotton wide flat laces offering maximum flexibility, tactile comfort, and vibrant colorfastness for skate and canvas shoes.</p>
+                <div class="product-card-tags">
+                  <span class="product-tag-chip">Soft Non-Waxy</span>
+                  <span class="product-tag-chip">6.00mm &amp; 8.00mm</span>
+                  <span class="product-tag-chip">6 Colorways</span>
+                </div>
+                <div class="product-card-actions">
+                  <a href="contact-us.html?division=Shoe+Laces&sku=OE-SL-106&name=6.00mm+–+8.00mm+Cotton+Flat+Soft+Non-Waxy+Laces" class="btn-action-rfq">Request Sample</a>
+                  <button type="button" class="btn-action-quickview" onclick="openQuickView('OE-SL-106', '6.00mm – 8.00mm Cotton Flat Soft Non-Waxy Laces', 'Shoe Laces', '/images/products/shoe-laces/6.png', 'Natural untreated soft cotton wide flat laces offering maximum flexibility and vibrant color drape.', '1,500 Pairs', '10 Days', '100% Combed Natural Cotton, Azo-Free Eco-Dyed, 6 Colors (Brown, Blue, Red, Light Tan, Tan, White)')">Quick View</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product 7: Poly Round & Dotted Outdoor Cords -->
+          <div class="col-lg-3 col-md-6 mb-4 product-item-col" data-sku="OE-SL-107" data-title="Poly Round &amp; Dotted Outdoor Trail Boot Cords">
+            <div class="product-model-card">
+              <div class="product-card-thumb contain-thumb">
+                <span class="card-sku-badge">SKU: OE-SL-107</span>
+                <img src="/images/products/shoe-laces/7.png" alt="Poly Round &amp; Dotted Outdoor Trail Boot Cords" loading="lazy">
+              </div>
+              <div class="product-card-content">
+                <h3 class="product-card-name">Poly Round &amp; Dotted Outdoor Trail Boot Cords</h3>
+                <p class="product-card-desc">High-tenacity filament polyester cords in 3.0mm/3.5mm solid round and 3.5mm jacquard dotted patterns for trekking, trail runners, and work boots.</p>
+                <div class="product-card-tags">
+                  <span class="product-tag-chip">Outdoor Cords</span>
+                  <span class="product-tag-chip">Jacquard Dotted</span>
+                  <span class="product-tag-chip">High-Tensile</span>
+                </div>
+                <div class="product-card-actions">
+                  <a href="contact-us.html?division=Shoe+Laces&sku=OE-SL-107&name=Poly+Round+and+Dotted+Outdoor+Trail+Boot+Cords" class="btn-action-rfq">Request Sample</a>
+                  <button type="button" class="btn-action-quickview" onclick="openQuickView('OE-SL-107', 'Poly Round & Dotted Outdoor Trail Boot Cords', 'Shoe Laces', '/images/products/shoe-laces/7.png', 'High-tenacity filament polyester cords in solid and two-tone dotted patterns for mountaineering boots.', '2,000 Pairs', '12-14 Days', 'High-Tenacity Filament Poly Sheath & Core, 5 Bi-Colorways, Breaking Force >850N')">Quick View</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product 8: Poly Flex Round Tactical & Hiking Laces -->
+          <div class="col-lg-3 col-md-6 mb-4 product-item-col" data-sku="OE-SL-108" data-title="Poly Flex Round Tactical &amp; Hiking Boot Laces">
+            <div class="product-model-card">
+              <div class="product-card-thumb contain-thumb">
+                <span class="card-sku-badge">SKU: OE-SL-108</span>
+                <img src="/images/products/shoe-laces/8.png" alt="Poly Flex Round Tactical &amp; Hiking Boot Laces" loading="lazy">
+              </div>
+              <div class="product-card-content">
+                <h3 class="product-card-name">Poly Flex Round Tactical &amp; Hiking Boot Laces</h3>
+                <p class="product-card-desc">Heavy-duty 32-carrier abrasion-resistant braided flex cords in 3.0mm, 3.5mm, and 4.0mm gauges for tactical, combat, and heavy mountaineering boots.</p>
+                <div class="product-card-tags">
+                  <span class="product-tag-chip">Tactical Flex</span>
+                  <span class="product-tag-chip">32-Carrier Shell</span>
+                  <span class="product-tag-chip">3.0 - 4.0mm</span>
+                </div>
+                <div class="product-card-actions">
+                  <a href="contact-us.html?division=Shoe+Laces&sku=OE-SL-108&name=Poly+Flex+Round+Tactical+and+Hiking+Boot+Laces" class="btn-action-rfq">Request Sample</a>
+                  <button type="button" class="btn-action-quickview" onclick="openQuickView('OE-SL-108', 'Poly Flex Round Tactical & Hiking Boot Laces', 'Shoe Laces', '/images/products/shoe-laces/8.png', 'Heavy-duty flexible outdoor cords with high elasticity core and 32-carrier abrasion shell for tactical boots.', '2,000 Pairs', '12-15 Days', 'Industrial Polyester Sheath, Shock-Absorbing Core, 5 Tactical Patterns, Breaking Force >900N')">Quick View</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         DIVISION 06: TECHNICAL ELASTIC & WEBBING
+         ========================================================================= -->
+    <section class="division-section" id="elastic-bands" data-category="Elastic Webbing">
+      <div class="container container--type-3">
+
+        <div class="division-header-box">
+          <span class="division-badge">DIVISION 06 OF 06</span>
+          <h2 class="division-title">Technical Elastic Bands &amp; Webbing</h2>
+          <p class="division-description">
+            High-tensile narrow fabrics engineered on advanced needle looms. Specialized manufacturing of 1inch and 2inch woven elastic in color as per requirement. Supplying premier global footwear and apparel makers with heavy Chelsea boot gusset elastics, earth-tone and multi-color woven elastics, high-recovery spools, and custom Pantone-matched stretch webbings. Tested for high elongation, wash durability, and chemical safety under EU REACH standards.
+          </p>
+        </div>
+
+        <!-- Products Grid for Division 6 -->
+        <div class="row product-cards-grid">
+
+          <!-- Product 1: OE-EL-101 -->
+          <div class="col-lg-3 col-md-6 mb-4 product-item-col" data-sku="OE-EL-101" data-title="1&quot; &amp; 2&quot; Heavy-Duty Black Woven Elastic Roll">
+            <div class="product-model-card">
+              <div class="product-card-thumb contain-thumb">
+                <span class="card-sku-badge">SKU: OE-EL-101</span>
+                <img src="/images/products/elastic/1.jpeg" alt="1&quot; and 2&quot; Heavy-Duty Black Woven Elastic Roll" loading="lazy">
+              </div>
+              <div class="product-card-content">
+                <h3 class="product-card-name">1" &amp; 2" Black Woven Elastic Roll</h3>
+                <p class="product-card-desc">1inch and 2inch Woven Elastic in color as per requirement. Dense twill woven elastic roll engineered for high modulus tension and edge stability in waistbands, footwear gussets, and utility straps.</p>
+                <div class="product-card-tags">
+                  <span class="product-tag-chip">1" &amp; 2" Woven</span>
+                  <span class="product-tag-chip">Black Elastic</span>
+                  <span class="product-tag-chip">Color As Per Req.</span>
+                </div>
+                <div class="product-card-actions">
+                  <a href="contact-us.html?division=Elastic+Webbing&sku=OE-EL-101&name=1+and+2+Inch+Black+Woven+Elastic+Roll" class="btn-action-rfq">Request Sample</a>
+                  <button type="button" class="btn-action-quickview" onclick="openQuickView('OE-EL-101', '1&quot; &amp; 2&quot; Heavy-Duty Black Woven Elastic Roll', 'Elastic Webbing', '/images/products/elastic/1.jpeg', '1inch and 2inch Woven Elastic in color as per requirement. Dense twill woven elastic roll engineered for high modulus tension and edge stability in waistbands, footwear gussets, and utility straps.', '1,500 Meters', '10-12 Days', 'High-Bulk Polyester & Natural Latex Rubber, 1&quot; (25mm) and 2&quot; (50mm) Widths, Black & Custom Colors as per requirement')">Quick View</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product 2: OE-EL-102 -->
+          <div class="col-lg-3 col-md-6 mb-4 product-item-col" data-sku="OE-EL-102" data-title="1&quot; &amp; 2&quot; High-Recovery Black Woven Elastic Spool">
+            <div class="product-model-card">
+              <div class="product-card-thumb contain-thumb">
+                <span class="card-sku-badge">SKU: OE-EL-102</span>
+                <img src="/images/products/elastic/2.jpeg" alt="1&quot; and 2&quot; High-Recovery Black Woven Elastic Spool" loading="lazy">
+              </div>
+              <div class="product-card-content">
+                <h3 class="product-card-name">1" &amp; 2" High-Recovery Elastic Spool</h3>
+                <p class="product-card-desc">1inch and 2inch Woven Elastic in color as per requirement. Spooled heavy-gauge elastic tape with non-roll edge construction specifically crafted for Chelsea boots and apparel waistbands.</p>
+                <div class="product-card-tags">
+                  <span class="product-tag-chip">1" &amp; 2" Woven</span>
+                  <span class="product-tag-chip">Boot Gusset</span>
+                  <span class="product-tag-chip">Color As Per Req.</span>
+                </div>
+                <div class="product-card-actions">
+                  <a href="contact-us.html?division=Elastic+Webbing&sku=OE-EL-102&name=1+and+2+Inch+High-Recovery+Black+Woven+Elastic+Spool" class="btn-action-rfq">Request Sample</a>
+                  <button type="button" class="btn-action-quickview" onclick="openQuickView('OE-EL-102', '1&quot; &amp; 2&quot; High-Recovery Black Woven Elastic Spool', 'Elastic Webbing', '/images/products/elastic/2.jpeg', '1inch and 2inch Woven Elastic in color as per requirement. Spooled heavy-gauge elastic tape with non-roll edge construction specifically crafted for Chelsea boots and waistbands.', '1,500 Meters', '10-14 Days', 'Reinforced Heat-Treated Poly & Latex Core, 1&quot; & 2&quot; Widths, Non-Curling Edge, Custom Colors as per requirement')">Quick View</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product 3: OE-EL-103 -->
+          <div class="col-lg-3 col-md-6 mb-4 product-item-col" data-sku="OE-EL-103" data-title="Multi-Color Coordinated 1&quot; &amp; 2&quot; Woven Elastic Rolls">
+            <div class="product-model-card">
+              <div class="product-card-thumb contain-thumb">
+                <span class="card-sku-badge">SKU: OE-EL-103</span>
+                <img src="/images/products/elastic/3.jpeg" alt="Multi-Color Coordinated 1&quot; and 2&quot; Woven Elastic Rolls" loading="lazy">
+              </div>
+              <div class="product-card-content">
+                <h3 class="product-card-name">Multi-Color 1" &amp; 2" Woven Rolls</h3>
+                <p class="product-card-desc">1inch and 2inch Woven Elastic in color as per requirement. Multi-color coordinated selection in Black, Grey, Red, Tan, Dark Brown, and Navy Blue with yarn-dyed colorfast finish.</p>
+                <div class="product-card-tags">
+                  <span class="product-tag-chip">Multi-Color</span>
+                  <span class="product-tag-chip">1" &amp; 2" Woven</span>
+                  <span class="product-tag-chip">Color As Per Req.</span>
+                </div>
+                <div class="product-card-actions">
+                  <a href="contact-us.html?division=Elastic+Webbing&sku=OE-EL-103&name=Multi-Color+Coordinated+Woven+Elastic+Rolls" class="btn-action-rfq">Request Sample</a>
+                  <button type="button" class="btn-action-quickview" onclick="openQuickView('OE-EL-103', 'Multi-Color Coordinated 1&quot; &amp; 2&quot; Woven Elastic Rolls', 'Elastic Webbing', '/images/products/elastic/3.jpeg', '1inch and 2inch Woven Elastic in color as per requirement. Multi-color coordinated selection in Black, Grey, Red, Tan, Brown, Navy.', '1,000 Meters', '12-15 Days', 'Combed Polyester Face with Natural Latex Rubber Core, 1&quot; (25mm) and 2&quot; (50mm), 6 Core Tones & Custom Colors as per requirement')">Quick View</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product 4: OE-EL-104 -->
+          <div class="col-lg-3 col-md-6 mb-4 product-item-col" data-sku="OE-EL-104" data-title="2&quot; Wide Dark Brown Woven Elastic Tape">
+            <div class="product-model-card">
+              <div class="product-card-thumb contain-thumb">
+                <span class="card-sku-badge">SKU: OE-EL-104</span>
+                <img src="/images/products/elastic/4.jpeg" alt="2&quot; Wide Dark Brown Woven Elastic Tape" loading="lazy">
+              </div>
+              <div class="product-card-content">
+                <h3 class="product-card-name">2" Dark Brown Woven Elastic Tape</h3>
+                <p class="product-card-desc">1inch and 2inch Woven Elastic in color as per requirement. Substantial 2-inch wide woven elastic in deep dark brown / coffee hue, ideal for equestrian gear, footwear side panels, and outerwear.</p>
+                <div class="product-card-tags">
+                  <span class="product-tag-chip">2" Wide Profile</span>
+                  <span class="product-tag-chip">Dark Brown</span>
+                  <span class="product-tag-chip">Color As Per Req.</span>
+                </div>
+                <div class="product-card-actions">
+                  <a href="contact-us.html?division=Elastic+Webbing&sku=OE-EL-104&name=2+Inch+Dark+Brown+Woven+Elastic+Tape" class="btn-action-rfq">Request Sample</a>
+                  <button type="button" class="btn-action-quickview" onclick="openQuickView('OE-EL-104', '2&quot; Wide Dark Brown Woven Elastic Tape', 'Elastic Webbing', '/images/products/elastic/4.jpeg', '1inch and 2inch Woven Elastic in color as per requirement. Substantial 2-inch wide woven elastic in deep dark brown and custom hues.', '1,500 Meters', '12-14 Days', 'Dense Double-Woven Polyester & Latex Core, 2&quot; (50mm) & 1&quot; (25mm), Dark Brown / Coffee & Custom Colors as per requirement')">Quick View</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product 5: OE-EL-105 -->
+          <div class="col-lg-3 col-md-6 mb-4 product-item-col" data-sku="OE-EL-105" data-title="5-Core Color 1&quot; &amp; 2&quot; Woven Elastic Assortment">
+            <div class="product-model-card">
+              <div class="product-card-thumb contain-thumb">
+                <span class="card-sku-badge">SKU: OE-EL-105</span>
+                <img src="/images/products/elastic/5.jpeg" alt="5-Core Color 1&quot; and 2&quot; Woven Elastic Assortment" loading="lazy">
+              </div>
+              <div class="product-card-content">
+                <h3 class="product-card-name">5-Core Color Woven Assortment</h3>
+                <p class="product-card-desc">1inch and 2inch Woven Elastic in color as per requirement. Production-ready core shades: Coffee, Gray, Red, Black, and Brown. Engineered for consistent tension and zero wash degradation.</p>
+                <div class="product-card-tags">
+                  <span class="product-tag-chip">5 Core Colors</span>
+                  <span class="product-tag-chip">1" &amp; 2" Woven</span>
+                  <span class="product-tag-chip">Color As Per Req.</span>
+                </div>
+                <div class="product-card-actions">
+                  <a href="contact-us.html?division=Elastic+Webbing&sku=OE-EL-105&name=5-Core+Color+Woven+Elastic+Assortment" class="btn-action-rfq">Request Sample</a>
+                  <button type="button" class="btn-action-quickview" onclick="openQuickView('OE-EL-105', '5-Core Color 1&quot; &amp; 2&quot; Woven Elastic Assortment', 'Elastic Webbing', '/images/products/elastic/5.jpeg', '1inch and 2inch Woven Elastic in color as per requirement. Production-ready core shades: Coffee, Gray, Red, Black, Brown.', '1,000 Meters', '10-14 Days', 'Dope-Dyed Poly Yarn with High-Grade Elastic Core, 1&quot; & 2&quot; Widths, Grade 4-5 Colorfastness, Custom Colors as per requirement')">Quick View</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product 6: OE-EL-106 -->
+          <div class="col-lg-3 col-md-6 mb-4 product-item-col" data-sku="OE-EL-106" data-title="Full-Spectrum Pantone 1&quot; &amp; 2&quot; Woven Elastic Collection">
+            <div class="product-model-card">
+              <div class="product-card-thumb contain-thumb">
+                <span class="card-sku-badge">SKU: OE-EL-106</span>
+                <img src="/images/products/elastic/6.jpeg" alt="Full-Spectrum Pantone 1&quot; and 2&quot; Woven Elastic Collection" loading="lazy">
+              </div>
+              <div class="product-card-content">
+                <h3 class="product-card-name">Full-Spectrum Pantone Collection</h3>
+                <p class="product-card-desc">1inch and 2inch Woven Elastic in color as per requirement. Full custom spectrum of 20+ shades including Neon, Emerald, Mustard, Navy, Olive, Fuchsia, and Pastels with laboratory Pantone matching.</p>
+                <div class="product-card-tags">
+                  <span class="product-tag-chip">Full Spectrum</span>
+                  <span class="product-tag-chip">Pantone Matching</span>
+                  <span class="product-tag-chip">Color As Per Req.</span>
+                </div>
+                <div class="product-card-actions">
+                  <a href="contact-us.html?division=Elastic+Webbing&sku=OE-EL-106&name=Full-Spectrum+Pantone+Woven+Elastic+Collection" class="btn-action-rfq">Request Sample</a>
+                  <button type="button" class="btn-action-quickview" onclick="openQuickView('OE-EL-106', 'Full-Spectrum Pantone 1&quot; &amp; 2&quot; Woven Elastic Collection', 'Elastic Webbing', '/images/products/elastic/6.jpeg', '1inch and 2inch Woven Elastic in color as per requirement. Extensive custom dye-to-order palette with precise Pantone matching.', '1,000 Meters', '14-18 Days', 'Premium Polyester-Elastane Blend, 1&quot; (25mm) & 2&quot; (50mm), 20+ Stock Shades + Custom Pantone Dyeing as per requirement')">Quick View</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product 7: OE-EL-107 -->
+          <div class="col-lg-3 col-md-6 mb-4 product-item-col" data-sku="OE-EL-107" data-title="Export-Grade Bundled Spool 1&quot; &amp; 2&quot; Woven Elastic">
+            <div class="product-model-card">
+              <div class="product-card-thumb contain-thumb">
+                <span class="card-sku-badge">SKU: OE-EL-107</span>
+                <img src="/images/products/elastic/7.jpeg" alt="Export-Grade Bundled Spool 1&quot; and 2&quot; Woven Elastic" loading="lazy">
+              </div>
+              <div class="product-card-content">
+                <h3 class="product-card-name">Bundled Spool Woven Elastic</h3>
+                <p class="product-card-desc">1inch and 2inch Woven Elastic in color as per requirement. Factory-bundled standardized coils in high-demand colors (Green, Gold, Neon, Navy, Red, White, Tan) ready for rapid manufacturing and export dispatch.</p>
+                <div class="product-card-tags">
+                  <span class="product-tag-chip">Bundled Coils</span>
+                  <span class="product-tag-chip">1" &amp; 2" Woven</span>
+                  <span class="product-tag-chip">Color As Per Req.</span>
+                </div>
+                <div class="product-card-actions">
+                  <a href="contact-us.html?division=Elastic+Webbing&sku=OE-EL-107&name=Export-Grade+Bundled+Spool+Woven+Elastic" class="btn-action-rfq">Request Sample</a>
+                  <button type="button" class="btn-action-quickview" onclick="openQuickView('OE-EL-107', 'Export-Grade Bundled Spool 1&quot; &amp; 2&quot; Woven Elastic', 'Elastic Webbing', '/images/products/elastic/7.jpeg', '1inch and 2inch Woven Elastic in color as per requirement. Industrial export rolls bundled in standardized skeins and spools.', '2,000 Meters', '10-12 Days', 'High-Tensile Needle-Loom Woven Elastic, 1&quot; & 2&quot; Gauges, Bundled Export Coils, Colors as per buyer requirement')">Quick View</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+  </main>
+
+  <!-- Quick View Modal Structure -->
+  <div class="quickview-modal-backdrop" id="quickViewModal" onclick="if(event.target === this) closeQuickView();">
+    <div class="quickview-card">
+      <button type="button" class="quickview-close-btn" onclick="closeQuickView()" aria-label="Close modal">
+        <i class="fa fa-times"></i>
+      </button>
+      <div class="quickview-grid">
+        <div class="quickview-media">
+          <img id="qvImage" src="/images/products/leather-tooling-belts/Product T1.png" alt="Product Preview">
+        </div>
+        <div class="quickview-info">
+          <div style="font-size:0.7rem;letter-spacing:0.18em;color:#c5a059;text-transform:uppercase;font-weight:700;margin-bottom:0.4rem;" id="qvCategory">Leather Belts</div>
+          <h3 style="font-family:'Cinzel',serif;font-size:1.35rem;color:#0f172a;margin-bottom:0.5rem;" id="qvTitle">Product Name</h3>
+          <div style="font-family:'Cinzel',serif;font-size:0.75rem;color:#64748b;margin-bottom:1rem;" id="qvSku">SKU: T1</div>
+          <p style="font-size:0.86rem;line-height:1.7;color:#475569;margin-bottom:1.25rem;" id="qvDesc">Description text goes here.</p>
+          
+          <div style="background:#f8fafc;border:1px solid #e2e8f0;padding:0.75rem 1rem;border-radius:3px;font-size:0.8rem;margin-bottom:1.5rem;color:#334155;">
+            <div style="margin-bottom:4px;"><strong>Standard Export MOQ:</strong> <span id="qvMoq">100 Pieces</span></div>
+            <div style="margin-bottom:4px;"><strong>Production Lead Time:</strong> <span id="qvLead">15-20 Days</span></div>
+            <div><strong>Material Specification:</strong> <span id="qvSpecs">Vegetable-Tanned Steerhide</span></div>
+          </div>
+
+          <div style="display:flex;gap:10px;margin-top:auto;">
+            <a id="qvRfqLink" href="contact-us.html" class="btn-action-rfq" style="padding:0.75rem 1rem;font-size:0.78rem;">Submit Formal RFQ</a>
+            <a id="qvWhatsAppLink" href="#" target="_blank" class="btn-action-quickview" style="padding:0.75rem 1rem;display:flex;align-items:center;gap:6px;background:#25D366;color:#fff;border-color:#25D366;text-decoration:none;">
+              <i class="fa fa-whatsapp"></i> Chat Now
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- B2B Direct Requisition CTA Ribbon -->
+  <section class="b2b-cta-ribbon">
+    <div class="container container--type-3">
+      <span style="font-size:0.72rem;letter-spacing:0.25em;color:#c9a96e;text-transform:uppercase;font-weight:700;display:block;margin-bottom:0.75rem;">Direct Factory Atelier &bull; Kanpur Export Desk</span>
+      <h3>Require Custom Tooling Dies or Private Label OEM?</h3>
+      <p>
+        Our directors personally supervise all custom die development, Pantone color matching, private label branding, and counter-sample dispatches within 48 hours for global buying houses.
+      </p>
+      <div>
+        <a href="contact-us.html" class="btn-gold-action">Send Export RFQ</a>
+        <a href="https://wa.me/919839086636?text=Hello%20Mr%20Farhan%20Mirza%2C%20I%20would%20like%20to%20request%20samples%20and%20catalogue." target="_blank" class="btn-outline-action">
+          <i class="fa fa-whatsapp"></i> Direct WhatsApp
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Modern Clean Full-Width Luxury Footer (Standardized 4-Page System) -->
+  <div class="go-top" id="goTopBtn" title="Back to Top"><i class="fa fa-chevron-up"></i></div>
+  <footer class="modern-footer collection-footer footov">
+    <div class="container container--type-4">
+
+      <!-- Top Footer Horizontal Menu (Clean 4 Pages) -->
+      <div class="modern-footer__top-nav">
+        <ul class="modern-footer__menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="contact-us.html">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <!-- 4-Column Luxury Corporate Ledger Grid -->
+      <div class="footer-lux-grid">
+
+        <!-- Column 1: Brand & Legacy -->
+        <div class="footer-col">
+          <a href="index.html" class="footer-brand-lockup" style="display:flex;align-items:center;gap:12px;text-decoration:none;">
+            <img src="/images/logo-dark-bg.png" alt="Olympic Exports Crest" class="footer-brand-logo-img" style="height:48px;">
+            <div>
+              <h4 class="footer-brand-title" style="margin:0;font-family:'Cinzel',serif;color:#fff;">OLYMPIC EXPORTS PVT. LTD.</h4>
+              <span style="font-size:0.75rem;color:#c9a96e;letter-spacing:0.1em;text-transform:uppercase;">Govt. Recognized Export House</span>
+            </div>
+          </a>
+          <p class="footer-heritage-desc" style="margin-top:1rem;font-size:0.86rem;line-height:1.75;color:#ccc;">
+            Established in 1994 in the historic leather capital of Kanpur. Manufacturing and exporting luxury hand-carved
+            tooling belts, beaded belts, Kilim bags, and technical narrow fabrics to 35+ countries.
+          </p>
+        </div>
+
+        <!-- Column 2: 6 Integrated Manufacturing Divisions -->
+        <div class="footer-col">
+          <h5 class="footer-col-title" style="font-family:'Cinzel',serif;color:#c9a96e;font-size:0.85rem;letter-spacing:0.12em;margin-bottom:1.2rem;">MANUFACTURING DIVISIONS</h5>
+          <ul class="footer-links-list" style="list-style:none;padding:0;font-size:0.84rem;line-height:2;">
+            <li><a href="products.html#leather-belts">01. Hand-Carved Western Belts</a></li>
+            <li><a href="products.html#beaded-belts">02. Tribal Aztec Beaded Belts</a></li>
+            <li><a href="products.html#kilim-bags">03. Handwoven Kilim Tapestry Bags</a></li>
+            <li><a href="products.html#leather-bags">04. Handcrafted Full-Grain Bags</a></li>
+            <li><a href="products.html#shoe-laces">05. Waxed Shoelaces &amp; Boot Cords</a></li>
+            <li><a href="products.html#elastic-bands">06. Technical Elastic &amp; Webbing</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Global Export & Trade Services -->
+        <div class="footer-col">
+          <h5 class="footer-col-title" style="font-family:'Cinzel',serif;color:#c9a96e;font-size:0.85rem;letter-spacing:0.12em;margin-bottom:1.2rem;">EXPORT &amp; TRADE DESK</h5>
+          <ul class="footer-links-list" style="list-style:none;padding:0;font-size:0.84rem;line-height:2;">
+            <li><a href="about.html">Heritage &amp; Kanpur Factory Tour</a></li>
+            <li><a href="about.html#leadership">Leadership: Farhan &amp; Ayaan Mirza</a></li>
+            <li><a href="products.html">Integrated Product Divisions</a></li>
+            <li><a href="contact-us.html">Request Counter-Sample Deck</a></li>
+            <li><a href="contact-us.html">Custom Die &amp; Private Label RFQ</a></li>
+            <li><a href="about.html">REACH &amp; SVHC Compliance Standards</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 4: Factory Atelier & Direct Contacts -->
+        <div class="footer-col">
+          <h5 class="footer-col-title" style="font-family:'Cinzel',serif;color:#c9a96e;font-size:0.85rem;letter-spacing:0.12em;margin-bottom:1.2rem;">KANPUR ATELIER &amp; CONTACT</h5>
+          <div class="footer-contact-block" style="font-size:0.84rem;line-height:1.75;color:#ccc;">
+            <div style="margin-bottom:0.75rem;">
+              <a href="https://maps.google.com/?q=56-D+Defence+Colony+Jajmau+Kanpur" target="_blank" style="color:#ddd;text-decoration:none;">
+                <strong>56-D, Defence Colony, Jajmau,</strong><br>
+                Kanpur &ndash; 208010, Uttar Pradesh, India
+              </a>
+            </div>
+            <div style="margin-bottom:0.75rem;">
+              <a href="tel:+919839086636" style="color:#e6c875;text-decoration:none;font-weight:600;">+91 98390 86636</a> <span style="font-size:0.72rem;color:#aaa;">(Mr. Farhan Mirza)</span><br>
+              <a href="tel:+917388814225" style="color:#e6c875;text-decoration:none;font-weight:600;">+91 73888 14225</a> <span style="font-size:0.72rem;color:#aaa;">(Mr. Ayaan Mirza)</span>
+            </div>
+            <div>
+              <a href="mailto:Olympic.Mirza@yahoo.com" style="color:#fff;text-decoration:none;">Olympic.Mirza@yahoo.com</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Copyright & Legal Bottom Bar -->
+      <div class="footer-bottom-bar" style="border-top:1px solid rgba(255,255,255,0.12);padding-top:1.5rem;margin-top:2.5rem;">
+        <div class="d-flex justify-content-between align-items-center flex-wrap gap-2" style="font-size:0.8rem;color:#aaa;">
+          <p style="margin:0;">&copy; 2026 Olympic Exports Pvt. Ltd. All Rights Reserved.</p>
+          <div class="footer-legal-links" style="display:flex;gap:15px;">
+            <a href="index.html" style="color:#aaa;text-decoration:none;">Home</a>
+            <span>&bull;</span>
+            <a href="about.html" style="color:#aaa;text-decoration:none;">About Us</a>
+            <span>&bull;</span>
+            <a href="products.html" style="color:#aaa;text-decoration:none;">Products</a>
+            <span>&bull;</span>
+            <a href="contact-us.html" style="color:#aaa;text-decoration:none;">Contact Us</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Interactive JavaScript for Quick View & Search Filter -->
+  <script>
+    // Quick View Modal Controller
+    function openQuickView(sku, title, category, img, desc, moq, lead, specs) {
+      document.getElementById('qvSku').textContent = 'SKU: ' + sku;
+      document.getElementById('qvTitle').textContent = title;
+      document.getElementById('qvCategory').textContent = category;
+      document.getElementById('qvImage').src = img;
+      document.getElementById('qvDesc').textContent = desc;
+      document.getElementById('qvMoq').textContent = moq;
+      document.getElementById('qvLead').textContent = lead;
+      document.getElementById('qvSpecs').textContent = specs;
+      
+      const rfqUrl = 'contact-us.html?division=' + encodeURIComponent(category) + '&sku=' + encodeURIComponent(sku) + '&name=' + encodeURIComponent(title);
+      document.getElementById('qvRfqLink').href = rfqUrl;
+
+      const waMsg = 'Hello Mr Farhan Mirza, I am interested in ' + title + ' (' + sku + ') from Olympic Exports catalogue.';
+      document.getElementById('qvWhatsAppLink').href = 'https://wa.me/919839086636?text=' + encodeURIComponent(waMsg);
+
+      document.getElementById('quickViewModal').classList.add('show');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeQuickView() {
+      document.getElementById('quickViewModal').classList.remove('show');
+      document.body.style.overflow = '';
+    }
+
+    // Category Tabs Filter
+    document.addEventListener('DOMContentLoaded', function() {
+      const filterInput = document.getElementById('productFilterInput');
+      const productCards = document.querySelectorAll('.product-item-col');
+      const divisionSections = document.querySelectorAll('.division-section');
+      const tabBtns = document.querySelectorAll('.cat-pill-btn');
+
+      // Live search input filtering
+      if (filterInput) {
+        filterInput.addEventListener('input', function(e) {
+          const query = e.target.value.toLowerCase().trim();
+          
+          productCards.forEach(function(card) {
+            const title = (card.getAttribute('data-title') || '').toLowerCase();
+            const sku = (card.getAttribute('data-sku') || '').toLowerCase();
+            const text = card.textContent.toLowerCase();
+
+            if (!query || title.includes(query) || sku.includes(query) || text.includes(query)) {
+              card.style.display = '';
+            } else {
+              card.style.display = 'none';
+            }
+          });
+
+          // Show/hide empty division sections
+          divisionSections.forEach(function(sec) {
+            const visibleChildren = sec.querySelectorAll('.product-item-col:not([style*="display: none"])');
+            if (query && visibleChildren.length === 0) {
+              sec.style.display = 'none';
+            } else {
+              sec.style.display = '';
+            }
+          });
+        });
+      }
+
+      // Category tab click behavior
+      tabBtns.forEach(function(btn) {
+        btn.addEventListener('click', function(e) {
+          const filter = btn.getAttribute('data-filter');
+          const target = btn.getAttribute('data-target');
+
+          tabBtns.forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+
+          if (filter === 'all') {
+            e.preventDefault();
+            divisionSections.forEach(sec => sec.style.display = '');
+            productCards.forEach(card => card.style.display = '');
+            if (filterInput) filterInput.value = '';
+            window.scrollTo({ top: 350, behavior: 'smooth' });
+          }
+        });
+      });
+
+      // Canvas Drawer toggle
+      const btnOpenMenu = document.getElementById('btnOpenMenu');
+      const btnCloseMenu = document.getElementById('btnCloseCanvasMenu');
+      const canvasMenu = document.getElementById('canvasMenu');
+      const canvasOverlay = document.getElementById('canvasMenuOverlay');
+
+      if (btnOpenMenu && canvasMenu) {
+        btnOpenMenu.addEventListener('click', function() {
+          canvasMenu.classList.add('active', 'open');
+          document.body.style.overflow = 'hidden';
+        });
+      }
+      if (btnCloseMenu && canvasMenu) {
+        btnCloseMenu.addEventListener('click', function() {
+          canvasMenu.classList.remove('active', 'open');
+          document.body.style.overflow = '';
+        });
+      }
+      if (canvasOverlay && canvasMenu) {
+        canvasOverlay.addEventListener('click', function() {
+          canvasMenu.classList.remove('active', 'open');
+          document.body.style.overflow = '';
+        });
+      }
+
+      // Back to top
+      const goTopBtn = document.getElementById('goTopBtn');
+      if (goTopBtn) {
+        window.addEventListener('scroll', function() {
+          if (window.scrollY > 400) {
+            goTopBtn.style.display = 'flex';
+          } else {
+            goTopBtn.style.display = 'none';
+          }
+        });
+        goTopBtn.addEventListener('click', function() {
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+      }
+    });
+  </script>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>

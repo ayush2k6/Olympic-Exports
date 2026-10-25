@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <title>About Us || Olympic Exports Pvt. Ltd. (Est. 1994, Kanpur)</title>
+  <meta name="description" content="Founded in 1994 in Jajmau, Kanpur. Managing Director Farhan Mirza, Director Rukhsaar Mirza, and Director Ayaan Mirza lead Olympic Exports Pvt. Ltd., a Govt. Recognized Export House manufacturing premium leather belts, bags, and technical narrow fabrics.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;800&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.lineicons.com/4.0/lineicons.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="/src/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+  <style>
+    footer.modern-footer, .modern-footer, .footov, .collection-footer {
+      background-color: #000000 !important; background: #000000 !important; color: #ffffff !important;
+    }
+    .modern-footer a, .modern-footer p, .modern-footer span, .modern-footer li, .modern-footer .modern-footer__logo { color: #ffffff !important; }
+    .modern-footer a:hover { color: #e6c875 !important; }
+    .modern-footer hr { border-color: rgba(255,255,255,0.15) !important; }
+    header.header--type-4, .header--type-4, #mainHeader {
+      background-color: #000000 !important;
+      background: #000000 !important;
+    }
+    .header--type-4 .oe-logo-text, .header--type-4.scrolled .oe-logo-text { color: #ffffff !important; }
+
+    /* Desktop Navigation Bar in Header */
+    .header__nav-menu {
+      display: flex;
+      align-items: center;
+      gap: 2.2rem;
+      margin: 0 2rem;
+    }
+    .header__nav-link {
+      font-family: 'Cinzel', serif;
+      font-size: 0.82rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: rgba(255, 255, 255, 0.85);
+      text-decoration: none;
+      transition: color 0.2s ease;
+      font-weight: 600;
+      position: relative;
+      padding: 0.25rem 0;
+    }
+    .header__nav-link:hover, .header__nav-link.active {
+      color: #c9a96e;
+      text-decoration: none;
+    }
+    .header__nav-link.active::after {
+      content: '';
+      position: absolute;
+      bottom: -4px;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      background: #c9a96e;
+    }
+    @media (max-width: 991px) {
+      .header__nav-menu { display: none; }
+    }
+
+    /* About Hero Banner */
+    .about-hero-banner {
+      height: 55vh; min-height: 420px;
+      background: linear-gradient(135deg, #1a0f05 0%, #2d1a08 50%, #1a0f05 100%);
+      position: relative; overflow: hidden;
+      display: flex; align-items: flex-end; padding-bottom: 5rem;
+    }
+    .about-hero-banner img.hero-cover {
+      position: absolute; inset: 0; width: 100%; height: 100%;
+      object-fit: cover; opacity: 0.35;
+    }
+    .about-hero-banner .container { position: relative; z-index: 2; }
+    .about-hero-banner h1 {
+      font-family: 'Cinzel', serif; font-size: clamp(2.5rem, 6vw, 4.5rem);
+      font-weight: 700; color: #fff; line-height: 1.1; margin: 0;
+    }
+    .about-hero-banner .tagline { font-size: 0.85rem; color: #c9a96e; letter-spacing: 0.25em; text-transform: uppercase; margin-bottom: 1rem; }
+    .about-hero-banner .breadcrumb-row { color: rgba(255,255,255,0.55); font-size: 0.8rem; margin-top: 1.25rem; }
+    .about-hero-banner .breadcrumb-row a { color: rgba(255,255,255,0.55); text-decoration: none; }
+    .about-hero-banner .breadcrumb-row a:hover { color: #c9a96e; }
+
+    /* Heritage Section */
+    .heritage-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 0; }
+    @media (max-width: 768px) { .heritage-grid { grid-template-columns: 1fr; } }
+    .heritage-text { padding: 5rem; background: #f8fafc; }
+    .heritage-text .kicker { font-family: 'Cinzel', serif; font-size: 0.7rem; letter-spacing: 0.25em; text-transform: uppercase; color: #c5a059; margin-bottom: 1.25rem; font-weight: 700; }
+    .heritage-text h2 { font-family: 'Cinzel', serif; font-size: clamp(1.8rem, 3vw, 2.6rem); font-weight: 700; color: #0f172a; margin-bottom: 1.5rem; line-height: 1.2; }
+    .heritage-text p { font-size: 1rem; line-height: 1.85; color: #475569; margin-bottom: 1.25rem; }
+    .heritage-img { position: relative; min-height: 400px; }
+    .heritage-img img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+
+    /* Leaders Section */
+    .leadership-section { background: #0b0e14; color: #fff; padding: 6rem 0; border-top: 1px solid rgba(197, 160, 89, 0.2); border-bottom: 1px solid rgba(197, 160, 89, 0.2); }
+    .leadership-section .section-kicker { font-size: 0.7rem; letter-spacing: 0.25em; text-transform: uppercase; color: #c5a059; text-align: center; margin-bottom: 1rem; font-weight: 700; }
+    .leadership-section h2 { font-family: 'Cinzel', serif; font-size: 2.5rem; text-align: center; color: #fff; margin-bottom: 4rem; }
+    .leader-card { background: #0f172a; border: 1px solid rgba(197,160,89,0.25); padding: 2.25rem 1.5rem; border-radius: 4px; text-align: center; height: 100%; box-shadow: 0 10px 30px rgba(0,0,0,0.25); display: flex; flex-direction: column; justify-content: space-between; }
+    .leader-card .name { font-family: 'Cinzel', serif; font-size: 1.35rem; color: #fff; margin-bottom: 0.5rem; }
+    .leader-card .role { color: #c5a059; font-size: 0.8rem; letter-spacing: 0.15em; text-transform: uppercase; margin-bottom: 1.25rem; font-weight: 600; }
+    .leader-card .phone a { color: #e2e8f0; font-size: 1rem; text-decoration: none; display: block; margin-bottom: 0.4rem; transition: color 0.2s; }
+    .leader-card .phone a:hover { color: #c5a059; }
+    .leader-avatar { width: 84px; height: 84px; border-radius: 50%; background: linear-gradient(135deg, #0f172a, #1e293b); border: 2px solid #c5a059; display: flex; align-items: center; justify-content: center; font-family: 'Cinzel', serif; font-size: 1.6rem; color: #c5a059; margin: 0 auto 1.25rem; }
+
+
+    /* Timeline */
+    .timeline-section { background: #fff; padding: 6rem 0; }
+    .timeline-section h2 { font-family: 'Cinzel', serif; font-size: 2.5rem; text-align: center; color: #0f172a; margin-bottom: 4rem; }
+    .timeline { max-width: 700px; margin: 0 auto; }
+    .timeline-item { display: flex; gap: 2rem; margin-bottom: 3rem; }
+    .timeline-year { font-family: 'Cinzel', serif; font-size: 1.5rem; font-weight: 700; color: #0f172a; min-width: 80px; padding-top: 0.15rem; }
+    .timeline-body h4 { font-size: 1.1rem; font-weight: 700; color: #0f172a; margin-bottom: 0.5rem; font-family:'Cinzel',serif; }
+    .timeline-body p { font-size: 0.92rem; color: #475569; line-height: 1.7; }
+    .timeline-line { width: 2px; background: linear-gradient(to bottom, #c5a059, #0f172a, transparent); flex-shrink: 0; }
+
+    /* Distinctions */
+    .distinctions-section { background: #f8fafc; padding: 6rem 0; border-top: 1px solid #e2e8f0; }
+    .distinctions-section h2 { font-family: 'Cinzel', serif; font-size: 2.5rem; text-align: center; color: #0f172a; margin-bottom: 4rem; }
+    .distinction-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; }
+    .distinction-card { background: #fff; border: 1px solid #e2e8f0; padding: 2rem; border-radius: 4px; box-shadow: 0 4px 16px rgba(15, 23, 42, 0.04); }
+    .distinction-card .icon { font-size: 2rem; margin-bottom: 1rem; color:#c5a059; }
+    .distinction-card h4 { font-family: 'Cinzel', serif; font-size: 1.1rem; color: #0f172a; margin-bottom: 0.75rem; }
+    .distinction-card p { font-size: 0.88rem; color: #475569; line-height: 1.7; }
+
+    .eighth-button {
+      background: #0f172a; color: #fff; font-family: 'Cinzel', serif;
+      font-size: 0.82rem; letter-spacing: 0.12em; text-transform: uppercase;
+      padding: 0.85rem 1.8rem; text-decoration: none; display: inline-block;
+      font-weight: 700; border-radius: 2px; border: 1px solid #0f172a; transition: all 0.2s;
+    }
+    .eighth-button:hover { background: #c5a059; border-color: #c5a059; color: #0b0e14; text-decoration: none; }
+  </style>
+</head>
+<body class="absolute-header">
+
+<!-- WhatsApp Float -->
+<a href="https://wa.me/919839086636?text=Hello%20Olympic%20Exports%20Pvt%20Ltd%2C%20I%20am%20interested%20in%20your%20Leather%20Goods%20and%20Belts%20Catalogue." class="floatwp" target="_blank" title="WhatsApp Direct Desk">
+  <i class="fa fa-whatsapp my-float"></i>
+</a>
+
+<!-- Primary Header -->
+<header class="header header--type-4" id="mainHeader">
+  <div class="container container--type-3">
+    <div class="header__container d-flex align-items-center justify-content-between">
+      
+      <!-- Left Brand Logo -->
+      <h1 class="header__logo mb-0">
+        <a href="index.html" style="display: flex; align-items: center; gap: 10px; text-decoration: none;">
+          <img src="/images/logo-dark-bg.png" alt="Olympic Exports Crest" style="height: 44px; width: auto; object-fit: contain;">
+          <span class="oe-logo-text" style="font-family: 'Cinzel', serif; font-size: 1.15rem; font-weight: 700; letter-spacing: 0.08em; color: #ffffff;">OLYMPIC <span style="font-weight: 400; font-size: 0.88rem; opacity: 0.85; color: #ffffff;">EXPORTS</span></span>
+        </a>
+      </h1>
+
+      <!-- 4-Page Desktop Primary Navigation Menu -->
+      <nav class="header__nav-menu">
+        <a href="index.html" class="header__nav-link">Home</a>
+        <a href="about.html" class="header__nav-link active">About Us</a>
+        <a href="products.html" class="header__nav-link">Products</a>
+        <a href="contact-us.html" class="header__nav-link">Contact Us</a>
+      </nav>
+
+      <!-- Right Action & Mobile Drawer Trigger -->
+      <div class="header__right-action-wrapper">
+        <a href="contact-us.html" class="btn-header-quote">
+          <i class="fa fa-envelope-o"></i> Request Quote
+        </a>
+        <!-- Mobile Menu Icon (Only visible on small screens) -->
+        <button type="button" class="header__mobile-menu-btn js-open-canvas-menu" id="btnOpenMenu" aria-label="Open Navigation">
+          <i class="fa fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- Slide-Out Canvas Navigation Drawer (Clean 4 Pages) -->
+<div class="canvas-menu js-canvas-menu" id="canvasMenu" aria-hidden="true">
+  <div class="canvas-menu__overlay js-close-canvas-menu" id="canvasMenuOverlay"></div>
+  <div class="canvas-menu__content">
+    <div class="canvas-menu__close">
+      <button type="button" class="js-close-canvas-menu close-drawer-btn" id="btnCloseCanvasMenu">
+        <i data-lucide="x" class="icon-sm"></i>
+        <span>Close</span>
+      </button>
+    </div>
+    <div class="canvas-menu__brand">
+      <img src="/images/logo-dark-bg.png" alt="Olympic Exports" class="canvas-logo-img">
+      <h3 style="font-family:'Cinzel',serif;margin-top:8px;">Olympic Exports</h3>
+      <p style="font-size:0.75rem;letter-spacing:0.15em;color:#c5a059;text-transform:uppercase;">Govt. Recognized Export House &bull; Jajmau, Kanpur</p>
+    </div>
+    <nav class="canvas-menu__nav">
+      <ul>
+        <li><a href="index.html" class="canvas-nav__item">Home</a></li>
+        <li><a href="about.html" class="canvas-nav__item" style="color:#c5a059;font-weight:700;">About Us</a></li>
+        <li class="canvas-menu__dropdown">
+          <div style="display:flex;justify-content:space-between;align-items:center;">
+            <a href="products.html" class="canvas-nav__item">Products (All 6 Divisions)</a>
+          </div>
+          <ul class="canvas-sub-menu" style="display:block;padding-left:1rem;margin-top:0.4rem;">
+            <li><a href="products.html#leather-belts">01. Leather Belts (Tooled Western)</a></li>
+            <li><a href="products.html#beaded-belts">02. Beaded Belts (Tribal Aztec)</a></li>
+            <li><a href="products.html#kilim-bags">03. Kilim Bags &amp; Tapestry</a></li>
+            <li><a href="products.html#leather-bags">04. Handcrafted Leather Bags</a></li>
+            <li><a href="products.html#shoe-laces">05. Shoe Laces &amp; Boot Cords</a></li>
+            <li><a href="products.html#elastic-bands">06. Technical Elastic &amp; Webbing</a></li>
+          </ul>
+        </li>
+        <li><a href="contact-us.html" class="canvas-nav__item">Contact Us</a></li>
+      </ul>
+    </nav>
+    <div style="padding:1.5rem 2rem;border-top:1px solid #eee;font-size:0.82rem;line-height:1.7;">
+      <strong>Kanpur Direct Desk:</strong><br>
+      <a href="tel:9839086636" style="color:#c5a059;text-decoration:none;">+91 98390 86636</a> (Mr. Farhan Mirza)<br>
+      <a href="tel:7388814225" style="color:#c5a059;text-decoration:none;">+91 73888 14225</a> (Mr. Ayaan Mirza)
+    </div>
+  </div>
+</div>
+
+<!-- About Hero Banner -->
+<div class="about-hero-banner">
+  <img src="/images/hero.jpg" alt="Olympic Exports Kanpur Workshop" class="hero-cover">
+  <div class="container">
+    <div class="tagline">Est. 1994 &bull; Jajmau, Kanpur &bull; Govt. Recognized Export House</div>
+    <h1>Threaded With<br>Legacy</h1>
+    <div class="breadcrumb-row"><a href="index.html">Home</a> &rarr; About Us</div>
+  </div>
+</div>
+
+<!-- Heritage Story -->
+<section style="background:#fff;">
+  <div class="heritage-grid">
+    <div class="heritage-text">
+      <div class="kicker">Tracing the Roots of Olympic Exports</div>
+      <h2>Woven With Excellence</h2>
+      <p>The story of Olympic Exports Pvt. Ltd. is one of quiet, relentless craftsmanship — born in the historic leather quarter of Jajmau, Kanpur in 1994. From our foundational workshop on Defence Colony, we have grown into a premier Govt. Recognized Export House, supplying luxury leather goods and technical components to buyers across the United States, United Kingdom, Germany, France, and Australia.</p>
+      <p>Under the active stewardship of <strong>Managing Director Farhan Mirza</strong>, <strong>Director Rukhsaar Mirza</strong>, and <strong>Director Ayaan Mirza</strong>, we have maintained an uncompromising benchmark across all 6 manufacturing divisions — from hand-carved Western tooling belts and tribal Aztec beaded straps to handwoven Kilim tapestries, technical narrow fabrics, and custom footwear cordage.</p>
+      <p>Our location in Jajmau — India's premier leather processing epicenter — provides direct access to premium vegetable-tanned hides, generational tooling artisans, and the operational agility of a family-run atelier with full industrial export scale.</p>
+      <div style="margin-top:2rem;display:flex;gap:1rem;flex-wrap:wrap;">
+        <a href="products.html" class="eighth-button">Explore Products</a>
+        <a href="contact-us.html" class="eighth-button" style="background:#111;">Contact Export Desk</a>
+      </div>
+    </div>
+    <div class="heritage-img">
+      <img src="/images/leather-belts.jpg" alt="Leather craftsmanship at Olympic Exports workshop">
+    </div>
+  </div>
+</section>
+
+
+<!-- Leadership Section -->
+<section class="leadership-section" id="leadership">
+  <div class="container">
+    <div class="section-kicker">Directorate Desk</div>
+    <h2>The Mirza Family Leadership</h2>
+    <div class="row justify-content-center">
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="leader-card">
+          <div>
+            <div class="leader-avatar">FM</div>
+            <div class="name">Farhan Mirza</div>
+            <div class="role">Managing Director</div>
+            <p style="color:#aaa;font-size:0.875rem;line-height:1.7;">Chief executive leadership across Olympic Exports' manufacturing facilities in Jajmau, Kanpur. Directs master tannery relations, tooling supervision, quality control, and strategic global export operations.</p>
+          </div>
+          <div class="phone" style="margin-top:1.5rem;">
+            <a href="tel:+919839086636">+91 98390 86636</a>
+            <a href="mailto:Olympic.Mirza@yahoo.com">Olympic.Mirza@yahoo.com</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="leader-card">
+          <div>
+            <div class="leader-avatar">RM</div>
+            <div class="name">Rukhsaar Mirza</div>
+            <div class="role">Director</div>
+            <p style="color:#aaa;font-size:0.875rem;line-height:1.7;">Directs corporate administration, artisan development, design aesthetics, and compliance across Olympic Exports' manufacturing divisions, ensuring ethical standards and craft perfection.</p>
+          </div>
+          <div class="phone" style="margin-top:1.5rem;">
+            <a href="mailto:Olympic.Mirza@yahoo.com">Olympic.Mirza@yahoo.com</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="leader-card">
+          <div>
+            <div class="leader-avatar">AM</div>
+            <div class="name">Ayaan Mirza</div>
+            <div class="role">Director</div>
+            <p style="color:#aaa;font-size:0.875rem;line-height:1.7;">Leads international brand collaborations, buyer negotiations, custom OEM die developments, and private-label programs. Primary desk for line sheets, counter-sample decks, and global logistics.</p>
+          </div>
+          <div class="phone" style="margin-top:1.5rem;">
+            <a href="tel:+917388814225">+91 73888 14225</a>
+            <a href="mailto:Olympic.Mirza@yahoo.com">Olympic.Mirza@yahoo.com</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Timeline -->
+<section class="timeline-section">
+  <div class="container">
+    <div style="text-align:center;font-size:0.7rem;letter-spacing:0.25em;color:#c5a059;text-transform:uppercase;margin-bottom:0.75rem;font-weight:700;">Chronology of Growth</div>
+    <h2>Three Decades of Industrial Excellence</h2>
+    <div class="timeline">
+      <div class="timeline-item">
+        <div class="timeline-year">1994</div>
+        <div class="timeline-line"></div>
+        <div class="timeline-body">
+          <h4>Establishment in Jajmau, Kanpur</h4>
+          <p>Founded on Defence Colony as an artisanal manufacturing workshop dedicated to Western leather tooling belts, shoelaces, and saddlery hardware.</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-year">2003</div>
+        <div class="timeline-line"></div>
+        <div class="timeline-body">
+          <h4>Expansion into Narrow Fabrics &amp; Elastics</h4>
+          <p>Commissioned high-speed needle looms and braided cordage machinery to supply technical boot gussets, apparel waistbands, and glazed waxed cords.</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-year">2012</div>
+        <div class="timeline-line"></div>
+        <div class="timeline-body">
+          <h4>Tribal Beaded Inlays &amp; Kilim Tapestry Bags</h4>
+          <p>Integrated generational handloom weavers and bead artisans, launching our iconic Southwestern Kilim luggage and Aztec beaded belts export lines.</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-year">2020</div>
+        <div class="timeline-line"></div>
+        <div class="timeline-body">
+          <h4>High-Speed Needle Looms &amp; Technical Elastics</h4>
+          <p>Installed computer-controlled narrow-fabric looms and silicone-coating machinery to manufacture high-tensile technical webbings and jacquard elastics.</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-year">Present</div>
+        <div class="timeline-line"></div>
+        <div class="timeline-body">
+          <h4>Global B2B Export House</h4>
+          <p>Serving buying houses and boutique brands in 35+ countries with private label tooling dies, rapid 48-hour sample dispatches, and full REACH compliance.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Distinctions -->
+<section class="distinctions-section" id="certifications">
+  <div class="container">
+    <div style="text-align:center;font-size:0.7rem;letter-spacing:0.25em;color:#c5a059;text-transform:uppercase;margin-bottom:0.75rem;font-weight:700;">Quality Accreditations</div>
+    <h2>Why Global Buying Houses Partner With Us</h2>
+    <div class="distinction-grid">
+      <div class="distinction-card">
+        <div class="icon"><i class="fa fa-certificate"></i></div>
+        <h4>Govt. Recognized Export House</h4>
+        <p>Officially recognized status ensuring streamlined international customs clearing, FOB port handling, and certified export compliance.</p>
+      </div>
+      <div class="distinction-card">
+        <div class="icon"><i class="fa fa-leaf"></i></div>
+        <h4>REACH &amp; SVHC Compliance</h4>
+        <p>All leathers, dyes, metal hardware, and elastics are thoroughly tested for azo-free, chromium-free, and nickel-free European safety standards.</p>
+      </div>
+      <div class="distinction-card">
+        <div class="icon"><i class="fa fa-cogs"></i></div>
+        <h4>Bespoke OEM Tooling Dies</h4>
+        <p>In-house mold, die, and stamp development enabling brands to produce exclusive hardware and custom carved tooling patterns with confidential MOQs.</p>
+      </div>
+      <div class="distinction-card">
+        <div class="icon"><i class="fa fa-plane"></i></div>
+        <h4>48-Hour Sample Turnaround</h4>
+        <p>Counter-samples and physical line-sheet specimen swatches dispatched via DHL/FedEx Express directly from our Kanpur atelier.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Modern Clean Full-Width Luxury Footer (Standardized 4-Page System) -->
+<div class="go-top" id="goTopBtn" title="Back to Top"><i class="fa fa-chevron-up"></i></div>
+<footer class="modern-footer collection-footer footov">
+  <div class="container container--type-4">
+
+    <!-- Top Footer Horizontal Menu (Clean 4 Pages) -->
+    <div class="modern-footer__top-nav">
+      <ul class="modern-footer__menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="contact-us.html">Contact Us</a></li>
+      </ul>
+    </div>
+
+    <!-- 4-Column Luxury Corporate Ledger Grid -->
+    <div class="footer-lux-grid">
+
+      <!-- Column 1: Brand & Legacy -->
+      <div class="footer-col">
+        <a href="index.html" class="footer-brand-lockup" style="display:flex;align-items:center;gap:12px;text-decoration:none;">
+          <img src="/images/logo-dark-bg.png" alt="Olympic Exports Crest" class="footer-brand-logo-img" style="height:48px;">
+          <div>
+            <h4 class="footer-brand-title" style="margin:0;font-family:'Cinzel',serif;color:#fff;">OLYMPIC EXPORTS PVT. LTD.</h4>
+            <span style="font-size:0.75rem;color:#c9a96e;letter-spacing:0.1em;text-transform:uppercase;">Govt. Recognized Export House</span>
+          </div>
+        </a>
+        <p class="footer-heritage-desc" style="margin-top:1rem;font-size:0.86rem;line-height:1.75;color:#ccc;">
+          Established in 1994 in the historic leather hub of Kanpur. Manufacturing and exporting luxury hand-carved
+          tooling belts, beaded belts, Kilim bags, and technical narrow fabrics worldwide.
+        </p>
+      </div>
+
+      <!-- Column 2: 6 Integrated Manufacturing Divisions -->
+      <div class="footer-col">
+        <h5 class="footer-col-title" style="font-family:'Cinzel',serif;color:#c9a96e;font-size:0.85rem;letter-spacing:0.12em;margin-bottom:1.2rem;">MANUFACTURING DIVISIONS</h5>
+        <ul class="footer-links-list" style="list-style:none;padding:0;font-size:0.84rem;line-height:2;">
+          <li><a href="products.html#leather-belts">01. Hand-Carved Western Belts</a></li>
+          <li><a href="products.html#beaded-belts">02. Tribal Aztec Beaded Belts</a></li>
+          <li><a href="products.html#kilim-bags">03. Handwoven Kilim Tapestry Bags</a></li>
+          <li><a href="products.html#leather-bags">04. Handcrafted Full-Grain Bags</a></li>
+          <li><a href="products.html#shoe-laces">05. Waxed Shoelaces &amp; Boot Cords</a></li>
+          <li><a href="products.html#elastic-bands">06. Technical Elastic &amp; Webbing</a></li>
+        </ul>
+      </div>
+
+      <!-- Column 3: Global Export & Trade Services -->
+      <div class="footer-col">
+        <h5 class="footer-col-title" style="font-family:'Cinzel',serif;color:#c9a96e;font-size:0.85rem;letter-spacing:0.12em;margin-bottom:1.2rem;">EXPORT &amp; TRADE DESK</h5>
+        <ul class="footer-links-list" style="list-style:none;padding:0;font-size:0.84rem;line-height:2;">
+          <li><a href="about.html">Heritage &amp; Kanpur Factory Tour</a></li>
+          <li><a href="about.html#leadership">Leadership: Farhan &amp; Ayaan Mirza</a></li>
+          <li><a href="products.html">Integrated Product Divisions</a></li>
+          <li><a href="contact-us.html">Request Counter-Sample Deck</a></li>
+          <li><a href="contact-us.html">Custom Die &amp; Private Label RFQ</a></li>
+          <li><a href="about.html#certifications">REACH &amp; SVHC Compliance Standards</a></li>
+        </ul>
+      </div>
+
+      <!-- Column 4: Factory Atelier & Direct Contacts -->
+      <div class="footer-col">
+        <h5 class="footer-col-title" style="font-family:'Cinzel',serif;color:#c9a96e;font-size:0.85rem;letter-spacing:0.12em;margin-bottom:1.2rem;">KANPUR ATELIER &amp; CONTACT</h5>
+        <div class="footer-contact-block" style="font-size:0.84rem;line-height:1.75;color:#ccc;">
+          <div style="margin-bottom:0.75rem;">
+            <a href="https://maps.google.com/?q=56-D+Defence+Colony+Jajmau+Kanpur" target="_blank" style="color:#ddd;text-decoration:none;">
+              <strong>56-D, Defence Colony, Jajmau,</strong><br>
+              Kanpur &ndash; 208010, Uttar Pradesh, India
+            </a>
+          </div>
+          <div style="margin-bottom:0.75rem;">
+            <a href="tel:+919839086636" style="color:#e6c875;text-decoration:none;font-weight:600;">+91 98390 86636</a> <span style="font-size:0.72rem;color:#aaa;">(Mr. Farhan Mirza)</span><br>
+            <a href="tel:+917388814225" style="color:#e6c875;text-decoration:none;font-weight:600;">+91 73888 14225</a> <span style="font-size:0.72rem;color:#aaa;">(Mr. Ayaan Mirza)</span>
+          </div>
+          <div>
+            <a href="mailto:Olympic.Mirza@yahoo.com" style="color:#fff;text-decoration:none;">Olympic.Mirza@yahoo.com</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Copyright & Legal Compliance Bottom Bar -->
+    <div class="footer-bottom-bar" style="border-top:1px solid rgba(255,255,255,0.12);padding-top:1.5rem;margin-top:2.5rem;">
+      <div class="d-flex justify-content-between align-items-center flex-wrap gap-2" style="font-size:0.8rem;color:#aaa;">
+        <p style="margin:0;">&copy; 2026 Olympic Exports Pvt. Ltd. All Rights Reserved.</p>
+        <div class="footer-legal-links" style="display:flex;gap:15px;">
+          <a href="index.html" style="color:#aaa;text-decoration:none;">Home</a>
+          <span>&bull;</span>
+          <a href="about.html" style="color:#aaa;text-decoration:none;">About Us</a>
+          <span>&bull;</span>
+          <a href="products.html" style="color:#aaa;text-decoration:none;">Products</a>
+          <span>&bull;</span>
+          <a href="contact-us.html" style="color:#aaa;text-decoration:none;">Contact Us</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</footer>
+
+<script>
+  // Canvas Drawer toggle
+  document.addEventListener('DOMContentLoaded', function() {
+    const btnOpenMenu = document.getElementById('btnOpenMenu');
+    const btnCloseMenu = document.getElementById('btnCloseCanvasMenu');
+    const canvasMenu = document.getElementById('canvasMenu');
+    const canvasOverlay = document.getElementById('canvasMenuOverlay');
+
+    if (btnOpenMenu && canvasMenu) {
+      btnOpenMenu.addEventListener('click', function() {
+        canvasMenu.classList.add('active', 'open');
+        document.body.style.overflow = 'hidden';
+      });
+    }
+    if (btnCloseMenu && canvasMenu) {
+      btnCloseMenu.addEventListener('click', function() {
+        canvasMenu.classList.remove('active', 'open');
+        document.body.style.overflow = '';
+      });
+    }
+    if (canvasOverlay && canvasMenu) {
+      canvasOverlay.addEventListener('click', function() {
+        canvasMenu.classList.remove('active', 'open');
+        document.body.style.overflow = '';
+      });
+    }
+
+    const goTopBtn = document.getElementById('goTopBtn');
+    if (goTopBtn) {
+      window.addEventListener('scroll', function() {
+        if (window.scrollY > 400) {
+          goTopBtn.style.display = 'flex';
+        } else {
+          goTopBtn.style.display = 'none';
+        }
+      });
+      goTopBtn.addEventListener('click', function() {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      });
+    }
+  });
+</script>
+
+<script type="module" src="/src/main.js"></script>
+</body>
+</html>
