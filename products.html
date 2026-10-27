@@ -3080,7 +3080,55 @@
       document.getElementById('qvSku').textContent = 'SKU: ' + sku;
       document.getElementById('qvTitle').textContent = title;
       document.getElementById('qvCategory').textContent = category;
-      document.getElementById('qvImage').src = img;
+
+      // Robust image resolution across local dev, Vite build, and GitHub Pages subpaths:
+      const qvImg = document.getElementById('qvImage');
+      let loadedSrc = '';
+
+      // 1. Look for the already rendered and correctly resolved image on the product card
+      if (sku) {
+        try {
+          const cardImg = document.querySelector('[data-sku="' + sku.replace(/"/g, '\\"') + '"] img');
+          if (cardImg && (cardImg.currentSrc || cardImg.src)) {
+            loadedSrc = cardImg.currentSrc || cardImg.src;
+          }
+        } catch (e) {}
+      }
+
+      // 2. Fallback resolution if card image not in DOM or not yet loaded
+      if (!loadedSrc && img) {
+        if (/^https?:\/\//i.test(img)) {
+          loadedSrc = img;
+        } else if (img.startsWith('/')) {
+          const pathSegments = window.location.pathname.split('/').filter(Boolean);
+          // If running under a subfolder on GitHub Pages (e.g. /Olympic-Exports/products.html)
+          if (pathSegments.length > 1 || (pathSegments.length === 1 && !pathSegments[0].includes('.'))) {
+            const repoBase = '/' + pathSegments[0];
+            if (!img.startsWith(repoBase + '/')) {
+              loadedSrc = repoBase + img;
+            } else {
+              loadedSrc = img;
+            }
+          } else {
+            loadedSrc = img;
+          }
+        } else {
+          loadedSrc = img;
+        }
+      }
+
+      if (qvImg) {
+        qvImg.onerror = function () {
+          // If image failed to load, try relative fallback
+          if (img && this.src !== img) {
+            const cleanRel = img.replace(/^\/+/, '');
+            this.src = cleanRel;
+          }
+        };
+        qvImg.src = loadedSrc;
+        qvImg.alt = title;
+      }
+
       document.getElementById('qvDesc').textContent = desc;
       document.getElementById('qvMoq').textContent = moq;
       document.getElementById('qvLead').textContent = lead;
@@ -3095,6 +3143,9 @@
       document.getElementById('quickViewModal').classList.add('show');
       document.body.style.overflow = 'hidden';
     }
+
+    window.openQuickView = openQuickView;
+    window.closeQuickView = closeQuickView;
 
 
     // Military Leather Subcategory Filter
