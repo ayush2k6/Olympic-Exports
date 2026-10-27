@@ -694,6 +694,637 @@ const PRODUCTS = [
       leadTime: '20-25 Business Days'
     },
     tags: ['Messenger', 'Laptop Satchel', 'Business']
+  },
+
+  // =========================================================================
+  // DIVISION 7: MILITARY LEATHER & TACTICAL GEAR (33 MODELS)
+  // =========================================================================
+  {
+    id: 'mh-1',
+    sku: 'Product MH1',
+    name: 'Classic OWB Molded Leather Holster',
+    category: 'Military Leather',
+    industry: 'Defense, Tactical & Law Enforcement',
+    image: '/images/products/military-leather/gun-holsters/1.png',
+    summary: 'Hand-molded full-grain steerhide belt holster with reinforced mouth band for smooth one-handed re-holstering.',
+    specs: {
+      material: 'Full-Grain Kanpur Steerhide, Bonded Nylon Thread, Black/Coyote Tan',
+      dimensions: 'Custom Fit per Firearm Blueprint',
+      performance: 'Mil-spec reinforced rot-proof construction, high tensile wear resistance',
+      finish: 'Matte Tactical Black, Coyote Brown & Dark Tan',
+      hardware: 'Heavy-Duty Blackened Steel & Solid Brass Snaps',
+      moq: '50 Pieces',
+      leadTime: '15-20 Days'
+    },
+    tags: ["OWB Belt Holster", "Vegetable-Tanned", "9-10 oz Steerhide"]
+  },
+  {
+    id: 'mh-2',
+    sku: 'Product MH2',
+    name: 'Tactical Dual-Slot Belt Slide Holster',
+    category: 'Military Leather',
+    industry: 'Defense, Tactical & Law Enforcement',
+    image: '/images/products/military-leather/gun-holsters/2.png',
+    summary: 'Close-contour pancake design with twin belt slots for maximum concealment and optimal tactical weight distribution.',
+    specs: {
+      material: 'Vegetable-Tanned Cowhide, Hand-Burnished Edge, Matte Black',
+      dimensions: 'Custom Fit per Firearm Blueprint',
+      performance: 'Mil-spec reinforced rot-proof construction, high tensile wear resistance',
+      finish: 'Matte Tactical Black, Coyote Brown & Dark Tan',
+      hardware: 'Heavy-Duty Blackened Steel & Solid Brass Snaps',
+      moq: '50 Pieces',
+      leadTime: '15-20 Days'
+    },
+    tags: ["Pancake Style", "Dual Slot", "Full Grain"]
+  },
+  {
+    id: 'mh-3',
+    sku: 'Product MH3',
+    name: 'Thumb-Break Service Duty Holster',
+    category: 'Military Leather',
+    industry: 'Defense, Tactical & Law Enforcement',
+    image: '/images/products/military-leather/gun-holsters/3.png',
+    summary: 'Heavy-duty security holster with reinforced steel-insert thumb-break retention strap and covered trigger guard.',
+    specs: {
+      material: '10 oz Bridle Leather, Steel Reinforced Thumb Break, Blackened Hardware',
+      dimensions: 'Custom Fit per Firearm Blueprint',
+      performance: 'Mil-spec reinforced rot-proof construction, high tensile wear resistance',
+      finish: 'Matte Tactical Black, Coyote Brown & Dark Tan',
+      hardware: 'Heavy-Duty Blackened Steel & Solid Brass Snaps',
+      moq: '50 Pieces',
+      leadTime: '15 Business Days'
+    },
+    tags: ["Thumb-Break", "Duty Holster", "Reinforced Spine"]
+  },
+  {
+    id: 'mh-4',
+    sku: 'Product MH4',
+    name: 'Concealed Carry IWB Leather Holster',
+    category: 'Military Leather',
+    industry: 'Defense, Tactical & Law Enforcement',
+    image: '/images/products/military-leather/gun-holsters/4.png',
+    summary: 'Ultra-slim inside-the-waistband profile with tempered spring-steel clip and protective body shield against perspiration.',
+    specs: {
+      material: '7-8 oz Supple Steerhide, Tempered Steel Clip, Hand-Molded',
+      dimensions: 'Custom Fit per Firearm Blueprint',
+      performance: 'Mil-spec reinforced rot-proof construction, high tensile wear resistance',
+      finish: 'Matte Tactical Black, Coyote Brown & Dark Tan',
+      hardware: 'Heavy-Duty Blackened Steel & Solid Brass Snaps',
+      moq: '100 Pieces',
+      leadTime: '12-15 Days'
+    },
+    tags: ["IWB Concealed", "Spring Clip", "Sweat Shield"]
+  },
+  {
+    id: 'mh-5',
+    sku: 'Product MH5',
+    name: 'Tactical Vertical Shoulder Rig Holster',
+    category: 'Military Leather',
+    industry: 'Defense, Tactical & Law Enforcement',
+    image: '/images/products/military-leather/gun-holsters/5.png',
+    summary: 'Adjustable leather 4-point harness system with vertical firearm scabbard and dual counterbalanced magazine pouch.',
+    specs: {
+      material: 'Full Harness Leather, Solid Brass Snaps, Modular Tie-Downs',
+      dimensions: 'Custom Fit per Firearm Blueprint',
+      performance: 'Mil-spec reinforced rot-proof construction, high tensile wear resistance',
+      finish: 'Matte Tactical Black, Coyote Brown & Dark Tan',
+      hardware: 'Heavy-Duty Blackened Steel & Solid Brass Snaps',
+      moq: '40 Systems',
+      leadTime: '20 Business Days'
+    },
+    tags: ["Shoulder Rig", "Mag Pouch", "Full Harness"]
+  },
+  {
+    id: 'mh-6',
+    sku: 'Product MH6',
+    name: 'Western Field Quick-Draw Leather Holster',
+    category: 'Military Leather',
+    industry: 'Defense, Tactical & Law Enforcement',
+    image: '/images/products/military-leather/gun-holsters/6.png',
+    summary: 'Heritage open-top holster sculpted with heavy perimeter border tooling, hammer retention thong, and leg tie slot.',
+    specs: {
+      material: '9-10 oz Heavy Saddle Leather, Rawhide Hammer Thong, Saddle Tan',
+      dimensions: 'Custom Fit per Firearm Blueprint',
+      performance: 'Mil-spec reinforced rot-proof construction, high tensile wear resistance',
+      finish: 'Matte Tactical Black, Coyote Brown & Dark Tan',
+      hardware: 'Heavy-Duty Blackened Steel & Solid Brass Snaps',
+      moq: '50 Pieces',
+      leadTime: '15 Business Days'
+    },
+    tags: ["Open Top", "Hammer Thong", "Hand-Burnished"]
+  },
+  {
+    id: 'mh-7',
+    sku: 'Product MH7',
+    name: 'Cross-Draw Driving Leather Holster',
+    category: 'Military Leather',
+    industry: 'Defense, Tactical & Law Enforcement',
+    image: '/images/products/military-leather/gun-holsters/7.png',
+    summary: 'Angled forward-cant holster engineered for rapid vehicle access, mounted patrol, and seated tactical draw.',
+    specs: {
+      material: '8-9 oz Steerhide, Reinforced Belt Loop, Deep Havana Brown',
+      dimensions: 'Custom Fit per Firearm Blueprint',
+      performance: 'Mil-spec reinforced rot-proof construction, high tensile wear resistance',
+      finish: 'Matte Tactical Black, Coyote Brown & Dark Tan',
+      hardware: 'Heavy-Duty Blackened Steel & Solid Brass Snaps',
+      moq: '50 Pieces',
+      leadTime: '15 Business Days'
+    },
+    tags: ["Cross-Draw", "Forward Cant", "Vehicle Duty"]
+  },
+  {
+    id: 'mh-8',
+    sku: 'Product MH8',
+    name: 'Reinforced Combat Drop Holster',
+    category: 'Military Leather',
+    industry: 'Defense, Tactical & Law Enforcement',
+    image: '/images/products/military-leather/gun-holsters/8.png',
+    summary: 'Extended ride tactical drop holster with reinforced leather shank, thigh-strap slots, and dual retention.',
+    specs: {
+      material: 'Multi-Layered Steerhide, Mil-Spec Hardware, Matte Tactical Finish',
+      dimensions: 'Custom Fit per Firearm Blueprint',
+      performance: 'Mil-spec reinforced rot-proof construction, high tensile wear resistance',
+      finish: 'Matte Tactical Black, Coyote Brown & Dark Tan',
+      hardware: 'Heavy-Duty Blackened Steel & Solid Brass Snaps',
+      moq: '50 Pieces',
+      leadTime: '18 Business Days'
+    },
+    tags: ["Extended Ride", "Thigh Tie", "Tactical Combat"]
+  },
+  {
+    id: 'mh-9',
+    sku: 'Product MH9',
+    name: 'Compact Snub-Nose Pocket Holster',
+    category: 'Military Leather',
+    industry: 'Defense, Tactical & Law Enforcement',
+    image: '/images/products/military-leather/gun-holsters/9.png',
+    summary: 'Rough-out exterior texture keeping the holster anchored in pocket while weapon draws cleanly without snagging.',
+    specs: {
+      material: 'Rough-Out Cowhide, Smooth Interior, Anti-Print Design',
+      dimensions: 'Custom Fit per Firearm Blueprint',
+      performance: 'Mil-spec reinforced rot-proof construction, high tensile wear resistance',
+      finish: 'Matte Tactical Black, Coyote Brown & Dark Tan',
+      hardware: 'Heavy-Duty Blackened Steel & Solid Brass Snaps',
+      moq: '100 Pieces',
+      leadTime: '12 Business Days'
+    },
+    tags: ["Pocket Carry", "Rough-Out", "Snub-Nose"]
+  },
+  {
+    id: 'mh-10',
+    sku: 'Product MH10',
+    name: 'Flap-Over Military Service Holster',
+    category: 'Military Leather',
+    industry: 'Defense, Tactical & Law Enforcement',
+    image: '/images/products/military-leather/gun-holsters/10.png',
+    summary: 'Full-closure protective leather flap holster guarding sidearm against sand, water, and harsh field combat conditions.',
+    specs: {
+      material: '10 oz Heavy Bridle Leather, Mil-Spec Stud Closure, Olive/Black',
+      dimensions: 'Custom Fit per Firearm Blueprint',
+      performance: 'Mil-spec reinforced rot-proof construction, high tensile wear resistance',
+      finish: 'Matte Tactical Black, Coyote Brown & Dark Tan',
+      hardware: 'Heavy-Duty Blackened Steel & Solid Brass Snaps',
+      moq: '60 Pieces',
+      leadTime: '15-18 Days'
+    },
+    tags: ["Full Flap", "Mil-Spec", "Field Defense"]
+  },
+  {
+    id: 'mh-11',
+    sku: 'Product MH11',
+    name: 'Artisan Hand-Carved Floral Holster',
+    category: 'Military Leather',
+    industry: 'Defense, Tactical & Law Enforcement',
+    image: '/images/products/military-leather/gun-holsters/11.png',
+    summary: 'Master artisan carved floral relief tooling on 10 oz saddle leather with antique hand-rubbed two-tone patina.',
+    specs: {
+      material: '10 oz Vegetable Tanned Steerhide, Hand-Carved Relief, Two-Tone Brown',
+      dimensions: 'Custom Fit per Firearm Blueprint',
+      performance: 'Mil-spec reinforced rot-proof construction, high tensile wear resistance',
+      finish: 'Matte Tactical Black, Coyote Brown & Dark Tan',
+      hardware: 'Heavy-Duty Blackened Steel & Solid Brass Snaps',
+      moq: '40 Pieces',
+      leadTime: '20 Business Days'
+    },
+    tags: ["Floral Carved", "Master Tooling", "Collector Grade"]
+  },
+  {
+    id: 'mb-1',
+    sku: 'Product MB1',
+    name: 'Heavy Bridle 50-Round Bullet Carrier',
+    category: 'Military Leather',
+    industry: 'Defense, Tactical & Law Enforcement',
+    image: '/images/products/military-leather/bullet-box/1.png',
+    summary: 'Rigid full-grain saddle leather ammo box with internal caliber dividers, reinforced corners, and heavy brass clasp.',
+    specs: {
+      material: '9-11 oz Bridle Leather, Solid Brass Clasp, 9mm/.45 ACP Compatible',
+      dimensions: 'Caliber Specific 9mm/.45/12GA',
+      performance: 'Mil-spec reinforced rot-proof construction, high tensile wear resistance',
+      finish: 'Matte Tactical Black, Coyote Brown & Dark Tan',
+      hardware: 'Heavy-Duty Blackened Steel & Solid Brass Snaps',
+      moq: '80 Pieces',
+      leadTime: '15 Business Days'
+    },
+    tags: ["50-Round", "Molded Dividers", "Solid Brass Clasp"]
+  },
+  {
+    id: 'mb-2',
+    sku: 'Product MB2',
+    name: 'Vintage Military Cartridge Pouch',
+    category: 'Military Leather',
+    industry: 'Defense, Tactical & Law Enforcement',
+    image: '/images/products/military-leather/bullet-box/2.png',
+    summary: 'Twin-compartment field ammunition carrier with quick-release pull tab and reinforced belt loop backing.',
+    specs: {
+      material: '8 oz Steerhide, Heavy Copper Rivets, Antique Tan',
+      dimensions: 'Caliber Specific 9mm/.45/12GA',
+      performance: 'Mil-spec reinforced rot-proof construction, high tensile wear resistance',
+      finish: 'Matte Tactical Black, Coyote Brown & Dark Tan',
+      hardware: 'Heavy-Duty Blackened Steel & Solid Brass Snaps',
+      moq: '100 Pieces',
+      leadTime: '14 Business Days'
+    },
+    tags: ["Twin Chamber", "Quick Release", "Belt Mounted"]
+  },
+  {
+    id: 'mb-3',
+    sku: 'Product MB3',
+    name: 'Tactical 12-Gauge Shell Carrier Box',
+    category: 'Military Leather',
+    industry: 'Defense, Tactical & Law Enforcement',
+    image: '/images/products/military-leather/bullet-box/3.png',
+    summary: 'Reinforced box designed for 25 shotgun shells with weather-proof overlap lid and heavy-duty steel hardware.',
+    specs: {
+      material: '10 oz Oiled Steerhide, Weatherproof Overlap, 25-Shell Capacity',
+      dimensions: 'Caliber Specific 9mm/.45/12GA',
+      performance: 'Mil-spec reinforced rot-proof construction, high tensile wear resistance',
+      finish: 'Matte Tactical Black, Coyote Brown & Dark Tan',
+      hardware: 'Heavy-Duty Blackened Steel & Solid Brass Snaps',
+      moq: '80 Pieces',
+      leadTime: '15 Business Days'
+    },
+    tags: ["12 Gauge", "Weatherproof Lid", "Heavy Rivets"]
+  },
+  {
+    id: 'mb-4',
+    sku: 'Product MB4',
+    name: 'Belt-Mounted Speed-Ammo Carrier',
+    category: 'Military Leather',
+    industry: 'Defense, Tactical & Law Enforcement',
+    image: '/images/products/military-leather/bullet-box/4.png',
+    summary: 'Ergonomic curved hip carrier holding caliber trays for fast tactical reloading on the range and field operations.',
+    specs: {
+      material: 'Molded Leather Shell, Suede Lining, Quick-Action Stud Closure',
+      dimensions: 'Caliber Specific 9mm/.45/12GA',
+      performance: 'Mil-spec reinforced rot-proof construction, high tensile wear resistance',
+      finish: 'Matte Tactical Black, Coyote Brown & Dark Tan',
+      hardware: 'Heavy-Duty Blackened Steel & Solid Brass Snaps',
+      moq: '100 Pieces',
+      leadTime: '12 Business Days'
+    },
+    tags: ["Hip Curved", "Speed Reload", "Reinforced Base"]
+  },
+  {
+    id: 'mb-5',
+    sku: 'Product MB5',
+    name: 'Archival Field Ammo Caddy Box',
+    category: 'Military Leather',
+    industry: 'Defense, Tactical & Law Enforcement',
+    image: '/images/products/military-leather/bullet-box/5.png',
+    summary: 'Thick 11 oz buffalo leather casing with riveted brass corners, carrying handle, and pad-lockable brass hasp.',
+    specs: {
+      material: '11 oz Full-Grain Buffalo Leather, Brass Corner Guards, Leather Handle',
+      dimensions: 'Caliber Specific 9mm/.45/12GA',
+      performance: 'Mil-spec reinforced rot-proof construction, high tensile wear resistance',
+      finish: 'Matte Tactical Black, Coyote Brown & Dark Tan',
+      hardware: 'Heavy-Duty Blackened Steel & Solid Brass Snaps',
+      moq: '50 Pieces',
+      leadTime: '18 Business Days'
+    },
+    tags: ["Archival Caddy", "Brass Corners", "Carry Handle"]
+  },
+  {
+    id: 'mk-1',
+    sku: 'Product MK1',
+    name: 'Combat Fixed-Blade Leather Sheath',
+    category: 'Military Leather',
+    industry: 'Defense, Tactical & Law Enforcement',
+    image: '/images/products/military-leather/knife-covers/1.png',
+    summary: 'Full-grain steerhide scabbard with integrated blade welt, snap retention strap, and heavy 2.5-inch belt loop.',
+    specs: {
+      material: '9-10 oz Steerhide, Internal Leather Welt, Matte Tactical Black',
+      dimensions: 'Blade Lengths 4" to 12" Custom Fit',
+      performance: 'Mil-spec reinforced rot-proof construction, high tensile wear resistance',
+      finish: 'Matte Tactical Black, Coyote Brown & Dark Tan',
+      hardware: 'Heavy-Duty Blackened Steel & Solid Brass Snaps',
+      moq: '100 Pieces',
+      leadTime: '12-15 Days'
+    },
+    tags: ["Fixed Blade", "Blade Welt", "Snap Retention"]
+  },
+  {
+    id: 'mk-2',
+    sku: 'Product MK2',
+    name: 'Scout-Carry Horizontal Knife Sheath',
+    category: 'Military Leather',
+    industry: 'Defense, Tactical & Law Enforcement',
+    image: '/images/products/military-leather/knife-covers/2.png',
+    summary: 'Low-profile horizontal belt-carry sheath with dual snap loops for ambidextrous lumbar tactical draw.',
+    specs: {
+      material: '8 oz Steerhide, Twin Belt Straps with Mil-Spec Snaps, Coyote Brown',
+      dimensions: 'Blade Lengths 4" to 12" Custom Fit',
+      performance: 'Mil-spec reinforced rot-proof construction, high tensile wear resistance',
+      finish: 'Matte Tactical Black, Coyote Brown & Dark Tan',
+      hardware: 'Heavy-Duty Blackened Steel & Solid Brass Snaps',
+      moq: '100 Pieces',
+      leadTime: '14 Business Days'
+    },
+    tags: ["Scout Carry", "Horizontal Draw", "Dual Loop"]
+  },
+  {
+    id: 'mk-3',
+    sku: 'Product MK3',
+    name: 'Bushcraft Sheath with Firesteel Loop',
+    category: 'Military Leather',
+    industry: 'Defense, Tactical & Law Enforcement',
+    image: '/images/products/military-leather/knife-covers/3.png',
+    summary: 'Heavy survival knife scabbard featuring side-mounted ferrocerium rod sleeve and leg tie paracord eyelet.',
+    specs: {
+      material: '10 oz Vegetable Tanned Leather, Ferro Rod Loop, Brass Riveted',
+      dimensions: 'Blade Lengths 4" to 12" Custom Fit',
+      performance: 'Mil-spec reinforced rot-proof construction, high tensile wear resistance',
+      finish: 'Matte Tactical Black, Coyote Brown & Dark Tan',
+      hardware: 'Heavy-Duty Blackened Steel & Solid Brass Snaps',
+      moq: '100 Pieces',
+      leadTime: '14 Business Days'
+    },
+    tags: ["Survival", "Firesteel Sleeve", "Leg Tie Eyelet"]
+  },
+  {
+    id: 'mk-4',
+    sku: 'Product MK4',
+    name: 'Dangler Tactical Hunting Knife Sheath',
+    category: 'Military Leather',
+    industry: 'Defense, Tactical & Law Enforcement',
+    image: '/images/products/military-leather/knife-covers/4.png',
+    summary: 'Deep-pouch friction fit sheath suspended from a heavy brass D-ring dangler for seated comfort in vehicles.',
+    specs: {
+      material: 'Saddle Tan Leather, Solid Brass Dangler Ring, Triple Stitched',
+      dimensions: 'Blade Lengths 4" to 12" Custom Fit',
+      performance: 'Mil-spec reinforced rot-proof construction, high tensile wear resistance',
+      finish: 'Matte Tactical Black, Coyote Brown & Dark Tan',
+      hardware: 'Heavy-Duty Blackened Steel & Solid Brass Snaps',
+      moq: '100 Pieces',
+      leadTime: '12 Business Days'
+    },
+    tags: ["Dangler Style", "Friction Fit", "Brass D-Ring"]
+  },
+  {
+    id: 'mk-5',
+    sku: 'Product MK5',
+    name: 'Heavy Bowie Knife Leather Scabbard',
+    category: 'Military Leather',
+    industry: 'Defense, Tactical & Law Enforcement',
+    image: '/images/products/military-leather/knife-covers/5.png',
+    summary: 'Reinforced scabbard for 10-12 inch heavy blades with triple-stitched protective welting and copper rivets.',
+    specs: {
+      material: '11 oz Saddle Leather, Copper Burrs, Double Retention Straps',
+      dimensions: 'Blade Lengths 4" to 12" Custom Fit',
+      performance: 'Mil-spec reinforced rot-proof construction, high tensile wear resistance',
+      finish: 'Matte Tactical Black, Coyote Brown & Dark Tan',
+      hardware: 'Heavy-Duty Blackened Steel & Solid Brass Snaps',
+      moq: '80 Pieces',
+      leadTime: '15 Business Days'
+    },
+    tags: ["Bowie Grade", "Triple Stitched", "Copper Rivets"]
+  },
+  {
+    id: 'mk-6',
+    sku: 'Product MK6',
+    name: 'Tooled Heritage Leather Dagger Sheath',
+    category: 'Military Leather',
+    industry: 'Defense, Tactical & Law Enforcement',
+    image: '/images/products/military-leather/knife-covers/6.png',
+    summary: 'Hand-incised basketweave pattern with antique mahogany finish, drainage hole, and protective welted edge.',
+    specs: {
+      material: 'Hand-Stamped Basketweave, Moisture Drainage Eyelet, Antique Mahogany',
+      dimensions: 'Blade Lengths 4" to 12" Custom Fit',
+      performance: 'Mil-spec reinforced rot-proof construction, high tensile wear resistance',
+      finish: 'Matte Tactical Black, Coyote Brown & Dark Tan',
+      hardware: 'Heavy-Duty Blackened Steel & Solid Brass Snaps',
+      moq: '100 Pieces',
+      leadTime: '15 Business Days'
+    },
+    tags: ["Basketweave", "Drainage Port", "Antique Mahogany"]
+  },
+  {
+    id: 'ms-1',
+    sku: 'Product MS1',
+    name: 'Tactical 8-Inch Combat Patrol Boot',
+    category: 'Military Leather',
+    industry: 'Defense, Tactical & Law Enforcement',
+    image: '/images/products/military-leather/tactical-boots/1.png',
+    summary: 'Waterproof full-grain steerhide upper paired with oil-resistant lugged rubber outsole and padded suede collar.',
+    specs: {
+      material: 'Waterproof Steerhide, Oil-Resistant Rubber Outsole, Full Size Curve',
+      dimensions: 'Standard EU/US Combat Size Curve',
+      performance: 'Mil-spec reinforced rot-proof construction, high tensile wear resistance',
+      finish: 'Matte Tactical Black, Coyote Brown & Dark Tan',
+      hardware: 'Heavy-Duty Blackened Steel & Solid Brass Snaps',
+      moq: '100 Pairs',
+      leadTime: '25-30 Days'
+    },
+    tags: ["8-Inch Upper", "Lugged Outsole", "Goodyear Welted"]
+  },
+  {
+    id: 'ms-2',
+    sku: 'Product MS2',
+    name: 'Field Duty Desert Tactical Leather Boot',
+    category: 'Military Leather',
+    industry: 'Defense, Tactical & Law Enforcement',
+    image: '/images/products/military-leather/tactical-boots/2.png',
+    summary: 'Breathable desert suede and buffed cowhide boot engineered for high-heat terrain with speed-lacing eyelets.',
+    specs: {
+      material: 'Roughout Desert Suede, Speed Eyelets, Anti-Microbial Lining',
+      dimensions: 'Standard EU/US Combat Size Curve',
+      performance: 'Mil-spec reinforced rot-proof construction, high tensile wear resistance',
+      finish: 'Matte Tactical Black, Coyote Brown & Dark Tan',
+      hardware: 'Heavy-Duty Blackened Steel & Solid Brass Snaps',
+      moq: '100 Pairs',
+      leadTime: '25-30 Days'
+    },
+    tags: ["Desert Suede", "Speed Lacing", "Shock Absorbent"]
+  },
+  {
+    id: 'ms-l1',
+    sku: 'Product MSL1',
+    name: 'Padded Military Leather Rifle Sling',
+    category: 'Military Leather',
+    industry: 'Defense, Tactical & Law Enforcement',
+    image: '/images/products/military-leather/rifle-slings/1.png',
+    summary: 'Tapered contour leather rifle sling with dense internal closed-cell foam padding and non-slip suede lining.',
+    specs: {
+      material: '9 oz Bridle Leather, Closed-Cell Foam, Blackened Steel Swivels',
+      dimensions: '1" - 1.25" Width | Adjustable 34"-48"',
+      performance: 'Mil-spec reinforced rot-proof construction, high tensile wear resistance',
+      finish: 'Matte Tactical Black, Coyote Brown & Dark Tan',
+      hardware: 'Heavy-Duty Blackened Steel & Solid Brass Snaps',
+      moq: '100 Pieces',
+      leadTime: '15 Business Days'
+    },
+    tags: ["Padded Shoulder", "Suede Lined", "Mil-Spec Swivel"]
+  },
+  {
+    id: 'ms-l2',
+    sku: 'Product MSL2',
+    name: 'Cobra Wide-Flare Tactical Rifle Strap',
+    category: 'Military Leather',
+    industry: 'Defense, Tactical & Law Enforcement',
+    image: '/images/products/military-leather/rifle-slings/2.png',
+    summary: 'Classic flared cobra shape distributing weight evenly across shoulder during long field marches and patrol duty.',
+    specs: {
+      material: 'Wide 2.5" Shoulder Flare, Knurled Chicago Screws, Havana Brown',
+      dimensions: '1" - 1.25" Width | Adjustable 34"-48"',
+      performance: 'Mil-spec reinforced rot-proof construction, high tensile wear resistance',
+      finish: 'Matte Tactical Black, Coyote Brown & Dark Tan',
+      hardware: 'Heavy-Duty Blackened Steel & Solid Brass Snaps',
+      moq: '100 Pieces',
+      leadTime: '14 Business Days'
+    },
+    tags: ["Cobra Shape", "Weight Distributing", "Chicago Screws"]
+  },
+  {
+    id: 'ms-l3',
+    sku: 'Product MSL3',
+    name: 'Heavy Bridle 2-Point Combat Sling',
+    category: 'Military Leather',
+    industry: 'Defense, Tactical & Law Enforcement',
+    image: '/images/products/military-leather/rifle-slings/3.png',
+    summary: '1.25-inch wide solid bridle leather strap with rapid-adjust slide buckle and double heavy brass keepers.',
+    specs: {
+      material: '1.25" Bridle Leather, Solid Brass Slide Buckle, Matte Black',
+      dimensions: '1" - 1.25" Width | Adjustable 34"-48"',
+      performance: 'Mil-spec reinforced rot-proof construction, high tensile wear resistance',
+      finish: 'Matte Tactical Black, Coyote Brown & Dark Tan',
+      hardware: 'Heavy-Duty Blackened Steel & Solid Brass Snaps',
+      moq: '100 Pieces',
+      leadTime: '12 Business Days'
+    },
+    tags: ["2-Point Combat", "Rapid Adjust", "Double Keepers"]
+  },
+  {
+    id: 'ms-l4',
+    sku: 'Product MSL4',
+    name: 'Embossed Western Basketweave Rifle Sling',
+    category: 'Military Leather',
+    industry: 'Defense, Tactical & Law Enforcement',
+    image: '/images/products/military-leather/rifle-slings/4.png',
+    summary: 'Traditional basketweave stamped steerhide with hand-dyed dark edges and heavy-duty mil-spec steel swivels.',
+    specs: {
+      material: 'Stamped Basketweave Steerhide, Hand-Burnished Edges, Saddle Tan',
+      dimensions: '1" - 1.25" Width | Adjustable 34"-48"',
+      performance: 'Mil-spec reinforced rot-proof construction, high tensile wear resistance',
+      finish: 'Matte Tactical Black, Coyote Brown & Dark Tan',
+      hardware: 'Heavy-Duty Blackened Steel & Solid Brass Snaps',
+      moq: '80 Pieces',
+      leadTime: '15 Business Days'
+    },
+    tags: ["Basketweave", "Hand-Dyed", "Heavy Steel"]
+  },
+  {
+    id: 'ms-l5',
+    sku: 'Product MSL5',
+    name: 'Tactical Thumb-Hole Shooting Sling',
+    category: 'Military Leather',
+    industry: 'Defense, Tactical & Law Enforcement',
+    image: '/images/products/military-leather/rifle-slings/5.png',
+    summary: 'Ergonomically placed integrated thumb loop providing steady rifle control during offhand firing and rough terrain.',
+    specs: {
+      material: 'Reinforced Thumb Loop, Double Edge Stitching, Antique Tan',
+      dimensions: '1" - 1.25" Width | Adjustable 34"-48"',
+      performance: 'Mil-spec reinforced rot-proof construction, high tensile wear resistance',
+      finish: 'Matte Tactical Black, Coyote Brown & Dark Tan',
+      hardware: 'Heavy-Duty Blackened Steel & Solid Brass Snaps',
+      moq: '100 Pieces',
+      leadTime: '14 Business Days'
+    },
+    tags: ["Thumb Loop", "Stability Control", "Saddle Stitched"]
+  },
+  {
+    id: 'ms-l6',
+    sku: 'Product MSL6',
+    name: 'Quick-Detach Mil-Spec Carbine Sling',
+    category: 'Military Leather',
+    industry: 'Defense, Tactical & Law Enforcement',
+    image: '/images/products/military-leather/rifle-slings/6.png',
+    summary: 'Heavy oiled buffalo leather paired with quick-release push-button QD swivels for rapid rifle detachment.',
+    specs: {
+      material: 'Oiled Buffalo Hide, Push-Button QD Swivels, Tactical Coyote',
+      dimensions: '1" - 1.25" Width | Adjustable 34"-48"',
+      performance: 'Mil-spec reinforced rot-proof construction, high tensile wear resistance',
+      finish: 'Matte Tactical Black, Coyote Brown & Dark Tan',
+      hardware: 'Heavy-Duty Blackened Steel & Solid Brass Snaps',
+      moq: '100 Pieces',
+      leadTime: '14 Business Days'
+    },
+    tags: ["Quick Detach", "Oiled Buffalo", "Carbine Strap"]
+  },
+  {
+    id: 'ms-l7',
+    sku: 'Product MSL7',
+    name: 'Braided Leather Trim Hunting Sling',
+    category: 'Military Leather',
+    industry: 'Defense, Tactical & Law Enforcement',
+    image: '/images/products/military-leather/rifle-slings/7.png',
+    summary: 'Hand-laced calfskin side braid along 10 oz bridle leather core with non-slip textured back lining.',
+    specs: {
+      material: 'Hand-Braided Accent Lacing, 10 oz Core, Rich Walnut Finish',
+      dimensions: '1" - 1.25" Width | Adjustable 34"-48"',
+      performance: 'Mil-spec reinforced rot-proof construction, high tensile wear resistance',
+      finish: 'Matte Tactical Black, Coyote Brown & Dark Tan',
+      hardware: 'Heavy-Duty Blackened Steel & Solid Brass Snaps',
+      moq: '80 Pieces',
+      leadTime: '18 Business Days'
+    },
+    tags: ["Braided Lacing", "Non-Slip", "Bridle Leather"]
+  },
+  {
+    id: 'ms-l8',
+    sku: 'Product MSL8',
+    name: 'Reinforced Sniper Long-Gun Sling',
+    category: 'Military Leather',
+    industry: 'Defense, Tactical & Law Enforcement',
+    image: '/images/products/military-leather/rifle-slings/8.png',
+    summary: 'Double-layered 1.5-inch heavy harness leather strap engineered for heavy scoped rifles and precision matches.',
+    specs: {
+      material: '1.5" Harness Leather, Double-Layer Laminated, Heavy Duty Hardware',
+      dimensions: '1" - 1.25" Width | Adjustable 34"-48"',
+      performance: 'Mil-spec reinforced rot-proof construction, high tensile wear resistance',
+      finish: 'Matte Tactical Black, Coyote Brown & Dark Tan',
+      hardware: 'Heavy-Duty Blackened Steel & Solid Brass Snaps',
+      moq: '60 Pieces',
+      leadTime: '15 Business Days'
+    },
+    tags: ["Sniper Grade", "1.5\" Width", "Double Layered"]
+  },
+  {
+    id: 'ms-l9',
+    sku: 'Product MSL9',
+    name: 'Minimalist Lightweight Scout Rifle Sling',
+    category: 'Military Leather',
+    industry: 'Defense, Tactical & Law Enforcement',
+    image: '/images/products/military-leather/rifle-slings/9.png',
+    summary: 'Clean single-ply 1-inch oil-treated latigo leather strap with knurled Chicago screws and burnished edges.',
+    specs: {
+      material: '1" Oil-Tanned Latigo Leather, Knurled Fasteners, Raw Edge Burnish',
+      dimensions: '1" - 1.25" Width | Adjustable 34"-48"',
+      performance: 'Mil-spec reinforced rot-proof construction, high tensile wear resistance',
+      finish: 'Matte Tactical Black, Coyote Brown & Dark Tan',
+      hardware: 'Heavy-Duty Blackened Steel & Solid Brass Snaps',
+      moq: '120 Pieces',
+      leadTime: '10 Business Days'
+    },
+    tags: ["Minimalist 1\"", "Latigo Leather", "Field Burnished"]
   }
 ];
 
@@ -1544,7 +2175,7 @@ function initCatalogueDownload() {
         textContent += `Requested by: ${name} | ${company} (${email})\n`;
         textContent += `Date of Generation: ${new Date().toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}\n\n`;
         textContent += `--------------------------------------------------------------------------------\n`;
-        textContent += `COMPLETE MANUFACTURING SPECIFICATIONS MATRIX BY DIVISION (35 MODELS)\n`;
+        textContent += `COMPLETE MANUFACTURING SPECIFICATIONS MATRIX BY DIVISION (68 MODELS)\n`;
         textContent += `--------------------------------------------------------------------------------\n\n`;
 
         PRODUCTS.forEach((p, idx) => {
