@@ -93,15 +93,28 @@
     .heritage-img img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
 
     /* Leaders Section */
-    .leadership-section { background: #0b0e14; color: #fff; padding: 6rem 0; border-top: 1px solid rgba(197, 160, 89, 0.2); border-bottom: 1px solid rgba(197, 160, 89, 0.2); }
-    .leadership-section .section-kicker { font-size: 0.7rem; letter-spacing: 0.25em; text-transform: uppercase; color: #c5a059; text-align: center; margin-bottom: 1rem; font-weight: 700; }
-    .leadership-section h2 { font-family: 'Cinzel', serif; font-size: 2.5rem; text-align: center; color: #fff; margin-bottom: 4rem; }
-    .leader-card { background: #0f172a; border: 1px solid rgba(197,160,89,0.25); padding: 2.25rem 1.5rem; border-radius: 4px; text-align: center; height: 100%; box-shadow: 0 10px 30px rgba(0,0,0,0.25); display: flex; flex-direction: column; justify-content: space-between; }
-    .leader-card .name { font-family: 'Cinzel', serif; font-size: 1.35rem; color: #fff; margin-bottom: 0.5rem; }
-    .leader-card .role { color: #c5a059; font-size: 0.8rem; letter-spacing: 0.15em; text-transform: uppercase; margin-bottom: 1.25rem; font-weight: 600; }
-    .leader-card .phone a { color: #e2e8f0; font-size: 1rem; text-decoration: none; display: block; margin-bottom: 0.4rem; transition: color 0.2s; }
-    .leader-card .phone a:hover { color: #c5a059; }
-    .leader-avatar { width: 84px; height: 84px; border-radius: 50%; background: linear-gradient(135deg, #0f172a, #1e293b); border: 2px solid #c5a059; display: flex; align-items: center; justify-content: center; font-family: 'Cinzel', serif; font-size: 1.6rem; color: #c5a059; margin: 0 auto 1.25rem; }
+    .leadership-section { background: #0b0e14 !important; color: #fff !important; padding: 6rem 0; border-top: 1px solid rgba(197, 160, 89, 0.2); border-bottom: 1px solid rgba(197, 160, 89, 0.2); }
+    .leadership-section .section-kicker { font-size: 0.7rem; letter-spacing: 0.25em; text-transform: uppercase; color: #c5a059 !important; text-align: center; margin-bottom: 1rem; font-weight: 700; }
+    .leadership-section h2 { font-family: 'Cinzel', serif; font-size: 2.5rem; text-align: center; color: #fff !important; margin-bottom: 4rem; }
+    .leadership-section .leader-card, .leader-card {
+      background-color: #0f172a !important;
+      background: #0f172a !important;
+      border: 1px solid rgba(197,160,89,0.25) !important;
+      padding: 2.25rem 1.5rem !important;
+      border-radius: 4px;
+      text-align: center;
+      height: 100%;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.3) !important;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .leadership-section .leader-card .name, .leader-card .name { font-family: 'Cinzel', serif; font-size: 1.35rem; color: #ffffff !important; margin-bottom: 0.5rem; }
+    .leadership-section .leader-card .role, .leader-card .role { color: #c5a059 !important; font-size: 0.8rem; letter-spacing: 0.15em; text-transform: uppercase; margin-bottom: 1.25rem; font-weight: 600; }
+    .leadership-section .leader-card p, .leader-card p { color: #94a3b8 !important; font-size: 0.875rem; line-height: 1.7; }
+    .leadership-section .leader-card .phone a, .leader-card .phone a { color: #cbd5e1 !important; font-size: 0.95rem; text-decoration: none; display: block; margin-bottom: 0.4rem; transition: color 0.2s; }
+    .leadership-section .leader-card .phone a:hover, .leader-card .phone a:hover { color: #c5a059 !important; }
+    .leader-avatar { width: 84px; height: 84px; border-radius: 50%; background: linear-gradient(135deg, #0f172a, #1e293b) !important; border: 2px solid #c5a059 !important; display: flex; align-items: center; justify-content: center; font-family: 'Cinzel', serif; font-size: 1.6rem; color: #c5a059 !important; margin: 0 auto 1.25rem; }
 
 
     /* Timeline */
@@ -255,12 +268,12 @@
     <h2>The Mirza Family Leadership</h2>
     <div class="row justify-content-center">
       <div class="col-lg-4 col-md-6 mb-4">
-        <div class="leader-card">
+        <div class="leader-card" style="background:#0f172a !important; background-color:#0f172a !important; border:1px solid rgba(197,160,89,0.25) !important;">
           <div>
             <div class="leader-avatar">FM</div>
             <div class="name">Farhan Mirza</div>
             <div class="role">Managing Director</div>
-            <p style="color:#aaa;font-size:0.875rem;line-height:1.7;">Chief executive leadership across Olympic Exports' manufacturing facilities in Jajmau, Kanpur. Directs master tannery relations, tooling supervision, quality control, and strategic global export operations.</p>
+            <p style="color:#94a3b8;font-size:0.875rem;line-height:1.7;">Chief executive leadership across Olympic Exports' manufacturing facilities in Jajmau, Kanpur. Directs master tannery relations, tooling supervision, quality control, and strategic global export operations.</p>
           </div>
           <div class="phone" style="margin-top:1.5rem;">
             <a href="tel:+919839086636">+91 98390 86636</a>
@@ -269,12 +282,12 @@
         </div>
       </div>
       <div class="col-lg-4 col-md-6 mb-4">
-        <div class="leader-card">
+        <div class="leader-card" style="background:#0f172a !important; background-color:#0f172a !important; border:1px solid rgba(197,160,89,0.25) !important;">
           <div>
             <div class="leader-avatar">RM</div>
             <div class="name">Rukhsaar Mirza</div>
             <div class="role">Director</div>
-            <p style="color:#aaa;font-size:0.875rem;line-height:1.7;">Directs corporate administration, artisan development, design aesthetics, and compliance across Olympic Exports' manufacturing divisions, ensuring ethical standards and craft perfection.</p>
+            <p style="color:#94a3b8;font-size:0.875rem;line-height:1.7;">Directs corporate administration, artisan development, design aesthetics, and compliance across Olympic Exports' manufacturing divisions, ensuring ethical standards and craft perfection.</p>
           </div>
           <div class="phone" style="margin-top:1.5rem;">
             <a href="mailto:Olympic.Mirza@yahoo.com">Olympic.Mirza@yahoo.com</a>
@@ -282,12 +295,12 @@
         </div>
       </div>
       <div class="col-lg-4 col-md-6 mb-4">
-        <div class="leader-card">
+        <div class="leader-card" style="background:#0f172a !important; background-color:#0f172a !important; border:1px solid rgba(197,160,89,0.25) !important;">
           <div>
             <div class="leader-avatar">AM</div>
             <div class="name">Ayaan Mirza</div>
             <div class="role">Director</div>
-            <p style="color:#aaa;font-size:0.875rem;line-height:1.7;">Leads international brand collaborations, buyer negotiations, custom OEM die developments, and private-label programs. Primary desk for line sheets, counter-sample decks, and global logistics.</p>
+            <p style="color:#94a3b8;font-size:0.875rem;line-height:1.7;">Leads international brand collaborations, buyer negotiations, custom OEM die developments, and private-label programs. Primary desk for line sheets, counter-sample decks, and global logistics.</p>
           </div>
           <div class="phone" style="margin-top:1.5rem;">
             <a href="tel:+917388814225">+91 73888 14225</a>

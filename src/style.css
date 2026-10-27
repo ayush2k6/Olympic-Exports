@@ -1002,10 +1002,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .leader-card {
-  background-color: var(--bg-canvas);
-  border: 1px solid var(--border-hairline);
-  padding: 1.25rem;
-  border-radius: var(--radius-xs);
+  background-color: #0f172a !important;
+  background: #0f172a !important;
+  border: 1px solid rgba(197, 160, 89, 0.25) !important;
+  padding: 2.25rem 1.5rem !important;
+  border-radius: 4px;
 }
 
 .leader-title-tag {
