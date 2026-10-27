@@ -280,6 +280,12 @@
       display: none;
     }
     .prefill-alert.show { display: block; }
+
+    @media (max-width: 600px) {
+      .rfq-recipient-selector {
+        grid-template-columns: 1fr !important;
+      }
+    }
   </style>
 </head>
 
@@ -530,28 +536,82 @@
                 </div>
               </div>
 
+              <!-- Requisition Recipient: Direct to Owner Farhan Mirza or Director Ayaan Mirza -->
+              <div class="rfq-form-field">
+                <label class="rfq-label">Direct Requisition To Owner / Directorate *</label>
+                <div class="rfq-recipient-selector" style="display:grid;grid-template-columns:1fr 1fr;gap:12px;">
+                  <label id="labelRecipientFarhan" style="background:#fff;border:2px solid #c5a059;padding:12px 14px;border-radius:4px;cursor:pointer;display:flex;align-items:center;gap:12px;box-shadow:0 2px 8px rgba(197,160,89,0.12);transition:all 0.2s;margin:0;">
+                    <input type="radio" name="rfqRecipient" value="farhan" checked style="accent-color:#c5a059;width:18px;height:18px;cursor:pointer;">
+                    <div>
+                      <div style="font-weight:700;color:#0f172a;font-size:0.92rem;display:flex;align-items:center;gap:6px;flex-wrap:wrap;">
+                        <span>Mr. Farhan Mirza</span>
+                        <span style="font-size:0.7rem;background:#c5a059;color:#0f172a;padding:2px 7px;border-radius:3px;font-weight:700;letter-spacing:0.04em;">OWNER &amp; MD</span>
+                      </div>
+                      <div style="font-size:0.8rem;color:#155c37;font-weight:600;margin-top:2px;">
+                        <i class="fa fa-whatsapp"></i> +91 98390 86636
+                      </div>
+                    </div>
+                  </label>
+                  <label id="labelRecipientAyaan" style="background:#fff;border:1px solid #cbd5e1;padding:12px 14px;border-radius:4px;cursor:pointer;display:flex;align-items:center;gap:12px;transition:all 0.2s;margin:0;">
+                    <input type="radio" name="rfqRecipient" value="ayaan" style="accent-color:#c5a059;width:18px;height:18px;cursor:pointer;">
+                    <div>
+                      <div style="font-weight:700;color:#0f172a;font-size:0.92rem;display:flex;align-items:center;gap:6px;flex-wrap:wrap;">
+                        <span>Mr. Ayaan Mirza</span>
+                        <span style="font-size:0.7rem;background:#0f172a;color:#fff;padding:2px 7px;border-radius:3px;font-weight:700;letter-spacing:0.04em;">DIRECTOR</span>
+                      </div>
+                      <div style="font-size:0.8rem;color:#155c37;font-weight:600;margin-top:2px;">
+                        <i class="fa fa-whatsapp"></i> +91 73888 14225
+                      </div>
+                    </div>
+                  </label>
+                </div>
+              </div>
+
               <div class="rfq-form-field">
                 <label class="rfq-label" for="rfqMessage">Technical Specifications / Notes *</label>
                 <textarea id="rfqMessage" class="rfq-textarea" rows="5" placeholder="Specify required widths, leather gauge, hardware finish, private label branding requirements, destination port, etc." required></textarea>
               </div>
 
               <div class="rfq-form-field">
-                <button type="submit" class="btn-submit-rfq">
+                <button type="submit" class="btn-submit-rfq" id="btnSubmitRfq">
                   <i class="fa fa-paper-plane-o"></i> Submit Formal Export Requisition
                 </button>
               </div>
 
-              <div id="formSuccessMsg" style="display:none;background:#eef8f1;color:#185a2b;padding:1.2rem;border-radius:4px;font-size:0.9rem;margin-top:1rem;border:1px solid #cce8d4;line-height:1.6;">
-                <div style="font-weight:600;font-size:0.96rem;margin-bottom:0.4rem;display:flex;align-items:center;gap:8px;">
-                  <i class="fa fa-check-circle" style="font-size:1.15rem;color:#185a2b;"></i>
-                  <span>Requisition Submitted!</span>
+              <div id="formSuccessMsg" style="display:none;background:#f0fdf4;border:1.5px solid #86efac;border-radius:6px;padding:1.4rem;margin-top:1.25rem;box-shadow:0 4px 14px rgba(22,101,52,0.08);">
+                <div style="display:flex;align-items:center;gap:10px;margin-bottom:0.5rem;">
+                  <div style="width:36px;height:36px;background:#22c55e;color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.1rem;flex-shrink:0;">
+                    <i class="fa fa-check"></i>
+                  </div>
+                  <div>
+                    <h4 style="margin:0;color:#14532d;font-family:'Cinzel',serif;font-size:1.05rem;font-weight:700;">Requisition Prepared Successfully!</h4>
+                    <p style="margin:0;color:#15803d;font-size:0.83rem;">All details compiled for official review &amp; quotation.</p>
+                  </div>
                 </div>
-                <p style="margin:0 0 0.8rem 0;color:#2e6b3e;">
-                  Details have been prepared and sent to <strong>Director Ayaan Mirza (+91 73888 14225)</strong> on WhatsApp. If WhatsApp did not open automatically, click the button below:
+
+                <p style="margin:0.75rem 0;color:#166534;font-size:0.88rem;line-height:1.6;">
+                  Transmitting details to <strong id="successRecipientName">Mr. Farhan Mirza (Owner &amp; Managing Director)</strong> on WhatsApp. If WhatsApp did not open automatically, click below:
                 </p>
-                <a id="waDirectBtn" href="#" target="_blank" style="display:inline-flex;align-items:center;gap:8px;background:#25D366;color:#fff;font-weight:600;padding:8px 18px;border-radius:4px;text-decoration:none;font-size:0.85rem;box-shadow:0 2px 6px rgba(37,211,102,0.3);">
-                  <i class="fa fa-whatsapp" style="font-size:1.1rem;"></i> Open WhatsApp Requisition (+91 73888 14225)
-                </a>
+
+                <div style="display:flex;gap:10px;flex-wrap:wrap;margin:1rem 0;">
+                  <a id="waDirectBtn" href="#" target="_blank" style="display:inline-flex;align-items:center;gap:8px;background:#25D366;color:#ffffff;font-weight:700;padding:11px 20px;border-radius:4px;text-decoration:none;font-size:0.9rem;box-shadow:0 3px 8px rgba(37,211,102,0.35);transition:all 0.2s;">
+                    <i class="fa fa-whatsapp" style="font-size:1.25rem;"></i> Send to Owner: Farhan Mirza (+91 98390 86636)
+                  </a>
+                  <a id="waSecondaryBtn" href="#" target="_blank" style="display:inline-flex;align-items:center;gap:8px;background:#0f172a;color:#ffffff;font-weight:600;padding:11px 18px;border-radius:4px;text-decoration:none;font-size:0.86rem;border:1px solid #334155;">
+                    <i class="fa fa-whatsapp" style="color:#25d366;font-size:1.15rem;"></i> Also Send to Director Ayaan Mirza (+91 73888 14225)
+                  </a>
+                  <button type="button" id="btnCopyWaMsg" onclick="copyRfqMsg()" style="display:inline-flex;align-items:center;gap:6px;background:#ffffff;color:#0f172a;font-weight:600;padding:11px 16px;border-radius:4px;border:1px solid #cbd5e1;cursor:pointer;font-size:0.85rem;">
+                    <i class="fa fa-clipboard"></i> Copy Requisition Text
+                  </button>
+                </div>
+
+                <!-- Preview of generated WhatsApp message -->
+                <div style="margin-top:1rem;background:#ffffff;border:1px solid #dcfce7;border-radius:4px;padding:0.85rem 1rem;">
+                  <div style="font-size:0.75rem;font-weight:700;text-transform:uppercase;color:#166534;margin-bottom:6px;letter-spacing:0.06em;">
+                    <i class="fa fa-file-text-o"></i> WhatsApp Message Preview:
+                  </div>
+                  <pre id="waMsgPreview" style="margin:0;font-family:monospace;font-size:0.82rem;white-space:pre-wrap;color:#1e293b;line-height:1.55;max-height:180px;overflow-y:auto;background:transparent;border:none;padding:0;"></pre>
+                </div>
               </div>
             </form>
           </div>
@@ -735,10 +795,38 @@
           window.scrollTo({ top: 0, behavior: 'smooth' });
         });
       }
+
+      // Dynamic toggle for recipient selection cards
+      const radioFarhan = document.querySelector('input[name="rfqRecipient"][value="farhan"]');
+      const radioAyaan = document.querySelector('input[name="rfqRecipient"][value="ayaan"]');
+      const lblFarhan = document.getElementById('labelRecipientFarhan');
+      const lblAyaan = document.getElementById('labelRecipientAyaan');
+
+      function updateRecipientCards() {
+        if (!lblFarhan || !lblAyaan) return;
+        if (radioFarhan && radioFarhan.checked) {
+          lblFarhan.style.borderColor = '#c5a059';
+          lblFarhan.style.borderWidth = '2px';
+          lblFarhan.style.boxShadow = '0 2px 8px rgba(197,160,89,0.15)';
+          lblAyaan.style.borderColor = '#cbd5e1';
+          lblAyaan.style.borderWidth = '1px';
+          lblAyaan.style.boxShadow = 'none';
+        } else if (radioAyaan && radioAyaan.checked) {
+          lblAyaan.style.borderColor = '#c5a059';
+          lblAyaan.style.borderWidth = '2px';
+          lblAyaan.style.boxShadow = '0 2px 8px rgba(197,160,89,0.15)';
+          lblFarhan.style.borderColor = '#cbd5e1';
+          lblFarhan.style.borderWidth = '1px';
+          lblFarhan.style.boxShadow = 'none';
+        }
+      }
+
+      if (radioFarhan) radioFarhan.addEventListener('change', updateRecipientCards);
+      if (radioAyaan) radioAyaan.addEventListener('change', updateRecipientCards);
     });
 
     function handleRfqSubmit(e) {
-      e.preventDefault();
+      if (e) e.preventDefault();
 
       const buyerName = document.getElementById('buyerName') ? document.getElementById('buyerName').value.trim() : '';
       const buyerCompany = document.getElementById('buyerCompany') ? document.getElementById('buyerCompany').value.trim() : '';
@@ -749,14 +837,29 @@
       const targetQuantity = document.getElementById('targetQuantity') ? document.getElementById('targetQuantity').value.trim() : '';
       const rfqMessage = document.getElementById('rfqMessage') ? document.getElementById('rfqMessage').value.trim() : '';
 
+      if (!buyerName || !buyerCompany || !buyerEmail || !buyerPhone || !productDivision || !rfqMessage) {
+        alert('Please fill out all required fields marked with *');
+        return false;
+      }
+
+      // Check recipient selection (Defaults to Owner Farhan Mirza)
+      const recipientRadio = document.querySelector('input[name="rfqRecipient"]:checked');
+      const recipientChoice = recipientRadio ? recipientRadio.value : 'farhan';
+
+      const farhanNumber = '919839086636'; // Mr. Farhan Mirza (Owner & Managing Director)
+      const ayaanNumber = '917388814225';  // Mr. Ayaan Mirza (Director)
+
+      const targetNumber = (recipientChoice === 'ayaan') ? ayaanNumber : farhanNumber;
+      const targetName = (recipientChoice === 'ayaan') ? 'Director Ayaan Mirza' : 'Managing Director Farhan Mirza (Owner)';
+
       const prefillAlert = document.getElementById('prefillAlert');
       const prefillModelTitle = document.getElementById('prefillModelTitle');
       const prefillSku = document.getElementById('prefillSku');
       const isPrefilled = prefillAlert && prefillAlert.classList.contains('show') && prefillModelTitle && prefillModelTitle.textContent.trim() !== 'Model';
 
-      // Build WhatsApp message formatted for clear readability
+      // Build structured WhatsApp message formatted for clear readability
       let msg = `*NEW FORMAL EXPORT REQUISITION*\n`;
-      msg += `*Olympic Exports Pvt. Ltd.*\n`;
+      msg += `*Olympic Exports Pvt. Ltd. (Kanpur, India)*\n`;
       msg += `━━━━━━━━━━━━━━━━━━━━━\n\n`;
       msg += `👤 *Buyer / Client:* ${buyerName}\n`;
       msg += `🏢 *Company / Brand:* ${buyerCompany}\n`;
@@ -771,24 +874,83 @@
       }
       msg += `\n*📝 Specifications / Notes:*\n${rfqMessage}\n\n`;
       msg += `━━━━━━━━━━━━━━━━━━━━━\n`;
-      msg += `_Submitted via Olympic Exports B2B Portal_`;
+      msg += `_Submitted via Olympic Exports B2B Portal on ${new Date().toLocaleDateString('en-US', { day: 'numeric', month: 'short', year: 'numeric' })}_`;
 
-      const targetNumber = '917388814225'; // Director Ayaan Mirza (+91 73888 14225)
-      const waUrl = 'https://api.whatsapp.com/send?phone=' + targetNumber + '&text=' + encodeURIComponent(msg);
+      const encodedMsg = encodeURIComponent(msg);
+      // Universal WhatsApp URLs
+      const waUrl = 'https://wa.me/' + targetNumber + '?text=' + encodedMsg;
+      const waFarhanUrl = 'https://wa.me/' + farhanNumber + '?text=' + encodedMsg;
+      const waAyaanUrl = 'https://wa.me/' + ayaanNumber + '?text=' + encodedMsg;
 
-      // Show success alert & update direct button
+      // Update success card
       const formSuccessMsg = document.getElementById('formSuccessMsg');
       const waDirectBtn = document.getElementById('waDirectBtn');
+      const waSecondaryBtn = document.getElementById('waSecondaryBtn');
+      const waMsgPreview = document.getElementById('waMsgPreview');
+      const recipientNameSpan = document.getElementById('successRecipientName');
+
+      if (recipientNameSpan) {
+        recipientNameSpan.textContent = targetName;
+      }
       if (waDirectBtn) {
         waDirectBtn.href = waUrl;
+        waDirectBtn.innerHTML = `<i class="fa fa-whatsapp" style="font-size:1.25rem;"></i> Send to ${targetName} (+${targetNumber})`;
       }
+      if (waSecondaryBtn) {
+        const altNumber = (recipientChoice === 'ayaan') ? farhanNumber : ayaanNumber;
+        const altName = (recipientChoice === 'ayaan') ? 'Owner Farhan Mirza' : 'Director Ayaan Mirza';
+        const altUrl = (recipientChoice === 'ayaan') ? waFarhanUrl : waAyaanUrl;
+        waSecondaryBtn.href = altUrl;
+        waSecondaryBtn.innerHTML = `<i class="fa fa-whatsapp" style="color:#25d366;font-size:1.15rem;"></i> Also Send to ${altName} (+${altNumber})`;
+      }
+      if (waMsgPreview) {
+        waMsgPreview.textContent = msg;
+      }
+
       if (formSuccessMsg) {
         formSuccessMsg.style.display = 'block';
         formSuccessMsg.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
       }
 
-      // Open WhatsApp directly
-      window.open(waUrl, '_blank');
+      // Visual feedback on the submit button
+      const submitBtn = document.getElementById('btnSubmitRfq');
+      if (submitBtn) {
+        const originalText = submitBtn.innerHTML;
+        submitBtn.innerHTML = '<i class="fa fa-check"></i> Requisition Prepared! Opening WhatsApp...';
+        setTimeout(() => {
+          submitBtn.innerHTML = originalText;
+        }, 4000);
+      }
+
+      // Reliably trigger WhatsApp
+      const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+      if (isMobile) {
+        window.location.href = waUrl;
+      } else {
+        const newTab = window.open(waUrl, '_blank');
+        if (!newTab || newTab.closed || typeof newTab.closed === 'undefined') {
+          // If popup blocker intervened, redirect current window
+          window.location.href = waUrl;
+        }
+      }
+
+      return false;
+    }
+
+    function copyRfqMsg() {
+      const preview = document.getElementById('waMsgPreview');
+      const btn = document.getElementById('btnCopyWaMsg');
+      if (preview && preview.textContent) {
+        navigator.clipboard.writeText(preview.textContent).then(() => {
+          if (btn) {
+            const orig = btn.innerHTML;
+            btn.innerHTML = '<i class="fa fa-check" style="color:#16a34a;"></i> Copied!';
+            setTimeout(() => { btn.innerHTML = orig; }, 2000);
+          }
+        }).catch(() => {
+          alert('Requisition text copied to clipboard!');
+        });
+      }
     }
   </script>
 

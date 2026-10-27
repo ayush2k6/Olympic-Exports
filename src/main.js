@@ -1421,21 +1421,62 @@ function initContactForm() {
   form.addEventListener('submit', (e) => {
     e.preventDefault();
     const submitBtn = document.getElementById('btnSubmitForm');
-    submitBtn.disabled = true;
-    submitBtn.innerHTML = `<span>Transmitting to Mr. Farhan Mirza...</span>`;
+    
+    const name = document.getElementById('contactName')?.value.trim() || '';
+    const company = document.getElementById('contactCompany')?.value.trim() || '';
+    const email = document.getElementById('contactEmail')?.value.trim() || '';
+    const phone = document.getElementById('contactPhone')?.value.trim() || '';
+    const categorySelect = document.getElementById('contactCategory');
+    const category = categorySelect ? (categorySelect.options[categorySelect.selectedIndex]?.text || categorySelect.value) : '';
+    const destination = document.getElementById('contactDestination')?.value.trim() || '';
+    const message = document.getElementById('contactMessage')?.value.trim() || '';
+
+    // Build structured WhatsApp message for Managing Director Farhan Mirza
+    let msg = `*NEW OFFICIAL EXPORT INQUIRY*\n`;
+    msg += `*Olympic Exports Pvt. Ltd. (Kanpur, India)*\n`;
+    msg += `━━━━━━━━━━━━━━━━━━━━━\n\n`;
+    msg += `👤 *Buyer / Client:* ${name}\n`;
+    msg += `🏢 *Company / Brand:* ${company}\n`;
+    msg += `📧 *Corporate Email:* ${email}\n`;
+    msg += `📱 *Phone / WhatsApp:* ${phone}\n\n`;
+    msg += `📦 *Primary Division:* ${category}\n`;
+    msg += `🚢 *Destination Port:* ${destination}\n\n`;
+    msg += `*📝 Order Specifications / Target Models:*\n${message}\n\n`;
+    msg += `━━━━━━━━━━━━━━━━━━━━━\n`;
+    msg += `_Transmitted via Olympic Exports Portal on ${new Date().toLocaleDateString('en-US', { day: 'numeric', month: 'short', year: 'numeric' })}_`;
+
+    const waUrl = `https://wa.me/919839086636?text=${encodeURIComponent(msg)}`;
+
+    if (submitBtn) {
+      submitBtn.disabled = true;
+      submitBtn.innerHTML = `<span>Opening WhatsApp to Owner Mr. Farhan Mirza...</span>`;
+    }
 
     setTimeout(() => {
-      submitBtn.disabled = false;
-      submitBtn.innerHTML = `<i data-lucide="check" class="icon-sm"></i> <span>Inquiry Successfully Transmitted</span>`;
-      createIcons({ icons });
+      if (submitBtn) {
+        submitBtn.disabled = false;
+        submitBtn.innerHTML = `<i data-lucide="check" class="icon-sm"></i> <span>Requisition Sent to Managing Director</span>`;
+        createIcons({ icons });
+      }
 
-      statusMsg.className = 'clean-status-msg success';
-      statusMsg.textContent = 'Thank you! Your official inquiry has been received at our Kanpur export desk. Managing Director Farhan Mirza and Directors Rukhsaar Mirza & Ayaan Mirza will review your specifications and reply via WhatsApp/Email within 12 business hours.';
-      statusMsg.classList.remove('hidden');
+      if (statusMsg) {
+        statusMsg.className = 'clean-status-msg success';
+        statusMsg.innerHTML = `<strong>Inquiry Successfully Compiled!</strong> Transmitting to Managing Director Farhan Mirza (+91 98390 86636) on WhatsApp. <a href="${waUrl}" target="_blank" style="color:#15803d;font-weight:700;text-decoration:underline;margin-left:6px;">Click here if WhatsApp didn't open automatically.</a>`;
+        statusMsg.classList.remove('hidden');
+      }
 
-      showToast('Export inquiry received! Our export desk will reply promptly.');
-      form.reset();
-    }, 1000);
+      showToast('Export inquiry compiled! Opening WhatsApp...');
+
+      const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+      if (isMobile) {
+        window.location.href = waUrl;
+      } else {
+        const newTab = window.open(waUrl, '_blank');
+        if (!newTab || newTab.closed || typeof newTab.closed === 'undefined') {
+          window.location.href = waUrl;
+        }
+      }
+    }, 600);
   });
 }
 
