@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  
+  <!-- Homepage -->
+  <url>
+    <loc>https://ayush2k6.github.io/Olympic-Exports/</loc>
+    <lastmod>2026-10-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- Products Catalogue -->
+  <url>
+    <loc>https://ayush2k6.github.io/Olympic-Exports/products.html</loc>
+    <lastmod>2026-10-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://ayush2k6.github.io/Olympic-Exports/images/leather-belts.jpg</image:loc>
+      <image:title>Olympic Exports - Hand-Carved Leather Tooling Belts</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://ayush2k6.github.io/Olympic-Exports/images/beaded-belts.jpg</image:loc>
+      <image:title>Olympic Exports - Tribal Aztec Beaded Belts</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://ayush2k6.github.io/Olympic-Exports/images/kilim-bags.jpg</image:loc>
+      <image:title>Olympic Exports - Handwoven Kilim Tapestry Bags</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://ayush2k6.github.io/Olympic-Exports/images/leather-bags.jpg</image:loc>
+      <image:title>Olympic Exports - Handcrafted Full-Grain Bags</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://ayush2k6.github.io/Olympic-Exports/images/shoelaces.jpg</image:loc>
+      <image:title>Olympic Exports - Waxed Cotton Shoelaces and Boot Cords</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://ayush2k6.github.io/Olympic-Exports/images/elastics.jpg</image:loc>
+      <image:title>Olympic Exports - Technical Narrow Fabrics and Webbing</image:title>
+    </image:image>
+  </url>
+
+  <!-- About Us & Heritage -->
+  <url>
+    <loc>https://ayush2k6.github.io/Olympic-Exports/about.html</loc>
+    <lastmod>2026-10-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Contact Us & Export Requisition Desk -->
+  <url>
+    <loc>https://ayush2k6.github.io/Olympic-Exports/contact-us.html</loc>
+    <lastmod>2026-10-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+</urlset>

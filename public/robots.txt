@@ -1,0 +1,6 @@
+# robots.txt for Olympic Exports Pvt. Ltd. (Kanpur, India)
+User-agent: *
+Allow: /
+
+# Sitemaps
+Sitemap: https://ayush2k6.github.io/Olympic-Exports/sitemap.xml
