@@ -30,7 +30,7 @@ const PRODUCTS = [
       performance: 'High-tensile saddle leather, resistant to stretch & cracking',
       finish: 'Natural Antique Saddle Tan, Hand-Dyed Edges',
       buckle: 'Heavy-Duty Antique Silver Engraved Western Floral Buckle',
-      moq: '100 Pieces / Size Curve',
+      moq: '100 Pieces',
       leadTime: '15-20 Business Days'
     },
     tags: ['Western', 'Hand-Carved', 'Tooling', 'Steerhide']
@@ -68,7 +68,7 @@ const PRODUCTS = [
       performance: 'Deep tooling relief that retains definition over decades',
       finish: 'Saddle Tan with Natural Carnauba Hand Buffing',
       buckle: 'Solid Brass or Antique Nickel Roller Buckle',
-      moq: '120 Pieces',
+      moq: '100 Pieces',
       leadTime: '14-18 Business Days'
     },
     tags: ['Sunburst', 'Bridle Leather', 'Saddle Tan', 'Hand-Carved']
@@ -148,7 +148,7 @@ const PRODUCTS = [
       performance: 'Beads tightly woven on reinforced backing; zero loose threads',
       finish: 'Antique Cognac Leather with Western Floral Tooling',
       buckle: 'Removable Engraved Western Silver Buckle Set',
-      moq: '80 Pieces / Colorway',
+      moq: '100 Pieces',
       leadTime: '18-22 Business Days'
     },
     tags: ['Beaded', 'Aztec', 'Turquoise', 'Sunflower', 'Handmade']
@@ -167,7 +167,7 @@ const PRODUCTS = [
       performance: 'Heavy nylon lock-stitched borders for rugged endurance',
       finish: 'Chestnut Brown with Black/White/Red Beading',
       buckle: 'Solid Antique Silver Floral Buckle & Keeper',
-      moq: '80 Pieces',
+      moq: '100 Pieces',
       leadTime: '18 Business Days'
     },
     tags: ['Basketweave', 'Navajo', 'Geometric', 'Beaded Leather']
@@ -205,7 +205,7 @@ const PRODUCTS = [
       performance: 'Hand-sewn beadwork reinforcement with bonded thread',
       finish: 'Natural Honey Tan with Turquoise Bead Inlay',
       buckle: 'Antique Silver Finish Western Floral Buckle',
-      moq: '80 Pieces',
+      moq: '100 Pieces',
       leadTime: '18 Business Days'
     },
     tags: ['Turquoise', 'Cross-Hatch', 'Honey Tan', 'Beaded']
@@ -246,7 +246,7 @@ const PRODUCTS = [
       dimensions: '17" W x 13" H x 5.5" D | 10" Handle Drop',
       performance: 'Heavy canvas interior lining with zip pocket & phone slots',
       hardware: 'Solid Antique Brass Rivets & YKK Metal Zippers',
-      moq: '30 Pieces / Style',
+      moq: '100 Pieces',
       leadTime: '20-25 Business Days'
     },
     tags: ['Kilim Tote', 'Handwoven', 'Full-Grain', 'Brass Hardware']
@@ -264,7 +264,7 @@ const PRODUCTS = [
       dimensions: '11" W x 12.5" H x 4.5" D',
       performance: 'Convertible adjustable leather straps (backpack / crossbody)',
       hardware: 'Antique Brass Snap & Smooth Glide YKK Zippers',
-      moq: '30 Pieces',
+      moq: '100 Pieces',
       leadTime: '20 Business Days'
     },
     tags: ['Dome Satchel', 'Mini Backpack', 'Hand-Carved', 'Kilim']
@@ -282,7 +282,7 @@ const PRODUCTS = [
       dimensions: '22" L x 11.5" W x 11.5" H (Carry-On Compliant)',
       performance: 'Reinforced dual leather handles & padded shoulder strap',
       hardware: 'Heavy-Gauge Brass D-Rings, Swivel Clips & Zippers',
-      moq: '25 Pieces',
+      moq: '100 Pieces',
       leadTime: '25 Business Days'
     },
     tags: ['Travel Duffel', 'Weekender', 'Carry-On', 'Luggage']
@@ -300,7 +300,7 @@ const PRODUCTS = [
       dimensions: '14" W x 11" H x 5" D',
       performance: 'Magnetic closure side pockets for quick passport/phone access',
       hardware: 'Hand-Hammered Antique Brass Studs',
-      moq: '35 Pieces',
+      moq: '100 Pieces',
       leadTime: '20 Business Days'
     },
     tags: ['Fringe Bag', 'Side Pockets', 'Boho Western', 'Shoulder Bag']
@@ -318,7 +318,7 @@ const PRODUCTS = [
       dimensions: '24" L x 12" W x 13" H',
       performance: 'Reinforced internal wire frame for shape retention',
       hardware: 'Antiqued Brass Heavy Dual Sliders',
-      moq: '25 Pieces',
+      moq: '100 Pieces',
       leadTime: '22 Business Days'
     },
     tags: ['Voyager', 'Large Duffel', 'Tooled Yoke', 'Leather Luggage']
@@ -342,7 +342,7 @@ const PRODUCTS = [
       colors: 'Black & Custom Colors as per requirement',
       performance: '140% Elongation with 98% Recovery Retain',
       finish: 'Dense twill face with reinforced non-fray selvage',
-      moq: '1,500 Meters',
+      moq: '100 Meters',
       leadTime: '10-12 Business Days'
     },
     tags: ['1" & 2" Woven', 'Black Elastic', 'High Modulus', 'Color As Per Req.']
@@ -361,7 +361,7 @@ const PRODUCTS = [
       colors: 'Black & Custom Colors as per requirement',
       performance: 'Firm holding tension, non-curling edge',
       finish: 'Double-woven dense twill face',
-      moq: '1,500 Meters',
+      moq: '100 Meters',
       leadTime: '10-14 Business Days'
     },
     tags: ['1" & 2" Woven', 'Boot Gusset', 'Reinforced Edge', 'Color As Per Req.']
@@ -380,7 +380,7 @@ const PRODUCTS = [
       colors: 'Black, Grey, Red, Tan, Brown, Navy & Custom Colors',
       performance: '150% Stretch with zero edge distortion',
       finish: 'Yarn-dyed colorfast finish (Grade 4-5)',
-      moq: '1,000 Meters / Color',
+      moq: '100 Meters',
       leadTime: '12-15 Business Days'
     },
     tags: ['Multi-Color', '1" & 2" Woven', 'Earth Tones', 'Color As Per Req.']
@@ -399,7 +399,7 @@ const PRODUCTS = [
       colors: 'Dark Brown / Coffee & Custom Colors as per requirement',
       performance: 'Heavy-duty holding tension, abrasion resistant',
       finish: 'Matte woven texture with stabilized edge',
-      moq: '1,500 Meters',
+      moq: '100 Meters',
       leadTime: '12-14 Business Days'
     },
     tags: ['2" Wide Profile', 'Dark Brown', 'Heavy Duty', 'Color As Per Req.']
@@ -418,7 +418,7 @@ const PRODUCTS = [
       colors: 'Coffee, Gray, Red, Black, Brown & Custom Colors',
       performance: 'Colorfast to washing (Grade 4-5), shrinkage <2%',
       finish: 'Soft-touch surface with uniform modulus',
-      moq: '1,000 Meters / Color',
+      moq: '100 Meters',
       leadTime: '10-14 Business Days'
     },
     tags: ['5 Core Colors', '1" & 2" Woven', 'Colorfast Dyed', 'Color As Per Req.']
@@ -437,7 +437,7 @@ const PRODUCTS = [
       colors: '20+ Stock Shades + Custom Pantone Dyeing as per requirement',
       performance: 'High-recovery 160% stretch, skin-friendly soft touch',
       finish: 'Vibrant eco-dyed Azo-free formulation',
-      moq: '1,000 Meters / Colorway',
+      moq: '100 Meters',
       leadTime: '14-18 Business Days'
     },
     tags: ['Full Spectrum', 'Pantone Matching', '1" & 2" Woven', 'Color As Per Req.']
@@ -456,7 +456,7 @@ const PRODUCTS = [
       colors: 'Green, Gold, Neon, Navy, Red, White, Tan & Custom Colors',
       performance: 'Consistent tension throughout full coil length',
       finish: 'Factory-tied export bundles (25m / 50m / 100m spools)',
-      moq: '2,000 Meters Combined',
+      moq: '100 Meters',
       leadTime: '10-12 Business Days'
     },
     tags: ['Bundled Coils', '1" & 2" Woven', 'Export Packaging', 'Color As Per Req.']
@@ -480,7 +480,7 @@ const PRODUCTS = [
       colors: '9 Colorways (Black, Brown, Light Brown, Tan, Khaki, Navy, Red, Pink, Beige)',
       performance: 'High-friction knot retention, zero fraying under eyelet stress',
       finish: 'Solid Brass or Clear Cellulose Acetate Aglets',
-      moq: '1,000 Pairs / Color',
+      moq: '100 Pairs',
       leadTime: '10 Business Days'
     },
     tags: ['2.50mm Round', 'Waxed Cotton', 'Oxfords', '9 Colorways']
@@ -499,7 +499,7 @@ const PRODUCTS = [
       colors: 'Black, Dark Brown, Rich Tan, Khaki, Light Khaki',
       performance: 'Firm hand-feel with calibrated thickness for heavy eyelets',
       finish: 'Clear Acetate or Vintage Antique Brass Tips',
-      moq: '1,000 Pairs / Color',
+      moq: '100 Pairs',
       leadTime: '10-12 Business Days'
     },
     tags: ['2.75-3.00mm', 'Waxed Round', 'Derby & Chukka', 'Earth Tones']
@@ -518,7 +518,7 @@ const PRODUCTS = [
       colors: 'Deep Black & Dark Chocolate Brown',
       performance: 'Heavy water-resistant wax glaze preventing mud and moisture soak',
       finish: 'Crimped Rustproof Metal or Sealed Tips',
-      moq: '1,200 Pairs',
+      moq: '100 Pairs',
       leadTime: '12 Business Days'
     },
     tags: ['3.5-5.0mm Round', '2.5mm Tubular', 'Heritage Boots', 'Heavy Waxed']
@@ -537,7 +537,7 @@ const PRODUCTS = [
       colors: 'Jet Black & Deep Earth Brown',
       performance: 'Low-friction lacing with maximum knot grip',
       finish: 'Heat-Fused Cellulose Acetate or Gunmetal Aglets',
-      moq: '1,500 Pairs',
+      moq: '100 Pairs',
       leadTime: '10-12 Business Days'
     },
     tags: ['Tubular & Flat', '4.0mm Profile', 'Waxed Finish', 'Sneaker Laces']
@@ -556,7 +556,7 @@ const PRODUCTS = [
       colors: 'Black, Saddle Tan, Navy Blue, Crisp White, Slate Grey',
       performance: 'Smooth glide through eyelets with durable wax shield',
       finish: 'Matte Black PVD or Engraved Metal Aglets',
-      moq: '1,500 Pairs',
+      moq: '100 Pairs',
       leadTime: '12 Business Days'
     },
     tags: ['6mm & 8mm Flat', 'Waxed Cotton', 'Luxury Sneakers', '5 Colors']
@@ -575,7 +575,7 @@ const PRODUCTS = [
       colors: 'Chocolate Brown, Royal Blue, Scarlet Red, Light Tan, Tan, White',
       performance: 'Ultra-soft natural drape, high wash durability, skin safe',
       finish: 'Clear Acetate Aglets or Soft Fused Tips',
-      moq: '1,500 Pairs',
+      moq: '100 Pairs',
       leadTime: '10 Business Days'
     },
     tags: ['Soft Non-Waxy', '6mm & 8mm', 'Vibrant Hues', 'Skate & Canvas']
@@ -594,7 +594,7 @@ const PRODUCTS = [
       colors: 'Solid Brown, Brown/Beige, Navy/White, Charcoal/Black, Red/Black',
       performance: 'Tensile breaking force > 850N, rot and mildew resistant',
       finish: 'Heavy-Duty Crimped Rustproof Metal Aglets',
-      moq: '2,000 Pairs',
+      moq: '100 Pairs',
       leadTime: '12-14 Business Days'
     },
     tags: ['Outdoor Cords', 'Jacquard Dotted', 'High Tensile', 'Trail Boots']
@@ -613,7 +613,7 @@ const PRODUCTS = [
       colors: 'Houndstooth Tan/Brown, Black/Red, Navy/White, Desert Khaki, Red/Black',
       performance: 'High-flex dynamic knot hold, breaking force > 900N',
       finish: 'Heavy Crimped Metal or Molded Reinforced Tips',
-      moq: '2,000 Pairs',
+      moq: '100 Pairs',
       leadTime: '12-15 Business Days'
     },
     tags: ['Tactical Flex', '32-Carrier Shell', 'Work & Combat', 'Flecks & Patterns']
@@ -636,7 +636,7 @@ const PRODUCTS = [
       dimensions: '32mm & 35mm Width | 3.6mm - 4.0mm Thickness',
       performance: 'Drum-dyed through, no synthetic filler layers',
       finish: 'Hand-burnished wax edge with brushed brass buckle',
-      moq: '300 Pcs / Color',
+      moq: '100 Pieces',
       leadTime: '15-20 Business Days'
     },
     tags: ['Full Grain', 'Formal', 'Italian Finish']
@@ -654,7 +654,7 @@ const PRODUCTS = [
       dimensions: '38mm & 40mm Casual Width | 3.8mm Thickness',
       performance: 'Self-healing surface with natural oils',
       finish: 'Raw-cut beveled edge with beeswax finish',
-      moq: '300 Pcs',
+      moq: '100 Pieces',
       leadTime: '15-18 Business Days'
     },
     tags: ['Pull-Up Leather', 'Casual Denim', 'Patina']
@@ -672,7 +672,7 @@ const PRODUCTS = [
       dimensions: '52cm x 28cm x 26cm (45L Volume)',
       performance: 'Reinforced bottom with 6 solid brass protective feet',
       finish: 'Detachable padded leather shoulder strap & rolled grab handles',
-      moq: '100 Pcs / Style',
+      moq: '100 Pieces',
       leadTime: '25-30 Business Days'
     },
     tags: ['Travel', 'Duffel Bag', 'YKK Zippers']
@@ -690,7 +690,7 @@ const PRODUCTS = [
       dimensions: '40cm x 30cm x 10cm',
       performance: 'Impact-absorbing high-density EVA laptop cushion',
       finish: 'Antiqued solid brass hardware and keyclip',
-      moq: '150 Pcs',
+      moq: '100 Pieces',
       leadTime: '20-25 Business Days'
     },
     tags: ['Messenger', 'Laptop Satchel', 'Business']
@@ -713,7 +713,7 @@ const PRODUCTS = [
       performance: 'Mil-spec reinforced rot-proof construction, high tensile wear resistance',
       finish: 'Matte Tactical Black, Coyote Brown & Dark Tan',
       hardware: 'Heavy-Duty Blackened Steel & Solid Brass Snaps',
-      moq: '50 Pieces',
+      moq: '100 Pieces',
       leadTime: '15-20 Days'
     },
     tags: ["OWB Belt Holster", "Vegetable-Tanned", "9-10 oz Steerhide"]
@@ -732,7 +732,7 @@ const PRODUCTS = [
       performance: 'Mil-spec reinforced rot-proof construction, high tensile wear resistance',
       finish: 'Matte Tactical Black, Coyote Brown & Dark Tan',
       hardware: 'Heavy-Duty Blackened Steel & Solid Brass Snaps',
-      moq: '50 Pieces',
+      moq: '100 Pieces',
       leadTime: '15-20 Days'
     },
     tags: ["Pancake Style", "Dual Slot", "Full Grain"]
@@ -751,7 +751,7 @@ const PRODUCTS = [
       performance: 'Mil-spec reinforced rot-proof construction, high tensile wear resistance',
       finish: 'Matte Tactical Black, Coyote Brown & Dark Tan',
       hardware: 'Heavy-Duty Blackened Steel & Solid Brass Snaps',
-      moq: '50 Pieces',
+      moq: '100 Pieces',
       leadTime: '15 Business Days'
     },
     tags: ["Thumb-Break", "Duty Holster", "Reinforced Spine"]
@@ -789,7 +789,7 @@ const PRODUCTS = [
       performance: 'Mil-spec reinforced rot-proof construction, high tensile wear resistance',
       finish: 'Matte Tactical Black, Coyote Brown & Dark Tan',
       hardware: 'Heavy-Duty Blackened Steel & Solid Brass Snaps',
-      moq: '40 Systems',
+      moq: '100 Pieces',
       leadTime: '20 Business Days'
     },
     tags: ["Shoulder Rig", "Mag Pouch", "Full Harness"]
@@ -808,7 +808,7 @@ const PRODUCTS = [
       performance: 'Mil-spec reinforced rot-proof construction, high tensile wear resistance',
       finish: 'Matte Tactical Black, Coyote Brown & Dark Tan',
       hardware: 'Heavy-Duty Blackened Steel & Solid Brass Snaps',
-      moq: '50 Pieces',
+      moq: '100 Pieces',
       leadTime: '15 Business Days'
     },
     tags: ["Open Top", "Hammer Thong", "Hand-Burnished"]
@@ -827,7 +827,7 @@ const PRODUCTS = [
       performance: 'Mil-spec reinforced rot-proof construction, high tensile wear resistance',
       finish: 'Matte Tactical Black, Coyote Brown & Dark Tan',
       hardware: 'Heavy-Duty Blackened Steel & Solid Brass Snaps',
-      moq: '50 Pieces',
+      moq: '100 Pieces',
       leadTime: '15 Business Days'
     },
     tags: ["Cross-Draw", "Forward Cant", "Vehicle Duty"]
@@ -846,7 +846,7 @@ const PRODUCTS = [
       performance: 'Mil-spec reinforced rot-proof construction, high tensile wear resistance',
       finish: 'Matte Tactical Black, Coyote Brown & Dark Tan',
       hardware: 'Heavy-Duty Blackened Steel & Solid Brass Snaps',
-      moq: '50 Pieces',
+      moq: '100 Pieces',
       leadTime: '18 Business Days'
     },
     tags: ["Extended Ride", "Thigh Tie", "Tactical Combat"]
@@ -884,7 +884,7 @@ const PRODUCTS = [
       performance: 'Mil-spec reinforced rot-proof construction, high tensile wear resistance',
       finish: 'Matte Tactical Black, Coyote Brown & Dark Tan',
       hardware: 'Heavy-Duty Blackened Steel & Solid Brass Snaps',
-      moq: '60 Pieces',
+      moq: '100 Pieces',
       leadTime: '15-18 Days'
     },
     tags: ["Full Flap", "Mil-Spec", "Field Defense"]
@@ -903,7 +903,7 @@ const PRODUCTS = [
       performance: 'Mil-spec reinforced rot-proof construction, high tensile wear resistance',
       finish: 'Matte Tactical Black, Coyote Brown & Dark Tan',
       hardware: 'Heavy-Duty Blackened Steel & Solid Brass Snaps',
-      moq: '40 Pieces',
+      moq: '100 Pieces',
       leadTime: '20 Business Days'
     },
     tags: ["Floral Carved", "Master Tooling", "Collector Grade"]
@@ -922,7 +922,7 @@ const PRODUCTS = [
       performance: 'Mil-spec reinforced rot-proof construction, high tensile wear resistance',
       finish: 'Matte Tactical Black, Coyote Brown & Dark Tan',
       hardware: 'Heavy-Duty Blackened Steel & Solid Brass Snaps',
-      moq: '80 Pieces',
+      moq: '100 Pieces',
       leadTime: '15 Business Days'
     },
     tags: ["50-Round", "Molded Dividers", "Solid Brass Clasp"]
@@ -960,7 +960,7 @@ const PRODUCTS = [
       performance: 'Mil-spec reinforced rot-proof construction, high tensile wear resistance',
       finish: 'Matte Tactical Black, Coyote Brown & Dark Tan',
       hardware: 'Heavy-Duty Blackened Steel & Solid Brass Snaps',
-      moq: '80 Pieces',
+      moq: '100 Pieces',
       leadTime: '15 Business Days'
     },
     tags: ["12 Gauge", "Weatherproof Lid", "Heavy Rivets"]
@@ -998,7 +998,7 @@ const PRODUCTS = [
       performance: 'Mil-spec reinforced rot-proof construction, high tensile wear resistance',
       finish: 'Matte Tactical Black, Coyote Brown & Dark Tan',
       hardware: 'Heavy-Duty Blackened Steel & Solid Brass Snaps',
-      moq: '50 Pieces',
+      moq: '100 Pieces',
       leadTime: '18 Business Days'
     },
     tags: ["Archival Caddy", "Brass Corners", "Carry Handle"]
@@ -1093,7 +1093,7 @@ const PRODUCTS = [
       performance: 'Mil-spec reinforced rot-proof construction, high tensile wear resistance',
       finish: 'Matte Tactical Black, Coyote Brown & Dark Tan',
       hardware: 'Heavy-Duty Blackened Steel & Solid Brass Snaps',
-      moq: '80 Pieces',
+      moq: '100 Pieces',
       leadTime: '15 Business Days'
     },
     tags: ["Bowie Grade", "Triple Stitched", "Copper Rivets"]
@@ -1226,7 +1226,7 @@ const PRODUCTS = [
       performance: 'Mil-spec reinforced rot-proof construction, high tensile wear resistance',
       finish: 'Matte Tactical Black, Coyote Brown & Dark Tan',
       hardware: 'Heavy-Duty Blackened Steel & Solid Brass Snaps',
-      moq: '80 Pieces',
+      moq: '100 Pieces',
       leadTime: '15 Business Days'
     },
     tags: ["Basketweave", "Hand-Dyed", "Heavy Steel"]
@@ -1283,7 +1283,7 @@ const PRODUCTS = [
       performance: 'Mil-spec reinforced rot-proof construction, high tensile wear resistance',
       finish: 'Matte Tactical Black, Coyote Brown & Dark Tan',
       hardware: 'Heavy-Duty Blackened Steel & Solid Brass Snaps',
-      moq: '80 Pieces',
+      moq: '100 Pieces',
       leadTime: '18 Business Days'
     },
     tags: ["Braided Lacing", "Non-Slip", "Bridle Leather"]
@@ -1302,7 +1302,7 @@ const PRODUCTS = [
       performance: 'Mil-spec reinforced rot-proof construction, high tensile wear resistance',
       finish: 'Matte Tactical Black, Coyote Brown & Dark Tan',
       hardware: 'Heavy-Duty Blackened Steel & Solid Brass Snaps',
-      moq: '60 Pieces',
+      moq: '100 Pieces',
       leadTime: '15 Business Days'
     },
     tags: ["Sniper Grade", "1.5\" Width", "Double Layered"]
@@ -1321,7 +1321,7 @@ const PRODUCTS = [
       performance: 'Mil-spec reinforced rot-proof construction, high tensile wear resistance',
       finish: 'Matte Tactical Black, Coyote Brown & Dark Tan',
       hardware: 'Heavy-Duty Blackened Steel & Solid Brass Snaps',
-      moq: '120 Pieces',
+      moq: '100 Pieces',
       leadTime: '10 Business Days'
     },
     tags: ["Minimalist 1\"", "Latigo Leather", "Field Burnished"]
