@@ -201,8 +201,8 @@ const SHARED_FOOTER = `
           </div>
           <div class="footer-contact-item">
             <div>
-              <a href="mailto:Olympic.Mirza@yahoo.com">Olympic.Mirza@yahoo.com</a><br>
-              <a href="mailto:Olympic.Mirza@yahoo.com">Olympic.Mirza@yahoo.com</a>
+              <a href="mailto:Olympic.Mirza@yahoo.in">Olympic.Mirza@yahoo.in</a><br>
+              <a href="mailto:Olympic.Mirza@yahoo.in">Olympic.Mirza@yahoo.in</a>
             </div>
           </div>
         </div>
@@ -519,7 +519,7 @@ ${SHARED_CANVAS}
             <div style="color:#aaa;">Uttar Pradesh, India — 208010</div>
             <div style="margin-top:0.75rem;"><a href="tel:9839086636" style="color:#e6c875;">+91 98390 86636</a></div>
             <div><a href="tel:7388814225" style="color:#e6c875;">+91 73888 14225</a></div>
-            <div style="margin-top:0.5rem;"><a href="mailto:Olympic.Mirza@yahoo.com" style="color:#e6c875;">Olympic.Mirza@yahoo.com</a></div>
+            <div style="margin-top:0.5rem;"><a href="mailto:Olympic.Mirza@yahoo.in" style="color:#e6c875;">Olympic.Mirza@yahoo.in</a></div>
           </div>
         </div>
       </div>

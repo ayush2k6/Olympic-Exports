@@ -4011,13 +4011,20 @@ h1, h2, h3, h4, h5, h6 {
 .hero-heritage-tag {
   display: inline-block;
   font-family: 'Cinzel', serif;
-  font-size: 0.78rem;
+  font-size: 0.84rem;
   font-weight: 700;
-  letter-spacing: 0.22em;
   text-transform: uppercase;
-  color: #d1b585;
+  letter-spacing: 0.2em;
+  color: #f3dfa2;
+  background: rgba(10, 10, 10, 0.88);
+  padding: 0.5rem 1.2rem;
+  border: 1px solid rgba(212, 175, 55, 0.6);
+  border-radius: 4px;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.7);
   margin-bottom: 1.25rem;
-  font-variant-numeric: lining-nums;
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  width: fit-content;
 }
 
 .collection-slider__title {
@@ -5513,22 +5520,23 @@ footer.modern-footer {
   z-index: 2;
 }
 
-.category-card__subtitle {
-  font-size: 0.7rem;
-  font-weight: 700;
-  color: #c5a059;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  margin-bottom: 0.35rem;
-}
-
 .category-card__title {
   font-family: 'Cinzel', serif;
   font-size: 1.5rem;
   font-weight: 700;
   color: #0f172a;
-  margin: 0 0 0.75rem 0;
+  margin: 0 0 0.35rem 0;
   line-height: 1.2;
+}
+
+.category-card__subtitle {
+  display: block;
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: #c5a059;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  margin-bottom: 0.75rem;
 }
 
 .category-card__title a {
@@ -5619,6 +5627,13 @@ footer.modern-footer {
   color: #ffffff;
   border-color: #0f172a;
   text-decoration: none;
+}
+
+.categories-bottom-bar p {
+  color: #000000 !important;
+  font-size: 1.15rem !important;
+  font-weight: 600;
+  line-height: 1.6;
 }
 
 .text-muted-gold {
@@ -5714,8 +5729,9 @@ html, body {
   }
 
   .hero-heritage-tag {
-    font-size: 0.65rem !important;
+    font-size: 0.68rem !important;
     letter-spacing: 0.12em !important;
+    padding: 0.4rem 0.8rem !important;
     margin-bottom: 0.75rem !important;
   }
 

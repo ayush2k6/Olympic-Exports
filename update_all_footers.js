@@ -80,8 +80,8 @@ const EXACT_CANONICAL_FOOTER = `  <footer class="modern-footer collection-footer
             </div>
             <div class="footer-contact-item">
               <div>
-                <a href="mailto:Olympic.Mirza@yahoo.com">Olympic.Mirza@yahoo.com</a><br>
-                <a href="mailto:Olympic.Mirza@yahoo.com">Olympic.Mirza@yahoo.com</a>
+                <a href="mailto:Olympic.Mirza@yahoo.in">Olympic.Mirza@yahoo.in</a><br>
+                <a href="mailto:Olympic.Mirza@yahoo.in">Olympic.Mirza@yahoo.in</a>
               </div>
             </div>
           </div>

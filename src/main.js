@@ -9,7 +9,7 @@ import { createIcons, icons } from 'lucide';
 
    Factory: 56-D, Defence Colony, Jajmau, Kanpur, Uttar Pradesh, India - 208010
    Contacts: Mr Farhan Mirza (+91 98390 86636) | Mr Ayaan Mirza (+91 73888 14225)
-   Official Email: Olympic.Mirza@yahoo.com
+   Official Email: Olympic.Mirza@yahoo.in
    ========================================================================== */
 
 const PRODUCTS = [
@@ -2167,9 +2167,9 @@ function initCatalogueDownload() {
         textContent += `Factory Address: 56-D, Defence Colony, Jajmau Industrial Area, Kanpur, UP, India - 208010\n`;
         textContent += `Direct Executive Contacts:\n`;
         textContent += `- Farhan Mirza (Managing Director): +91 98390 86636\n`;
-        textContent += `- Rukhsaar Mirza (Director): Olympic.Mirza@yahoo.com\n`;
+        textContent += `- Rukhsaar Mirza (Director): Olympic.Mirza@yahoo.in\n`;
         textContent += `- Ayaan Mirza (Director): +91 73888 14225\n`;
-        textContent += `Official Communications: Olympic.Mirza@yahoo.com\n`;
+        textContent += `Official Communications: Olympic.Mirza@yahoo.in\n`;
         textContent += `Logistics & Ports: ICD Kanpur (Dry Port) &bull; JNPT / Nhava Sheva (Sea Port) &bull; Delhi IGI (Air)\n`;
         textContent += `Compliance: EU REACH Compliant, Chromium-Free Vegetable Tanning, SVHC Cleared\n\n`;
         textContent += `Requested by: ${name} | ${company} (${email})\n`;
