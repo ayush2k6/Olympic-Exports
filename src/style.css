@@ -5690,7 +5690,7 @@ html, body {
   }
 
   .header__logo a .oe-logo-text {
-    font-size: 1.05rem !important;
+    font-size: 0.96rem !important;
   }
 
   .header__spacer {
@@ -5942,12 +5942,12 @@ html, body {
 
 @media (max-width: 480px) {
   .header__logo a .oe-logo-text {
-    font-size: 0.95rem !important;
-    letter-spacing: 0.05em !important;
+    font-size: 0.8rem !important;
+    letter-spacing: 0.04em !important;
   }
 
   .header__logo a img {
-    height: 34px !important;
+    height: 32px !important;
   }
 
   .collection-slider__title {
@@ -5960,6 +5960,17 @@ html, body {
 
   .categories-main-title {
     font-size: 1.75rem !important;
+  }
+}
+
+@media (max-width: 380px) {
+  .header__logo a .oe-logo-text {
+    font-size: 0.72rem !important;
+    letter-spacing: 0.03em !important;
+  }
+
+  .header__logo a img {
+    height: 28px !important;
   }
 }
 
